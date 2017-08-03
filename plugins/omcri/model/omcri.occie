@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ASCII"?>
+<occi:Extension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" name="omcri" scheme="http://omcri.org/cloudrobotics#">
+  <import href="http://schemas.ogf.org/occi/core#/"/>
+  <kinds name="Robot" scheme="http://omcri.org/cloudrobotics#">
+    <parent href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+  </kinds>
+  <kinds name="LegoMindstormNXT2" scheme="http://omcri.org/cloudrobotics#" parent="//@kinds[term='robot']">
+    <attributes name="macAddress" mutable="true">
+      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
+    </attributes>
+  </kinds>
+  <kinds name="ArDrone" scheme="http://omcri.org/cloudrobotics#" parent="//@kinds[term='robot']">
+    <attributes name="IPAddress" mutable="true">
+      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
+    </attributes>
+  </kinds>
+  <kinds name="Turtlebot" scheme="http://omcri.org/cloudrobotics#" title="" parent="//@kinds[term='robot']">
+    <attributes name="user" mutable="true">
+      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
+    </attributes>
+    <attributes name="password" mutable="true">
+      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
+    </attributes>
+    <attributes name="IPAddress" mutable="true">
+      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
+    </attributes>
+  </kinds>
+  <mixins name="Actuator" scheme="http://omcri.org/cloudrobotics#" applies="//@kinds[term='robot']"/>
+  <mixins name="TouchSensor" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='sensor']" applies="//@kinds[term='legomindstormnxt2']">
+    <attributes name="touch" mutable="true" type="//@types.0"/>
+    <actions name="senseTouch" scheme="http://omcri.org/cloudrobotics/touchsensor/action#" title=""/>
+  </mixins>
+  <mixins name="MotionActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='actuator']" applies="//@kinds[term='legomindstormnxt2'] //@kinds[term='turtlebot']">
+    <attributes name="angle" mutable="true" default="45">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="speed" mutable="true" default="100">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="duration" mutable="true" default="1000">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <actions name="moveForward" scheme="http://omcri.org/cloudrobotics/motionactuator/action#"/>
+    <actions name="moveBackward" scheme="http://omcri.org/cloudrobotics/motionactuator/action#"/>
+    <actions name="turnRight" scheme="http://omcri.org/cloudrobotics/motionactuator/action#"/>
+    <actions name="turnLeft" scheme="http://omcri.org/cloudrobotics/motionactuator/action#"/>
+    <actions name="stop" scheme="http://omcri.org/cloudrobotics/motionactuator/action#"/>
+  </mixins>
+  <mixins name="Sensor" scheme="http://omcri.org/cloudrobotics#" applies="//@kinds[term='robot']"/>
+  <mixins name="ColorSensor" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='sensor']" applies="//@kinds[term='legomindstormnxt2']">
+    <attributes name="color" mutable="true" type="//@types.0"/>
+    <attributes name="light" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="darkness" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="colorLamp" mutable="true" type="//@types.0"/>
+    <actions name="senseColor" scheme="http://omcri.org/cloudrobotics/colorsensor/action#"/>
+  </mixins>
+  <mixins name="UltrasonicSensor" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='sensor']" applies="//@kinds[term='legomindstormnxt2']">
+    <attributes name="distance" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <actions name="senseDistance" scheme="http://omcri.org/cloudrobotics/ultrasonicsensor/action#"/>
+  </mixins>
+  <mixins name="MouthActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='actuator']" applies="//@kinds[term='legomindstormnxt2']">
+    <actions name="openMouth" scheme="http://omcri.org/cloudrobotics/mouthactuator/action#"/>
+    <actions name="closeMouth" scheme="http://omcri.org/cloudrobotics/mouthactuator/action#"/>
+  </mixins>
+  <mixins name="FlightActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='actuator']" applies="//@kinds[term='ardrone']">
+    <attributes name="horizontalTilt" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="verticalTilt" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="horizontalSpeed" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <attributes name="verticalSpeed" mutable="true">
+      <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
+    </attributes>
+    <actions name="move" scheme="http://omcri.org/cloudrobotics/flightactuator/action#"/>
+    <actions name="land" scheme="http://omcri.org/cloudrobotics/flightactuator/action#"/>
+    <actions name="takeOff" scheme="http://omcri.org/cloudrobotics/flightactuator/action#"/>
+  </mixins>
+  <types xsi:type="occi:EnumerationType" name="Color">
+    <literals name="WHITE"/>
+    <literals name="BLACK"/>
+    <literals name="BLUE"/>
+    <literals name="YELLOW"/>
+    <literals name="RED"/>
+    <literals name="GREEN"/>
+  </types>
+  <types xsi:type="occi:EnumerationType" name="Touch">
+    <literals name="PRESSED"/>
+    <literals name="RELEASED"/>
+    <literals name="HIT"/>
+  </types>
+</occi:Extension>
