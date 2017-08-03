@@ -35,7 +35,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  * @see omcri.OmcriPackage#getFlightactuator()
  * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='appliesConstraint'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='appliesConstraint'"
  * @generated
  */
 public interface Flightactuator extends MixinBase, Actuator {
@@ -50,6 +49,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #setHorizontalTilt(Integer)
 	 * @see omcri.OmcriPackage#getFlightactuator_HorizontalTilt()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!horizontalTilt'"
 	 * @generated
 	 */
 	Integer getHorizontalTilt();
@@ -75,6 +75,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #setVerticalTilt(Integer)
 	 * @see omcri.OmcriPackage#getFlightactuator_VerticalTilt()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!verticalTilt'"
 	 * @generated
 	 */
 	Integer getVerticalTilt();
@@ -100,6 +101,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #setHorizontalSpeed(Integer)
 	 * @see omcri.OmcriPackage#getFlightactuator_HorizontalSpeed()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!horizontalSpeed'"
 	 * @generated
 	 */
 	Integer getHorizontalSpeed();
@@ -125,6 +127,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #setVerticalSpeed(Integer)
 	 * @see omcri.OmcriPackage#getFlightactuator_VerticalSpeed()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!verticalSpeed'"
 	 * @generated
 	 */
 	Integer getVerticalSpeed();
@@ -145,7 +148,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!move()'"
 	 * @generated
 	 */
 	void move();
@@ -156,7 +159,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!land()'"
 	 * @generated
 	 */
 	void land();
@@ -167,7 +170,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!takeoff()'"
 	 * @generated
 	 */
 	void takeoff();
@@ -175,7 +178,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.entity.oclIsKindOf(omcri::Ardrone)'"
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='/**\n *\n * inv appliesConstraint:\n *   let\n *     severity : Integer[1] = \'Flightactuator::appliesConstraint\'.getSeverity()\n *   in\n *     if severity &lt;= 0\n *     then true\n *     else\n *       let result : occi::Boolean[1] = self.entity.oclIsKindOf(Ardrone)\n *       in\n *         \'Flightactuator::appliesConstraint\'.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)\n *     endif\n \052/\nfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.evaluation.Executor%&gt; executor = &lt;%org.eclipse.ocl.pivot.internal.utilities.PivotUtilInternal%&gt;.getExecutor(this);\nfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.ids.IdResolver%&gt; idResolver = executor.getIdResolver();\nfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.values.IntegerValue%&gt; severity_0 = &lt;%org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation%&gt;.INSTANCE.evaluate(executor, &lt;%omcri.OmcriTables%&gt;.STR_Flightactuator_c_c_appliesConstraint);\nfinal /*@NonInvalid\052/ boolean le = &lt;%org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation%&gt;.INSTANCE.evaluate(executor, severity_0, &lt;%omcri.OmcriTables%&gt;.INT_0).booleanValue();\n/*@NonInvalid\052/ boolean symbol_0;\nif (le) {\n\tsymbol_0 = &lt;%org.eclipse.ocl.pivot.utilities.ValueUtil%&gt;.TRUE_VALUE;\n}\nelse {\n\tfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.Class%&gt; TYP_omcri_c_c_Ardrone = idResolver.getClass(&lt;%omcri.OmcriTables%&gt;.CLSSid_Ardrone, null);\n\tfinal /*@NonInvalid\052/ &lt;%org.eclipse.cmf.occi.core.Entity%&gt; entity = this.getEntity();\n\tfinal /*@NonInvalid\052/ boolean result = &lt;%org.eclipse.ocl.pivot.library.oclany.OclAnyOclIsKindOfOperation%&gt;.INSTANCE.evaluate(executor, entity, TYP_omcri_c_c_Ardrone).booleanValue();\n\tfinal /*@NonInvalid\052/ boolean logDiagnostic = &lt;%org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation%&gt;.INSTANCE.evaluate(executor, &lt;%org.eclipse.ocl.pivot.ids.TypeId%&gt;.BOOLEAN, &lt;%omcri.OmcriTables%&gt;.STR_Flightactuator_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, &lt;%omcri.OmcriTables%&gt;.INT_0).booleanValue();\n\tsymbol_0 = logDiagnostic;\n}\nreturn Boolean.TRUE == symbol_0;'"
 	 * @generated
 	 */
 	boolean appliesConstraint(DiagnosticChain diagnostics, Map<Object, Object> context);

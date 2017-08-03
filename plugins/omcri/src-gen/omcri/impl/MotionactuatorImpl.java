@@ -19,20 +19,37 @@ import java.util.Map;
 import omcri.Actuator;
 import omcri.Motionactuator;
 import omcri.OmcriPackage;
+import omcri.OmcriTables;
 
-import omcri.util.OmcriValidator;
+import org.eclipse.cmf.occi.core.Entity;
 
 import org.eclipse.cmf.occi.core.impl.MixinBaseImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.ocl.pivot.evaluation.Executor;
+
+import org.eclipse.ocl.pivot.ids.IdResolver;
+import org.eclipse.ocl.pivot.ids.TypeId;
+
+import org.eclipse.ocl.pivot.internal.utilities.PivotUtilInternal;
+
+import org.eclipse.ocl.pivot.library.oclany.OclAnyOclIsKindOfOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation;
+
+import org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation;
+
+import org.eclipse.ocl.pivot.utilities.ValueUtil;
+
+import org.eclipse.ocl.pivot.values.IntegerValue;
 
 /**
  * <!-- begin-user-doc -->
@@ -198,9 +215,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 */
 	public void moveforward() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!moveforward()
 	}
 
 	/**
@@ -209,9 +224,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 */
 	public void movebackward() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!movebackward()
 	}
 
 	/**
@@ -220,9 +233,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 */
 	public void turnright() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!turnright()
 	}
 
 	/**
@@ -231,9 +242,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 */
 	public void turnleft() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!turnleft()
 	}
 
 	/**
@@ -242,39 +251,56 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 */
 	public void stop() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!stop()
 	}
 
 	/**
-	 * The cached validation expression for the '{@link #appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String APPLIES_CONSTRAINT_DIAGNOSTIC_CHAIN_MAP_1__EEXPRESSION = "self.entity.oclIsKindOf(omcri::Legomindstormnxt2) or self.entity.oclIsKindOf(omcri::Turtlebot)";
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean appliesConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return
-			OmcriValidator.validate
-				(OmcriPackage.Literals.MOTIONACTUATOR,
-				 this,
-				 diagnostics,
-				 context,
-				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-				 OmcriPackage.Literals.MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1,
-				 APPLIES_CONSTRAINT_DIAGNOSTIC_CHAIN_MAP_1__EEXPRESSION,
-				 Diagnostic.ERROR,
-				 OmcriValidator.DIAGNOSTIC_SOURCE,
-				 OmcriValidator.MOTIONACTUATOR__APPLIES_CONSTRAINT);
+	public boolean appliesConstraint(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		/**
+		 *
+		 * inv appliesConstraint:
+		 *   let
+		 *     severity : Integer[1] = 'Motionactuator::appliesConstraint'.getSeverity()
+		 *   in
+		 *     if severity <= 0
+		 *     then true
+		 *     else
+		 *       let
+		 *         result : occi::Boolean[?] = self.entity.oclIsKindOf(Legomindstormnxt2) or
+		 *         self.entity.oclIsKindOf(Turtlebot)
+		 *       in
+		 *         'Motionactuator::appliesConstraint'.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+		 *     endif
+		 */
+		final /*@NonInvalid*/ Executor executor = PivotUtilInternal.getExecutor(this);
+		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
+		final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, OmcriTables.STR_Motionactuator_c_c_appliesConstraint);
+		final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, OmcriTables.INT_0).booleanValue();
+		/*@NonInvalid*/ boolean symbol_0;
+		if (le) {
+			symbol_0 = ValueUtil.TRUE_VALUE;
+		}
+		else {
+			final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcri_c_c_Legomindstormnxt2_0 = idResolver.getClass(OmcriTables.CLSSid_Legomindstormnxt2, null);
+			final /*@NonInvalid*/ Entity entity_0 = this.getEntity();
+			final /*@NonInvalid*/ boolean oclIsKindOf = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity_0, TYP_omcri_c_c_Legomindstormnxt2_0).booleanValue();
+			/*@NonInvalid*/ boolean result;
+			if (oclIsKindOf) {
+				result = ValueUtil.TRUE_VALUE;
+			}
+			else {
+				final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcri_c_c_Turtlebot = idResolver.getClass(OmcriTables.CLSSid_Turtlebot, null);
+				final /*@NonInvalid*/ boolean oclIsKindOf_0 = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity_0, TYP_omcri_c_c_Turtlebot).booleanValue();
+				result = oclIsKindOf_0;
+			}
+			final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, OmcriTables.STR_Motionactuator_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, OmcriTables.INT_0).booleanValue();
+			symbol_0 = logDiagnostic;
+		}
+		return Boolean.TRUE == symbol_0;
 	}
 
 	/**
@@ -364,7 +390,6 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == Actuator.class) {
 			switch (baseOperationID) {
-				case OmcriPackage.ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1: return OmcriPackage.MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 				case OmcriPackage.ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP: return OmcriPackage.MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 				default: return -1;
 			}

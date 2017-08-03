@@ -45,6 +45,7 @@ public interface Ardrone extends Robot {
 	 * @see #setIPAddress(String)
 	 * @see omcri.OmcriPackage#getArdrone_IPAddress()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Ardrone!IPAddress'"
 	 * @generated
 	 */
 	String getIPAddress();

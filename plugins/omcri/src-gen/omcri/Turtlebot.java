@@ -47,6 +47,7 @@ public interface Turtlebot extends Robot {
 	 * @see #setUser(String)
 	 * @see omcri.OmcriPackage#getTurtlebot_User()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Turtlebot!user'"
 	 * @generated
 	 */
 	String getUser();
@@ -72,6 +73,7 @@ public interface Turtlebot extends Robot {
 	 * @see #setPassword(String)
 	 * @see omcri.OmcriPackage#getTurtlebot_Password()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Turtlebot!password'"
 	 * @generated
 	 */
 	String getPassword();
@@ -97,6 +99,7 @@ public interface Turtlebot extends Robot {
 	 * @see #setIPAddress(String)
 	 * @see omcri.OmcriPackage#getTurtlebot_IPAddress()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Turtlebot!IPAddress'"
 	 * @generated
 	 */
 	String getIPAddress();

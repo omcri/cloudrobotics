@@ -54,7 +54,8 @@
       <!-- @generated omcri -->
       <package
             uri="http://omcri.org/cloudrobotics/ecore"
-            class="omcri.OmcriPackage"/>
+            class="omcri.OmcriPackage"
+            genModel="model/omcri.genmodel"/>
    </extension>
 
 </plugin>

@@ -19,20 +19,37 @@ import java.util.Map;
 import omcri.Actuator;
 import omcri.Flightactuator;
 import omcri.OmcriPackage;
+import omcri.OmcriTables;
 
-import omcri.util.OmcriValidator;
+import org.eclipse.cmf.occi.core.Entity;
 
 import org.eclipse.cmf.occi.core.impl.MixinBaseImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.ocl.pivot.evaluation.Executor;
+
+import org.eclipse.ocl.pivot.ids.IdResolver;
+import org.eclipse.ocl.pivot.ids.TypeId;
+
+import org.eclipse.ocl.pivot.internal.utilities.PivotUtilInternal;
+
+import org.eclipse.ocl.pivot.library.oclany.OclAnyOclIsKindOfOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation;
+
+import org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation;
+
+import org.eclipse.ocl.pivot.utilities.ValueUtil;
+
+import org.eclipse.ocl.pivot.values.IntegerValue;
 
 /**
  * <!-- begin-user-doc -->
@@ -240,9 +257,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 */
 	public void move() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!move()
 	}
 
 	/**
@@ -251,9 +266,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 */
 	public void land() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!land()
 	}
 
 	/**
@@ -262,39 +275,45 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 */
 	public void takeoff() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Flightactuator!takeoff()
 	}
 
 	/**
-	 * The cached validation expression for the '{@link #appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String APPLIES_CONSTRAINT_DIAGNOSTIC_CHAIN_MAP_1__EEXPRESSION = "self.entity.oclIsKindOf(omcri::Ardrone)";
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean appliesConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return
-			OmcriValidator.validate
-				(OmcriPackage.Literals.FLIGHTACTUATOR,
-				 this,
-				 diagnostics,
-				 context,
-				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-				 OmcriPackage.Literals.FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1,
-				 APPLIES_CONSTRAINT_DIAGNOSTIC_CHAIN_MAP_1__EEXPRESSION,
-				 Diagnostic.ERROR,
-				 OmcriValidator.DIAGNOSTIC_SOURCE,
-				 OmcriValidator.FLIGHTACTUATOR__APPLIES_CONSTRAINT);
+	public boolean appliesConstraint(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		/**
+		 *
+		 * inv appliesConstraint:
+		 *   let
+		 *     severity : Integer[1] = 'Flightactuator::appliesConstraint'.getSeverity()
+		 *   in
+		 *     if severity <= 0
+		 *     then true
+		 *     else
+		 *       let result : occi::Boolean[1] = self.entity.oclIsKindOf(Ardrone)
+		 *       in
+		 *         'Flightactuator::appliesConstraint'.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+		 *     endif
+		 */
+		final /*@NonInvalid*/ Executor executor = PivotUtilInternal.getExecutor(this);
+		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
+		final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, OmcriTables.STR_Flightactuator_c_c_appliesConstraint);
+		final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, OmcriTables.INT_0).booleanValue();
+		/*@NonInvalid*/ boolean symbol_0;
+		if (le) {
+			symbol_0 = ValueUtil.TRUE_VALUE;
+		}
+		else {
+			final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcri_c_c_Ardrone = idResolver.getClass(OmcriTables.CLSSid_Ardrone, null);
+			final /*@NonInvalid*/ Entity entity = this.getEntity();
+			final /*@NonInvalid*/ boolean result = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity, TYP_omcri_c_c_Ardrone).booleanValue();
+			final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, OmcriTables.STR_Flightactuator_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, OmcriTables.INT_0).booleanValue();
+			symbol_0 = logDiagnostic;
+		}
+		return Boolean.TRUE == symbol_0;
 	}
 
 	/**
@@ -394,7 +413,6 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == Actuator.class) {
 			switch (baseOperationID) {
-				case OmcriPackage.ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1: return OmcriPackage.FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 				case OmcriPackage.ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP: return OmcriPackage.FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 				default: return -1;
 			}

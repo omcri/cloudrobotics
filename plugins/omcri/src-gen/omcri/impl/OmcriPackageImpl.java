@@ -316,17 +316,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getActuator__AppliesConstraint__DiagnosticChain_Map_1() {
-		return actuatorEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getActuator__AppliesConstraint__DiagnosticChain_Map() {
-		return actuatorEClass.getEOperations().get(1);
+		return actuatorEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -361,17 +352,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTouchsensor__AppliesConstraint__DiagnosticChain_Map_1() {
-		return touchsensorEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getTouchsensor__AppliesConstraint__DiagnosticChain_Map() {
-		return touchsensorEClass.getEOperations().get(2);
+		return touchsensorEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -460,17 +442,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getMotionactuator__AppliesConstraint__DiagnosticChain_Map_1() {
-		return motionactuatorEClass.getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getMotionactuator__AppliesConstraint__DiagnosticChain_Map() {
-		return motionactuatorEClass.getEOperations().get(6);
+		return motionactuatorEClass.getEOperations().get(5);
 	}
 
 	/**
@@ -487,17 +460,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getSensor__AppliesConstraint__DiagnosticChain_Map_1() {
-		return sensorEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getSensor__AppliesConstraint__DiagnosticChain_Map() {
-		return sensorEClass.getEOperations().get(1);
+		return sensorEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -559,17 +523,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getColorsensor__AppliesConstraint__DiagnosticChain_Map_1() {
-		return colorsensorEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getColorsensor__AppliesConstraint__DiagnosticChain_Map() {
-		return colorsensorEClass.getEOperations().get(2);
+		return colorsensorEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -604,17 +559,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getUltrasonicsensor__AppliesConstraint__DiagnosticChain_Map_1() {
-		return ultrasonicsensorEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getUltrasonicsensor__AppliesConstraint__DiagnosticChain_Map() {
-		return ultrasonicsensorEClass.getEOperations().get(2);
+		return ultrasonicsensorEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -649,17 +595,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getMouthactuator__AppliesConstraint__DiagnosticChain_Map_1() {
-		return mouthactuatorEClass.getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getMouthactuator__AppliesConstraint__DiagnosticChain_Map() {
-		return mouthactuatorEClass.getEOperations().get(3);
+		return mouthactuatorEClass.getEOperations().get(2);
 	}
 
 	/**
@@ -739,17 +676,8 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getFlightactuator__AppliesConstraint__DiagnosticChain_Map_1() {
-		return flightactuatorEClass.getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EOperation getFlightactuator__AppliesConstraint__DiagnosticChain_Map() {
-		return flightactuatorEClass.getEOperations().get(4);
+		return flightactuatorEClass.getEOperations().get(3);
 	}
 
 	/**
@@ -812,13 +740,11 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		createEAttribute(turtlebotEClass, TURTLEBOT__IP_ADDRESS);
 
 		actuatorEClass = createEClass(ACTUATOR);
-		createEOperation(actuatorEClass, ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(actuatorEClass, ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		touchsensorEClass = createEClass(TOUCHSENSOR);
 		createEAttribute(touchsensorEClass, TOUCHSENSOR__TOUCH);
 		createEOperation(touchsensorEClass, TOUCHSENSOR___SENSETOUCH);
-		createEOperation(touchsensorEClass, TOUCHSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(touchsensorEClass, TOUCHSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		motionactuatorEClass = createEClass(MOTIONACTUATOR);
@@ -830,11 +756,9 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___TURNRIGHT);
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___TURNLEFT);
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___STOP);
-		createEOperation(motionactuatorEClass, MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		sensorEClass = createEClass(SENSOR);
-		createEOperation(sensorEClass, SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(sensorEClass, SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		colorsensorEClass = createEClass(COLORSENSOR);
@@ -843,19 +767,16 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		createEAttribute(colorsensorEClass, COLORSENSOR__DARKNESS);
 		createEAttribute(colorsensorEClass, COLORSENSOR__COLOR_LAMP);
 		createEOperation(colorsensorEClass, COLORSENSOR___SENSECOLOR);
-		createEOperation(colorsensorEClass, COLORSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(colorsensorEClass, COLORSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		ultrasonicsensorEClass = createEClass(ULTRASONICSENSOR);
 		createEAttribute(ultrasonicsensorEClass, ULTRASONICSENSOR__DISTANCE);
 		createEOperation(ultrasonicsensorEClass, ULTRASONICSENSOR___SENSEDISTANCE);
-		createEOperation(ultrasonicsensorEClass, ULTRASONICSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(ultrasonicsensorEClass, ULTRASONICSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		mouthactuatorEClass = createEClass(MOUTHACTUATOR);
 		createEOperation(mouthactuatorEClass, MOUTHACTUATOR___OPENMOUTH);
 		createEOperation(mouthactuatorEClass, MOUTHACTUATOR___CLOSEMOUTH);
-		createEOperation(mouthactuatorEClass, MOUTHACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(mouthactuatorEClass, MOUTHACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		flightactuatorEClass = createEClass(FLIGHTACTUATOR);
@@ -866,7 +787,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___MOVE);
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___LAND);
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___TAKEOFF);
-		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP_1);
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		// Create enums
@@ -940,19 +860,10 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 
 		initEClass(actuatorEClass, Actuator.class, "Actuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = initEOperation(getActuator__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = initEOperation(getActuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getActuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
@@ -962,15 +873,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		initEAttribute(getTouchsensor_Touch(), this.getColor(), "touch", null, 0, 1, Touchsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getTouchsensor__Sensetouch(), null, "sensetouch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getTouchsensor__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getTouchsensor__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -996,15 +898,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 
 		initEOperation(getMotionactuator__Stop(), null, "stop", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getMotionactuator__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		op = initEOperation(getMotionactuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1015,15 +908,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(sensorEClass, Sensor.class, "Sensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = initEOperation(getSensor__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getSensor__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1042,15 +926,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 
 		initEOperation(getColorsensor__Sensecolor(), null, "sensecolor", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getColorsensor__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		op = initEOperation(getColorsensor__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1064,15 +939,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		initEAttribute(getUltrasonicsensor_Distance(), theOCCIPackage.getInteger(), "distance", null, 0, 1, Ultrasonicsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getUltrasonicsensor__Sensedistance(), null, "sensedistance", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getUltrasonicsensor__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getUltrasonicsensor__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1088,15 +954,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		initEOperation(getMouthactuator__Openmouth(), null, "openmouth", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEOperation(getMouthactuator__Closemouth(), null, "closemouth", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getMouthactuator__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getMouthactuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1118,15 +975,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		initEOperation(getFlightactuator__Land(), null, "land", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEOperation(getFlightactuator__Takeoff(), null, "takeoff", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getFlightactuator__AppliesConstraint__DiagnosticChain_Map_1(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getFlightactuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1157,8 +1005,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		// Create annotations
 		// http://www.eclipse.org/emf/2002/Ecore
 		createEcoreAnnotations();
-		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
-		createPivotAnnotations();
 	}
 
 	/**
@@ -1173,32 +1019,9 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		  (this, 
 		   source, 
 		   new String[] {
-			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
-		   });	
-		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] {
-			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
 		   });	
 		addAnnotation
 		  (actuatorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
-		  (actuatorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
-		  (touchsensorEClass, 
 		   source, 
 		   new String[] {
 			 "constraints", "appliesConstraint"
@@ -1216,25 +1039,7 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 			 "constraints", "appliesConstraint"
 		   });	
 		addAnnotation
-		  (motionactuatorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
 		  (sensorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
-		  (sensorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
-		  (colorsensorEClass, 
 		   source, 
 		   new String[] {
 			 "constraints", "appliesConstraint"
@@ -1252,18 +1057,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 			 "constraints", "appliesConstraint"
 		   });	
 		addAnnotation
-		  (ultrasonicsensorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
-		  (mouthactuatorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
 		  (mouthactuatorEClass, 
 		   source, 
 		   new String[] {
@@ -1274,118 +1067,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		   source, 
 		   new String[] {
 			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
-		  (flightactuatorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });
-	}
-
-	/**
-	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createPivotAnnotations() {
-		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";	
-		addAnnotation
-		  (getActuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Robot)"
-		   });	
-		addAnnotation
-		  (getActuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Robot)"
-		   });	
-		addAnnotation
-		  (getTouchsensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getTouchsensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getMotionactuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2) or self.entity.oclIsKindOf(omcri::Turtlebot)"
-		   });	
-		addAnnotation
-		  (getMotionactuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2) or self.entity.oclIsKindOf(omcri::Turtlebot)"
-		   });	
-		addAnnotation
-		  (getSensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Robot)"
-		   });	
-		addAnnotation
-		  (getSensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Robot)"
-		   });	
-		addAnnotation
-		  (getColorsensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getColorsensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getUltrasonicsensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getUltrasonicsensor__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getMouthactuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getMouthactuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"
-		   });	
-		addAnnotation
-		  (getFlightactuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Ardrone)"
-		   });	
-		addAnnotation
-		  (getFlightactuator__AppliesConstraint__DiagnosticChain_Map_1(), 
-		   source, 
-		   new String[] {
-			 "body", "self.entity.oclIsKindOf(omcri::Ardrone)"
 		   });
 	}
 

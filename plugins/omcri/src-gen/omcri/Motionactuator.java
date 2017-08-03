@@ -34,7 +34,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  * @see omcri.OmcriPackage#getMotionactuator()
  * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='appliesConstraint'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='appliesConstraint'"
  * @generated
  */
 public interface Motionactuator extends MixinBase, Actuator {
@@ -50,6 +49,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * @see #setAngle(Integer)
 	 * @see omcri.OmcriPackage#getMotionactuator_Angle()
 	 * @model default="45" dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!angle'"
 	 * @generated
 	 */
 	Integer getAngle();
@@ -76,6 +76,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * @see #setSpeed(Integer)
 	 * @see omcri.OmcriPackage#getMotionactuator_Speed()
 	 * @model default="100" dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!speed'"
 	 * @generated
 	 */
 	Integer getSpeed();
@@ -102,6 +103,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * @see #setDuration(Integer)
 	 * @see omcri.OmcriPackage#getMotionactuator_Duration()
 	 * @model default="1000" dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!duration'"
 	 * @generated
 	 */
 	Integer getDuration();
@@ -122,7 +124,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!moveforward()'"
 	 * @generated
 	 */
 	void moveforward();
@@ -133,7 +135,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!movebackward()'"
 	 * @generated
 	 */
 	void movebackward();
@@ -144,7 +146,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!turnright()'"
 	 * @generated
 	 */
 	void turnright();
@@ -155,7 +157,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!turnleft()'"
 	 * @generated
 	 */
 	void turnleft();
@@ -166,7 +168,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/ecore!Motionactuator!stop()'"
 	 * @generated
 	 */
 	void stop();
@@ -174,7 +176,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.entity.oclIsKindOf(omcri::Legomindstormnxt2) or self.entity.oclIsKindOf(omcri::Turtlebot)'"
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='/**\n *\n * inv appliesConstraint:\n *   let\n *     severity : Integer[1] = \'Motionactuator::appliesConstraint\'.getSeverity()\n *   in\n *     if severity &lt;= 0\n *     then true\n *     else\n *       let\n *         result : occi::Boolean[?] = self.entity.oclIsKindOf(Legomindstormnxt2) or\n *         self.entity.oclIsKindOf(Turtlebot)\n *       in\n *         \'Motionactuator::appliesConstraint\'.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)\n *     endif\n \052/\nfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.evaluation.Executor%&gt; executor = &lt;%org.eclipse.ocl.pivot.internal.utilities.PivotUtilInternal%&gt;.getExecutor(this);\nfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.ids.IdResolver%&gt; idResolver = executor.getIdResolver();\nfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.values.IntegerValue%&gt; severity_0 = &lt;%org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation%&gt;.INSTANCE.evaluate(executor, &lt;%omcri.OmcriTables%&gt;.STR_Motionactuator_c_c_appliesConstraint);\nfinal /*@NonInvalid\052/ boolean le = &lt;%org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation%&gt;.INSTANCE.evaluate(executor, severity_0, &lt;%omcri.OmcriTables%&gt;.INT_0).booleanValue();\n/*@NonInvalid\052/ boolean symbol_0;\nif (le) {\n\tsymbol_0 = &lt;%org.eclipse.ocl.pivot.utilities.ValueUtil%&gt;.TRUE_VALUE;\n}\nelse {\n\tfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.Class%&gt; TYP_omcri_c_c_Legomindstormnxt2_0 = idResolver.getClass(&lt;%omcri.OmcriTables%&gt;.CLSSid_Legomindstormnxt2, null);\n\tfinal /*@NonInvalid\052/ &lt;%org.eclipse.cmf.occi.core.Entity%&gt; entity_0 = this.getEntity();\n\tfinal /*@NonInvalid\052/ boolean oclIsKindOf = &lt;%org.eclipse.ocl.pivot.library.oclany.OclAnyOclIsKindOfOperation%&gt;.INSTANCE.evaluate(executor, entity_0, TYP_omcri_c_c_Legomindstormnxt2_0).booleanValue();\n\t/*@NonInvalid\052/ boolean result;\n\tif (oclIsKindOf) {\n\t\tresult = &lt;%org.eclipse.ocl.pivot.utilities.ValueUtil%&gt;.TRUE_VALUE;\n\t}\n\telse {\n\t\tfinal /*@NonInvalid\052/ &lt;%org.eclipse.ocl.pivot.Class%&gt; TYP_omcri_c_c_Turtlebot = idResolver.getClass(&lt;%omcri.OmcriTables%&gt;.CLSSid_Turtlebot, null);\n\t\tfinal /*@NonInvalid\052/ boolean oclIsKindOf_0 = &lt;%org.eclipse.ocl.pivot.library.oclany.OclAnyOclIsKindOfOperation%&gt;.INSTANCE.evaluate(executor, entity_0, TYP_omcri_c_c_Turtlebot).booleanValue();\n\t\tresult = oclIsKindOf_0;\n\t}\n\tfinal /*@NonInvalid\052/ boolean logDiagnostic = &lt;%org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation%&gt;.INSTANCE.evaluate(executor, &lt;%org.eclipse.ocl.pivot.ids.TypeId%&gt;.BOOLEAN, &lt;%omcri.OmcriTables%&gt;.STR_Motionactuator_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, &lt;%omcri.OmcriTables%&gt;.INT_0).booleanValue();\n\tsymbol_0 = logDiagnostic;\n}\nreturn Boolean.TRUE == symbol_0;'"
 	 * @generated
 	 */
 	boolean appliesConstraint(DiagnosticChain diagnostics, Map<Object, Object> context);

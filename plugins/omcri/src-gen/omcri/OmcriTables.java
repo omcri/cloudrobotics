@@ -12,9 +12,9 @@
  *************************************************************************
  * This code is 100% auto-generated
  * from:
- *   /omcri/OCCI-Studio/repositories/org.eclipse.cmf.occi.product/target/products/org.eclipse.cmf.occi.product/linux/gtk/x86_64/workspace/omcri/model/omcri.ecore
+ *   /omcri/model/omcri.ecore
  * using:
- *   /omcri/OCCI-Studio/repositories/org.eclipse.cmf.occi.product/target/products/org.eclipse.cmf.occi.product/linux/gtk/x86_64/workspace/omcri/model/omcri.genmodel
+ *   /omcri/model/omcri.genmodel
  *   org.eclipse.ocl.examples.codegen.oclinecore.OCLinEcoreTables
  *
  * Do not edit it.
@@ -58,6 +58,37 @@ public class OmcriTables
 	 *	The library of all packages and types.
 	 */
 	public static final /*@NonNull*/ ExecutorStandardLibrary LIBRARY = OCLstdlibTables.LIBRARY;
+
+	/**
+	 *	Constants used by auto-generated code.
+	 */
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.RootPackageId PACKid_$metamodel$ = org.eclipse.ocl.pivot.ids.IdManager.getRootPackageId("$metamodel$");
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.NsURIPackageId PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore = org.eclipse.ocl.pivot.ids.IdManager.getNsURIPackageId("http://omcri.org/cloudrobotics/ecore", null, omcri.OmcriPackage.eINSTANCE);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.NsURIPackageId PACKid_http_c_s_s_schemas_ogf_org_s_occi_s_core_s_ecore = org.eclipse.ocl.pivot.ids.IdManager.getNsURIPackageId("http://schemas.ogf.org/occi/core/ecore", "occi", org.eclipse.cmf.occi.core.OCCIPackage.eINSTANCE);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Actuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Actuator", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Ardrone = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Ardrone", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Class = omcri.OmcriTables.PACKid_$metamodel$.getClassId("Class", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Colorsensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Colorsensor", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Entity = omcri.OmcriTables.PACKid_http_c_s_s_schemas_ogf_org_s_occi_s_core_s_ecore.getClassId("Entity", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Flightactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Flightactuator", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Legomindstormnxt2 = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Legomindstormnxt2", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Motionactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Motionactuator", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Mouthactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Mouthactuator", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Robot = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Robot", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Sensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Sensor", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Touchsensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Touchsensor", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Turtlebot = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Turtlebot", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Ultrasonicsensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Ultrasonicsensor", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.EnumerationId ENUMid_Color = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getEnumerationId("Color");
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.values.IntegerValue INT_0 = org.eclipse.ocl.pivot.utilities.ValueUtil.integerValueOf("0");
+	public static final /*@NonInvalid*/ java.lang.String STR_Actuator_c_c_appliesConstraint = "Actuator::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Colorsensor_c_c_appliesConstraint = "Colorsensor::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Flightactuator_c_c_appliesConstraint = "Flightactuator::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Motionactuator_c_c_appliesConstraint = "Motionactuator::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Mouthactuator_c_c_appliesConstraint = "Mouthactuator::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Sensor_c_c_appliesConstraint = "Sensor::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Touchsensor_c_c_appliesConstraint = "Touchsensor::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Ultrasonicsensor_c_c_appliesConstraint = "Ultrasonicsensor::appliesConstraint";
 
 	/**
 	 *	The type parameters for templated types and operations.

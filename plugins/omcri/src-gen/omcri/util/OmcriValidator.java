@@ -21,9 +21,6 @@ import org.eclipse.cmf.occi.core.util.OCCIValidator;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
@@ -141,16 +138,6 @@ public class OmcriValidator extends EObjectValidator {
 	 * @generated
 	 */
 	protected OCCIValidator occiValidator;
-
-	/**
-	 * Delegates evaluation of the given invariant expression against the object in the given context.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean validate(EClass eClass, EObject eObject, DiagnosticChain diagnostics, Map<Object, Object> context, String validationDelegate, EOperation invariant, String expression, int severity, String source, int code) {
-		return EObjectValidator.validate(eClass, eObject, diagnostics, context, validationDelegate, invariant, expression, severity, source, code);
-	}
 
 	/**
 	 * Creates an instance of the switch.
