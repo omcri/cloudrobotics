@@ -20,40 +20,24 @@ import org.slf4j.LoggerFactory;
 /**
  * Connector implementation for the OCCI kind:
  * - scheme: http://omcri.org/cloudrobotics#
- * - term: colorsensor
+ * - term: legomindstormnxt2motionactuator
  * - title: 
  */
-public class ColorsensorConnector extends omcri.impl.ColorsensorImpl
+public class Legomindstormnxt2motionactuatorConnector extends omcri.impl.Legomindstormnxt2motionactuatorImpl
 {
 	/**
 	 * Initialize the logger.
 	 */
-	private static Logger LOGGER = LoggerFactory.getLogger(ColorsensorConnector.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(Legomindstormnxt2motionactuatorConnector.class);
 
-	// Start of user code Colorsensorconnector_constructor
+	// Start of user code Legomindstormnxt2motionactuatorconnector_constructor
 	/**
-	 * Constructs a colorsensor connector.
+	 * Constructs a legomindstormnxt2motionactuator connector.
 	 */
-	ColorsensorConnector()
+	Legomindstormnxt2motionactuatorConnector()
 	{
 		LOGGER.debug("Constructor called on " + this);
 		// TODO: Implement this constructor.
 	}
 	// End of user code
-	// Start of user code Colorsensor_Kind_senseColor_action
-	/**
-	 * Implement OCCI action:
-     * - scheme: http://omcri.org/cloudrobotics/colorsensor/action#
-     * - term: sensecolor
-     * - title: 
-	 */
-	@Override
-	public void sensecolor()
-	{
-		LOGGER.debug("Action sensecolor() called on " + this);
-
-		// TODO: Implement how to sensecolor this colorsensor.
-	}
-		// End of user code
-
 }	

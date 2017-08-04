@@ -10,7 +10,7 @@
  * - Philippe Merle <philippe.merle@inria.fr>
  * - Faiez Zalila <faiez.zalila@inria.fr>
  *
- * Generated at Thu Aug 03 14:00:32 CEST 2017 from platform:/resource/omcri/model/omcri.occie by org.eclipse.cmf.occi.core.gen.connector
+ * Generated at Fri Aug 04 08:01:09 CEST 2017 from platform:/resource/omcri/model/omcri.occie by org.eclipse.cmf.occi.core.gen.connector
  */
 package omcri.connector;
 
@@ -40,7 +40,7 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 		// TODO: Implement this constructor.
 	}
 	// End of user code
-	
+	//
 	// OCCI CRUD callback operations.
 	//
 	
@@ -79,7 +79,7 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 		// TODO: Implement this callback or remove this method.
 	}
 	// End of user code
-	
+
 	// Start of user code Legomindstormnxt2occiDelete_method
 	/**
 	 * Called when this Legomindstormnxt2 instance will be deleted.

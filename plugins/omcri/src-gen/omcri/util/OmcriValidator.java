@@ -68,20 +68,12 @@ public class OmcriValidator extends EObjectValidator {
 	public static final int TOUCHSENSOR__APPLIES_CONSTRAINT = 2;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Motionactuator'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int MOTIONACTUATOR__APPLIES_CONSTRAINT = 3;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Sensor'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SENSOR__APPLIES_CONSTRAINT = 4;
+	public static final int SENSOR__APPLIES_CONSTRAINT = 3;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Colorsensor'.
@@ -89,7 +81,7 @@ public class OmcriValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COLORSENSOR__APPLIES_CONSTRAINT = 5;
+	public static final int COLORSENSOR__APPLIES_CONSTRAINT = 4;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Ultrasonicsensor'.
@@ -97,7 +89,7 @@ public class OmcriValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ULTRASONICSENSOR__APPLIES_CONSTRAINT = 6;
+	public static final int ULTRASONICSENSOR__APPLIES_CONSTRAINT = 5;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Mouthactuator'.
@@ -105,7 +97,7 @@ public class OmcriValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOUTHACTUATOR__APPLIES_CONSTRAINT = 7;
+	public static final int MOUTHACTUATOR__APPLIES_CONSTRAINT = 6;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Flightactuator'.
@@ -113,7 +105,23 @@ public class OmcriValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FLIGHTACTUATOR__APPLIES_CONSTRAINT = 8;
+	public static final int FLIGHTACTUATOR__APPLIES_CONSTRAINT = 7;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Turtlebotmotionactuator'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int TURTLEBOTMOTIONACTUATOR__APPLIES_CONSTRAINT = 8;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Legomindstormnxt2motionactuator'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int LEGOMINDSTORMNXT2MOTIONACTUATOR__APPLIES_CONSTRAINT = 9;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -121,7 +129,7 @@ public class OmcriValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 8;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 9;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -194,6 +202,10 @@ public class OmcriValidator extends EObjectValidator {
 				return validateMouthactuator((Mouthactuator)value, diagnostics, context);
 			case OmcriPackage.FLIGHTACTUATOR:
 				return validateFlightactuator((Flightactuator)value, diagnostics, context);
+			case OmcriPackage.TURTLEBOTMOTIONACTUATOR:
+				return validateTurtlebotmotionactuator((Turtlebotmotionactuator)value, diagnostics, context);
+			case OmcriPackage.LEGOMINDSTORMNXT2MOTIONACTUATOR:
+				return validateLegomindstormnxt2motionactuator((Legomindstormnxt2motionactuator)value, diagnostics, context);
 			case OmcriPackage.COLOR:
 				return validateColor((Color)value, diagnostics, context);
 			case OmcriPackage.TOUCH:
@@ -364,18 +376,8 @@ public class OmcriValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(motionactuator, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(motionactuator, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(motionactuator, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMotionactuator_appliesConstraint(motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateActuator_appliesConstraint(motionactuator, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * Validates the appliesConstraint constraint of '<em>Motionactuator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMotionactuator_appliesConstraint(Motionactuator motionactuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return motionactuator.appliesConstraint(diagnostics, context);
 	}
 
 	/**
@@ -521,6 +523,64 @@ public class OmcriValidator extends EObjectValidator {
 	 */
 	public boolean validateFlightactuator_appliesConstraint(Flightactuator flightactuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return flightactuator.appliesConstraint(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurtlebotmotionactuator(Turtlebotmotionactuator turtlebotmotionactuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(turtlebotmotionactuator, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(turtlebotmotionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurtlebotmotionactuator_appliesConstraint(turtlebotmotionactuator, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the appliesConstraint constraint of '<em>Turtlebotmotionactuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurtlebotmotionactuator_appliesConstraint(Turtlebotmotionactuator turtlebotmotionactuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return turtlebotmotionactuator.appliesConstraint(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLegomindstormnxt2motionactuator(Legomindstormnxt2motionactuator legomindstormnxt2motionactuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(legomindstormnxt2motionactuator, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(legomindstormnxt2motionactuator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLegomindstormnxt2motionactuator_appliesConstraint(legomindstormnxt2motionactuator, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the appliesConstraint constraint of '<em>Legomindstormnxt2motionactuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLegomindstormnxt2motionactuator_appliesConstraint(Legomindstormnxt2motionactuator legomindstormnxt2motionactuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return legomindstormnxt2motionactuator.appliesConstraint(diagnostics, context);
 	}
 
 	/**

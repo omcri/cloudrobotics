@@ -53,6 +53,8 @@ public class OmcriTests extends TestSuite {
 		suite.addTestSuite(UltrasonicsensorTest.class);
 		suite.addTestSuite(MouthactuatorTest.class);
 		suite.addTestSuite(FlightactuatorTest.class);
+		suite.addTestSuite(TurtlebotmotionactuatorTest.class);
+		suite.addTestSuite(Legomindstormnxt2motionactuatorTest.class);
 		return suite;
 	}
 

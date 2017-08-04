@@ -79,6 +79,8 @@ public class OmcriFactoryImpl extends EFactoryImpl implements OmcriFactory {
 			case OmcriPackage.ULTRASONICSENSOR: return createUltrasonicsensor();
 			case OmcriPackage.MOUTHACTUATOR: return createMouthactuator();
 			case OmcriPackage.FLIGHTACTUATOR: return createFlightactuator();
+			case OmcriPackage.TURTLEBOTMOTIONACTUATOR: return createTurtlebotmotionactuator();
+			case OmcriPackage.LEGOMINDSTORMNXT2MOTIONACTUATOR: return createLegomindstormnxt2motionactuator();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -236,6 +238,26 @@ public class OmcriFactoryImpl extends EFactoryImpl implements OmcriFactory {
 	public Flightactuator createFlightactuator() {
 		FlightactuatorImpl flightactuator = new FlightactuatorImpl();
 		return flightactuator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Turtlebotmotionactuator createTurtlebotmotionactuator() {
+		TurtlebotmotionactuatorImpl turtlebotmotionactuator = new TurtlebotmotionactuatorImpl();
+		return turtlebotmotionactuator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Legomindstormnxt2motionactuator createLegomindstormnxt2motionactuator() {
+		Legomindstormnxt2motionactuatorImpl legomindstormnxt2motionactuator = new Legomindstormnxt2motionactuatorImpl();
+		return legomindstormnxt2motionactuator;
 	}
 
 	/**

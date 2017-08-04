@@ -72,22 +72,24 @@ public class OmcriTables
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Entity = omcri.OmcriTables.PACKid_http_c_s_s_schemas_ogf_org_s_occi_s_core_s_ecore.getClassId("Entity", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Flightactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Flightactuator", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Legomindstormnxt2 = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Legomindstormnxt2", 0);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Motionactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Motionactuator", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Legomindstormnxt2motionactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Legomindstormnxt2motionactuator", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Mouthactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Mouthactuator", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Robot = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Robot", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Sensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Sensor", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Touchsensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Touchsensor", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Turtlebot = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Turtlebot", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Turtlebotmotionactuator = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Turtlebotmotionactuator", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Ultrasonicsensor = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getClassId("Ultrasonicsensor", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.EnumerationId ENUMid_Color = omcri.OmcriTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_ecore.getEnumerationId("Color");
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.values.IntegerValue INT_0 = org.eclipse.ocl.pivot.utilities.ValueUtil.integerValueOf("0");
 	public static final /*@NonInvalid*/ java.lang.String STR_Actuator_c_c_appliesConstraint = "Actuator::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Colorsensor_c_c_appliesConstraint = "Colorsensor::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Flightactuator_c_c_appliesConstraint = "Flightactuator::appliesConstraint";
-	public static final /*@NonInvalid*/ java.lang.String STR_Motionactuator_c_c_appliesConstraint = "Motionactuator::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Legomindstormnxt2motionactuator_c_c_appliesConstraint = "Legomindstormnxt2motionactuator::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Mouthactuator_c_c_appliesConstraint = "Mouthactuator::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Sensor_c_c_appliesConstraint = "Sensor::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Touchsensor_c_c_appliesConstraint = "Touchsensor::appliesConstraint";
+	public static final /*@NonInvalid*/ java.lang.String STR_Turtlebotmotionactuator_c_c_appliesConstraint = "Turtlebotmotionactuator::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Ultrasonicsensor_c_c_appliesConstraint = "Ultrasonicsensor::appliesConstraint";
 
 	/**
@@ -124,6 +126,7 @@ public class OmcriTables
 		public static final /*@NonNull*/ EcoreExecutorType _Colorsensor = new EcoreExecutorType(OmcriPackage.Literals.COLORSENSOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Flightactuator = new EcoreExecutorType(OmcriPackage.Literals.FLIGHTACTUATOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Legomindstormnxt2 = new EcoreExecutorType(OmcriPackage.Literals.LEGOMINDSTORMNXT2, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Legomindstormnxt2motionactuator = new EcoreExecutorType(OmcriPackage.Literals.LEGOMINDSTORMNXT2MOTIONACTUATOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Motionactuator = new EcoreExecutorType(OmcriPackage.Literals.MOTIONACTUATOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Mouthactuator = new EcoreExecutorType(OmcriPackage.Literals.MOUTHACTUATOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Robot = new EcoreExecutorType(OmcriPackage.Literals.ROBOT, PACKAGE, 0);
@@ -131,6 +134,7 @@ public class OmcriTables
 		public static final /*@NonNull*/ EcoreExecutorEnumeration _Touch = new EcoreExecutorEnumeration(OmcriPackage.Literals.TOUCH, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Touchsensor = new EcoreExecutorType(OmcriPackage.Literals.TOUCHSENSOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Turtlebot = new EcoreExecutorType(OmcriPackage.Literals.TURTLEBOT, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Turtlebotmotionactuator = new EcoreExecutorType(OmcriPackage.Literals.TURTLEBOTMOTIONACTUATOR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Ultrasonicsensor = new EcoreExecutorType(OmcriPackage.Literals.ULTRASONICSENSOR, PACKAGE, 0);
 
 		private static final /*@NonNull*/ EcoreExecutorType /*@NonNull*/ [] types = {
@@ -140,6 +144,7 @@ public class OmcriTables
 			_Colorsensor,
 			_Flightactuator,
 			_Legomindstormnxt2,
+			_Legomindstormnxt2motionactuator,
 			_Motionactuator,
 			_Mouthactuator,
 			_Robot,
@@ -147,6 +152,7 @@ public class OmcriTables
 			_Touch,
 			_Touchsensor,
 			_Turtlebot,
+			_Turtlebotmotionactuator,
 			_Ultrasonicsensor
 		};
 
@@ -210,6 +216,13 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2__Resource = new ExecutorFragment(Types._Legomindstormnxt2, OCCITables.Types._Resource);
 		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2__Robot = new ExecutorFragment(Types._Legomindstormnxt2, OmcriTables.Types._Robot);
 
+		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2motionactuator__Actuator = new ExecutorFragment(Types._Legomindstormnxt2motionactuator, OmcriTables.Types._Actuator);
+		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2motionactuator__Legomindstormnxt2motionactuator = new ExecutorFragment(Types._Legomindstormnxt2motionactuator, OmcriTables.Types._Legomindstormnxt2motionactuator);
+		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2motionactuator__MixinBase = new ExecutorFragment(Types._Legomindstormnxt2motionactuator, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2motionactuator__Motionactuator = new ExecutorFragment(Types._Legomindstormnxt2motionactuator, OmcriTables.Types._Motionactuator);
+		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2motionactuator__OclAny = new ExecutorFragment(Types._Legomindstormnxt2motionactuator, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Legomindstormnxt2motionactuator__OclElement = new ExecutorFragment(Types._Legomindstormnxt2motionactuator, OCLstdlibTables.Types._OclElement);
+
 		private static final /*@NonNull*/ ExecutorFragment _Motionactuator__Actuator = new ExecutorFragment(Types._Motionactuator, OmcriTables.Types._Actuator);
 		private static final /*@NonNull*/ ExecutorFragment _Motionactuator__MixinBase = new ExecutorFragment(Types._Motionactuator, OCCITables.Types._MixinBase);
 		private static final /*@NonNull*/ ExecutorFragment _Motionactuator__Motionactuator = new ExecutorFragment(Types._Motionactuator, OmcriTables.Types._Motionactuator);
@@ -251,6 +264,13 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorFragment _Turtlebot__Resource = new ExecutorFragment(Types._Turtlebot, OCCITables.Types._Resource);
 		private static final /*@NonNull*/ ExecutorFragment _Turtlebot__Robot = new ExecutorFragment(Types._Turtlebot, OmcriTables.Types._Robot);
 		private static final /*@NonNull*/ ExecutorFragment _Turtlebot__Turtlebot = new ExecutorFragment(Types._Turtlebot, OmcriTables.Types._Turtlebot);
+
+		private static final /*@NonNull*/ ExecutorFragment _Turtlebotmotionactuator__Actuator = new ExecutorFragment(Types._Turtlebotmotionactuator, OmcriTables.Types._Actuator);
+		private static final /*@NonNull*/ ExecutorFragment _Turtlebotmotionactuator__MixinBase = new ExecutorFragment(Types._Turtlebotmotionactuator, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Turtlebotmotionactuator__Motionactuator = new ExecutorFragment(Types._Turtlebotmotionactuator, OmcriTables.Types._Motionactuator);
+		private static final /*@NonNull*/ ExecutorFragment _Turtlebotmotionactuator__OclAny = new ExecutorFragment(Types._Turtlebotmotionactuator, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Turtlebotmotionactuator__OclElement = new ExecutorFragment(Types._Turtlebotmotionactuator, OCLstdlibTables.Types._OclElement);
+		private static final /*@NonNull*/ ExecutorFragment _Turtlebotmotionactuator__Turtlebotmotionactuator = new ExecutorFragment(Types._Turtlebotmotionactuator, OmcriTables.Types._Turtlebotmotionactuator);
 
 		private static final /*@NonNull*/ ExecutorFragment _Ultrasonicsensor__MixinBase = new ExecutorFragment(Types._Ultrasonicsensor, OCCITables.Types._MixinBase);
 		private static final /*@NonNull*/ ExecutorFragment _Ultrasonicsensor__OclAny = new ExecutorFragment(Types._Ultrasonicsensor, OCLstdlibTables.Types._OclAny);
@@ -466,6 +486,17 @@ public class OmcriTables
 		};
 		private static final int /*@NonNull*/ [] __Legomindstormnxt2 = { 1,1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Legomindstormnxt2motionactuator =
+		{
+			Fragments._Legomindstormnxt2motionactuator__OclAny /* 0 */,
+			Fragments._Legomindstormnxt2motionactuator__OclElement /* 1 */,
+			Fragments._Legomindstormnxt2motionactuator__MixinBase /* 2 */,
+			Fragments._Legomindstormnxt2motionactuator__Actuator /* 3 */,
+			Fragments._Legomindstormnxt2motionactuator__Motionactuator /* 4 */,
+			Fragments._Legomindstormnxt2motionactuator__Legomindstormnxt2motionactuator /* 5 */
+		};
+		private static final int /*@NonNull*/ [] __Legomindstormnxt2motionactuator = { 1,1,1,1,1,1 };
+
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Motionactuator =
 		{
 			Fragments._Motionactuator__OclAny /* 0 */,
@@ -536,6 +567,17 @@ public class OmcriTables
 		};
 		private static final int /*@NonNull*/ [] __Turtlebot = { 1,1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Turtlebotmotionactuator =
+		{
+			Fragments._Turtlebotmotionactuator__OclAny /* 0 */,
+			Fragments._Turtlebotmotionactuator__OclElement /* 1 */,
+			Fragments._Turtlebotmotionactuator__MixinBase /* 2 */,
+			Fragments._Turtlebotmotionactuator__Actuator /* 3 */,
+			Fragments._Turtlebotmotionactuator__Motionactuator /* 4 */,
+			Fragments._Turtlebotmotionactuator__Turtlebotmotionactuator /* 5 */
+		};
+		private static final int /*@NonNull*/ [] __Turtlebotmotionactuator = { 1,1,1,1,1,1 };
+
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Ultrasonicsensor =
 		{
 			Fragments._Ultrasonicsensor__OclAny /* 0 */,
@@ -556,6 +598,7 @@ public class OmcriTables
 			Types._Colorsensor.initFragments(_Colorsensor, __Colorsensor);
 			Types._Flightactuator.initFragments(_Flightactuator, __Flightactuator);
 			Types._Legomindstormnxt2.initFragments(_Legomindstormnxt2, __Legomindstormnxt2);
+			Types._Legomindstormnxt2motionactuator.initFragments(_Legomindstormnxt2motionactuator, __Legomindstormnxt2motionactuator);
 			Types._Motionactuator.initFragments(_Motionactuator, __Motionactuator);
 			Types._Mouthactuator.initFragments(_Mouthactuator, __Mouthactuator);
 			Types._Robot.initFragments(_Robot, __Robot);
@@ -563,6 +606,7 @@ public class OmcriTables
 			Types._Touch.initFragments(_Touch, __Touch);
 			Types._Touchsensor.initFragments(_Touchsensor, __Touchsensor);
 			Types._Turtlebot.initFragments(_Turtlebot, __Turtlebot);
+			Types._Turtlebotmotionactuator.initFragments(_Turtlebotmotionactuator, __Turtlebotmotionactuator);
 			Types._Ultrasonicsensor.initFragments(_Ultrasonicsensor, __Ultrasonicsensor);
 
 			Init.initEnd();
@@ -783,6 +827,43 @@ public class OmcriTables
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2__Resource = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2__Robot = {};
+
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2motionactuator__Legomindstormnxt2motionactuator = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2motionactuator__Actuator = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2motionactuator__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2motionactuator__Motionactuator = {
+			OmcriTables.Operations._Motionactuator__movebackward /* movebackward() */,
+			OmcriTables.Operations._Motionactuator__moveforward /* moveforward() */,
+			OmcriTables.Operations._Motionactuator__stop /* stop() */,
+			OmcriTables.Operations._Motionactuator__turnleft /* turnleft() */,
+			OmcriTables.Operations._Motionactuator__turnright /* turnright() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2motionactuator__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2motionactuator__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
 
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Motionactuator__Motionactuator = {
 			OmcriTables.Operations._Motionactuator__movebackward /* movebackward() */,
@@ -1019,6 +1100,43 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebot__Resource = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebot__Robot = {};
 
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebotmotionactuator__Turtlebotmotionactuator = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebotmotionactuator__Actuator = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebotmotionactuator__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebotmotionactuator__Motionactuator = {
+			OmcriTables.Operations._Motionactuator__movebackward /* movebackward() */,
+			OmcriTables.Operations._Motionactuator__moveforward /* moveforward() */,
+			OmcriTables.Operations._Motionactuator__stop /* stop() */,
+			OmcriTables.Operations._Motionactuator__turnleft /* turnleft() */,
+			OmcriTables.Operations._Motionactuator__turnright /* turnright() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebotmotionactuator__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebotmotionactuator__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Ultrasonicsensor__Ultrasonicsensor = {
 			OmcriTables.Operations._Ultrasonicsensor__sensedistance /* sensedistance() */
 		};
@@ -1092,6 +1210,13 @@ public class OmcriTables
 			Fragments._Legomindstormnxt2__Resource.initOperations(_Legomindstormnxt2__Resource);
 			Fragments._Legomindstormnxt2__Robot.initOperations(_Legomindstormnxt2__Robot);
 
+			Fragments._Legomindstormnxt2motionactuator__Actuator.initOperations(_Legomindstormnxt2motionactuator__Actuator);
+			Fragments._Legomindstormnxt2motionactuator__Legomindstormnxt2motionactuator.initOperations(_Legomindstormnxt2motionactuator__Legomindstormnxt2motionactuator);
+			Fragments._Legomindstormnxt2motionactuator__MixinBase.initOperations(_Legomindstormnxt2motionactuator__MixinBase);
+			Fragments._Legomindstormnxt2motionactuator__Motionactuator.initOperations(_Legomindstormnxt2motionactuator__Motionactuator);
+			Fragments._Legomindstormnxt2motionactuator__OclAny.initOperations(_Legomindstormnxt2motionactuator__OclAny);
+			Fragments._Legomindstormnxt2motionactuator__OclElement.initOperations(_Legomindstormnxt2motionactuator__OclElement);
+
 			Fragments._Motionactuator__Actuator.initOperations(_Motionactuator__Actuator);
 			Fragments._Motionactuator__MixinBase.initOperations(_Motionactuator__MixinBase);
 			Fragments._Motionactuator__Motionactuator.initOperations(_Motionactuator__Motionactuator);
@@ -1133,6 +1258,13 @@ public class OmcriTables
 			Fragments._Turtlebot__Resource.initOperations(_Turtlebot__Resource);
 			Fragments._Turtlebot__Robot.initOperations(_Turtlebot__Robot);
 			Fragments._Turtlebot__Turtlebot.initOperations(_Turtlebot__Turtlebot);
+
+			Fragments._Turtlebotmotionactuator__Actuator.initOperations(_Turtlebotmotionactuator__Actuator);
+			Fragments._Turtlebotmotionactuator__MixinBase.initOperations(_Turtlebotmotionactuator__MixinBase);
+			Fragments._Turtlebotmotionactuator__Motionactuator.initOperations(_Turtlebotmotionactuator__Motionactuator);
+			Fragments._Turtlebotmotionactuator__OclAny.initOperations(_Turtlebotmotionactuator__OclAny);
+			Fragments._Turtlebotmotionactuator__OclElement.initOperations(_Turtlebotmotionactuator__OclElement);
+			Fragments._Turtlebotmotionactuator__Turtlebotmotionactuator.initOperations(_Turtlebotmotionactuator__Turtlebotmotionactuator);
 
 			Fragments._Ultrasonicsensor__MixinBase.initOperations(_Ultrasonicsensor__MixinBase);
 			Fragments._Ultrasonicsensor__OclAny.initOperations(_Ultrasonicsensor__OclAny);
@@ -1184,6 +1316,12 @@ public class OmcriTables
 			OmcriTables.Properties._Legomindstormnxt2__macAddress
 		};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Legomindstormnxt2motionactuator = {
+			OmcriTables.Properties._Motionactuator__angle,
+			OmcriTables.Properties._Motionactuator__duration,
+			OmcriTables.Properties._Motionactuator__speed
+		};
+
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Motionactuator = {
 			OmcriTables.Properties._Motionactuator__angle,
 			OmcriTables.Properties._Motionactuator__duration,
@@ -1208,6 +1346,12 @@ public class OmcriTables
 			OmcriTables.Properties._Turtlebot__user
 		};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Turtlebotmotionactuator = {
+			OmcriTables.Properties._Motionactuator__angle,
+			OmcriTables.Properties._Motionactuator__duration,
+			OmcriTables.Properties._Motionactuator__speed
+		};
+
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Ultrasonicsensor = {
 			OmcriTables.Properties._Ultrasonicsensor__distance
 		};
@@ -1222,6 +1366,7 @@ public class OmcriTables
 			Fragments._Colorsensor__Colorsensor.initProperties(_Colorsensor);
 			Fragments._Flightactuator__Flightactuator.initProperties(_Flightactuator);
 			Fragments._Legomindstormnxt2__Legomindstormnxt2.initProperties(_Legomindstormnxt2);
+			Fragments._Legomindstormnxt2motionactuator__Legomindstormnxt2motionactuator.initProperties(_Legomindstormnxt2motionactuator);
 			Fragments._Motionactuator__Motionactuator.initProperties(_Motionactuator);
 			Fragments._Mouthactuator__Mouthactuator.initProperties(_Mouthactuator);
 			Fragments._Robot__Robot.initProperties(_Robot);
@@ -1229,6 +1374,7 @@ public class OmcriTables
 			Fragments._Touch__Touch.initProperties(_Touch);
 			Fragments._Touchsensor__Touchsensor.initProperties(_Touchsensor);
 			Fragments._Turtlebot__Turtlebot.initProperties(_Turtlebot);
+			Fragments._Turtlebotmotionactuator__Turtlebotmotionactuator.initProperties(_Turtlebotmotionactuator);
 			Fragments._Ultrasonicsensor__Ultrasonicsensor.initProperties(_Ultrasonicsensor);
 
 			Init.initEnd();

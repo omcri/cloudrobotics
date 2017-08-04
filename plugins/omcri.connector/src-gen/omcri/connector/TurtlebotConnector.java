@@ -10,7 +10,7 @@
  * - Philippe Merle <philippe.merle@inria.fr>
  * - Faiez Zalila <faiez.zalila@inria.fr>
  *
- * Generated at Thu Aug 03 14:00:32 CEST 2017 from platform:/resource/omcri/model/omcri.occie by org.eclipse.cmf.occi.core.gen.connector
+ * Generated at Fri Aug 04 08:01:09 CEST 2017 from platform:/resource/omcri/model/omcri.occie by org.eclipse.cmf.occi.core.gen.connector
  */
 package omcri.connector;
 
@@ -31,8 +31,9 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	 * Initialize the logger.
 	 */
 	private static Logger LOGGER = LoggerFactory.getLogger(TurtlebotConnector.class);
-	private TurtlebotControl turtlebotControl;
 
+	private TurtlebotControl turtlebotController = null;
+	
 	// Start of user code Turtlebotconnector_constructor
 	/**
 	 * Constructs a turtlebot connector.
@@ -56,8 +57,8 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	{
 		LOGGER.debug("occiCreate() called on " + this);
 		// TODO: Implement this callback or remove this method.
-		turtlebotControl = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIPAddress());
-		turtlebotControl.connect();
+		turtlebotController = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIPAddress());
+		turtlebotController.connect();
 	}
 	// End of user code
 
@@ -94,7 +95,9 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	{
 		LOGGER.debug("occiDelete() called on " + this);
 		// TODO: Implement this callback or remove this method.
-		turtlebotControl.disconnect();
+		if (turtlebotController != null) {
+			turtlebotController.disconnect();
+		}
 
 	}
 	// End of user code

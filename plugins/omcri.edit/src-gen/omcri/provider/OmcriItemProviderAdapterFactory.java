@@ -358,6 +358,52 @@ public class OmcriItemProviderAdapterFactory extends OmcriAdapterFactory impleme
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link omcri.Turtlebotmotionactuator} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TurtlebotmotionactuatorItemProvider turtlebotmotionactuatorItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link omcri.Turtlebotmotionactuator}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTurtlebotmotionactuatorAdapter() {
+		if (turtlebotmotionactuatorItemProvider == null) {
+			turtlebotmotionactuatorItemProvider = new TurtlebotmotionactuatorItemProvider(this);
+		}
+
+		return turtlebotmotionactuatorItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link omcri.Legomindstormnxt2motionactuator} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Legomindstormnxt2motionactuatorItemProvider legomindstormnxt2motionactuatorItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link omcri.Legomindstormnxt2motionactuator}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLegomindstormnxt2motionactuatorAdapter() {
+		if (legomindstormnxt2motionactuatorItemProvider == null) {
+			legomindstormnxt2motionactuatorItemProvider = new Legomindstormnxt2motionactuatorItemProvider(this);
+		}
+
+		return legomindstormnxt2motionactuatorItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -468,6 +514,8 @@ public class OmcriItemProviderAdapterFactory extends OmcriAdapterFactory impleme
 		if (ultrasonicsensorItemProvider != null) ultrasonicsensorItemProvider.dispose();
 		if (mouthactuatorItemProvider != null) mouthactuatorItemProvider.dispose();
 		if (flightactuatorItemProvider != null) flightactuatorItemProvider.dispose();
+		if (turtlebotmotionactuatorItemProvider != null) turtlebotmotionactuatorItemProvider.dispose();
+		if (legomindstormnxt2motionactuatorItemProvider != null) legomindstormnxt2motionactuatorItemProvider.dispose();
 	}
 
 }

@@ -177,6 +177,24 @@ public class OmcriSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case OmcriPackage.TURTLEBOTMOTIONACTUATOR: {
+				Turtlebotmotionactuator turtlebotmotionactuator = (Turtlebotmotionactuator)theEObject;
+				T result = caseTurtlebotmotionactuator(turtlebotmotionactuator);
+				if (result == null) result = caseMotionactuator(turtlebotmotionactuator);
+				if (result == null) result = caseActuator(turtlebotmotionactuator);
+				if (result == null) result = caseMixinBase(turtlebotmotionactuator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case OmcriPackage.LEGOMINDSTORMNXT2MOTIONACTUATOR: {
+				Legomindstormnxt2motionactuator legomindstormnxt2motionactuator = (Legomindstormnxt2motionactuator)theEObject;
+				T result = caseLegomindstormnxt2motionactuator(legomindstormnxt2motionactuator);
+				if (result == null) result = caseMotionactuator(legomindstormnxt2motionactuator);
+				if (result == null) result = caseActuator(legomindstormnxt2motionactuator);
+				if (result == null) result = caseMixinBase(legomindstormnxt2motionactuator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -358,6 +376,36 @@ public class OmcriSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFlightactuator(Flightactuator object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Turtlebotmotionactuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Turtlebotmotionactuator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTurtlebotmotionactuator(Turtlebotmotionactuator object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Legomindstormnxt2motionactuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Legomindstormnxt2motionactuator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLegomindstormnxt2motionactuator(Legomindstormnxt2motionactuator object) {
 		return null;
 	}
 

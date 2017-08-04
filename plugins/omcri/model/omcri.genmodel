@@ -168,6 +168,12 @@
         <ecoreOperation href="omcri.ecore#//Flightactuator/takeoff"/>
       </genOperations>
     </genClasses>
+    <genClasses>
+      <ecoreClass href="omcri.ecore#//Turtlebotmotionactuator"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcri.ecore#//Legomindstormnxt2motionactuator"/>
+    </genClasses>
   </genPackages>
   <usedGenPackages href="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.genmodel#//occi"/>
 </genmodel:GenModel>

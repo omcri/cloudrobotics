@@ -151,6 +151,16 @@ public class RobotItemProvider extends ResourceItemProvider {
 			(createChildParameter
 				(OCCIPackage.Literals.ENTITY__PARTS,
 				 OmcriFactory.eINSTANCE.createFlightactuator()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(OCCIPackage.Literals.ENTITY__PARTS,
+				 OmcriFactory.eINSTANCE.createTurtlebotmotionactuator()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(OCCIPackage.Literals.ENTITY__PARTS,
+				 OmcriFactory.eINSTANCE.createLegomindstormnxt2motionactuator()));
 	}
 
 	/**

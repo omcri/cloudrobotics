@@ -3,7 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: omcri.connector
 Bundle-SymbolicName: omcri.connector;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .
+Bundle-ClassPath: .,
+ lib/TurtlebotControl.jar
 Bundle-Vendor: OCCIware
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

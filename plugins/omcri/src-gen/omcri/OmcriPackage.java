@@ -950,6 +950,15 @@ public interface OmcriPackage extends EPackage {
 	int MOTIONACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 3;
 
 	/**
+	 * The operation id for the '<em>Applies Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
+
+	/**
 	 * The operation id for the '<em>Moveforward</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -995,22 +1004,13 @@ public interface OmcriPackage extends EPackage {
 	int MOTIONACTUATOR___STOP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 5;
 
 	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 6;
-
-	/**
 	 * The number of operations of the '<em>Motionactuator</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 7;
+	int MOTIONACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link omcri.impl.SensorImpl <em>Sensor</em>}' class.
@@ -1477,6 +1477,278 @@ public interface OmcriPackage extends EPackage {
 	int FLIGHTACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 5;
 
 	/**
+	 * The meta object id for the '{@link omcri.impl.TurtlebotmotionactuatorImpl <em>Turtlebotmotionactuator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see omcri.impl.TurtlebotmotionactuatorImpl
+	 * @see omcri.impl.OmcriPackageImpl#getTurtlebotmotionactuator()
+	 * @generated
+	 */
+	int TURTLEBOTMOTIONACTUATOR = 12;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Angle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR__ANGLE = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Speed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR__SPEED = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR__DURATION = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Turtlebotmotionactuator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Moveforward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR___MOVEFORWARD = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Movebackward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR___MOVEBACKWARD = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Turnright</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR___TURNRIGHT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Turnleft</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR___TURNLEFT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Stop</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR___STOP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Applies Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 6;
+
+	/**
+	 * The number of operations of the '<em>Turtlebotmotionactuator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TURTLEBOTMOTIONACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 7;
+
+	/**
+	 * The meta object id for the '{@link omcri.impl.Legomindstormnxt2motionactuatorImpl <em>Legomindstormnxt2motionactuator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see omcri.impl.Legomindstormnxt2motionactuatorImpl
+	 * @see omcri.impl.OmcriPackageImpl#getLegomindstormnxt2motionactuator()
+	 * @generated
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR = 13;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Angle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR__ANGLE = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Speed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR__SPEED = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR__DURATION = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Legomindstormnxt2motionactuator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Moveforward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR___MOVEFORWARD = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Movebackward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR___MOVEBACKWARD = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Turnright</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR___TURNRIGHT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Turnleft</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR___TURNLEFT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Stop</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR___STOP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Applies Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 6;
+
+	/**
+	 * The number of operations of the '<em>Legomindstormnxt2motionactuator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGOMINDSTORMNXT2MOTIONACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 7;
+
+	/**
 	 * The meta object id for the '{@link omcri.Color <em>Color</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1484,7 +1756,7 @@ public interface OmcriPackage extends EPackage {
 	 * @see omcri.impl.OmcriPackageImpl#getColor()
 	 * @generated
 	 */
-	int COLOR = 12;
+	int COLOR = 14;
 
 	/**
 	 * The meta object id for the '{@link omcri.Touch <em>Touch</em>}' enum.
@@ -1494,7 +1766,7 @@ public interface OmcriPackage extends EPackage {
 	 * @see omcri.impl.OmcriPackageImpl#getTouch()
 	 * @generated
 	 */
-	int TOUCH = 13;
+	int TOUCH = 15;
 
 
 	/**
@@ -1745,16 +2017,6 @@ public interface OmcriPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getMotionactuator__Stop();
-
-	/**
-	 * Returns the meta object for the '{@link omcri.Motionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Applies Constraint</em>' operation.
-	 * @see omcri.Motionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getMotionactuator__AppliesConstraint__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link omcri.Sensor <em>Sensor</em>}'.
@@ -2026,6 +2288,46 @@ public interface OmcriPackage extends EPackage {
 	EOperation getFlightactuator__AppliesConstraint__DiagnosticChain_Map();
 
 	/**
+	 * Returns the meta object for class '{@link omcri.Turtlebotmotionactuator <em>Turtlebotmotionactuator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Turtlebotmotionactuator</em>'.
+	 * @see omcri.Turtlebotmotionactuator
+	 * @generated
+	 */
+	EClass getTurtlebotmotionactuator();
+
+	/**
+	 * Returns the meta object for the '{@link omcri.Turtlebotmotionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Applies Constraint</em>' operation.
+	 * @see omcri.Turtlebotmotionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getTurtlebotmotionactuator__AppliesConstraint__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for class '{@link omcri.Legomindstormnxt2motionactuator <em>Legomindstormnxt2motionactuator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Legomindstormnxt2motionactuator</em>'.
+	 * @see omcri.Legomindstormnxt2motionactuator
+	 * @generated
+	 */
+	EClass getLegomindstormnxt2motionactuator();
+
+	/**
+	 * Returns the meta object for the '{@link omcri.Legomindstormnxt2motionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Applies Constraint</em>' operation.
+	 * @see omcri.Legomindstormnxt2motionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getLegomindstormnxt2motionactuator__AppliesConstraint__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for enum '{@link omcri.Color <em>Color</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2275,14 +2577,6 @@ public interface OmcriPackage extends EPackage {
 		EOperation MOTIONACTUATOR___STOP = eINSTANCE.getMotionactuator__Stop();
 
 		/**
-		 * The meta object literal for the '<em><b>Applies Constraint</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getMotionactuator__AppliesConstraint__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link omcri.impl.SensorImpl <em>Sensor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2499,6 +2793,42 @@ public interface OmcriPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getFlightactuator__AppliesConstraint__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '{@link omcri.impl.TurtlebotmotionactuatorImpl <em>Turtlebotmotionactuator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see omcri.impl.TurtlebotmotionactuatorImpl
+		 * @see omcri.impl.OmcriPackageImpl#getTurtlebotmotionactuator()
+		 * @generated
+		 */
+		EClass TURTLEBOTMOTIONACTUATOR = eINSTANCE.getTurtlebotmotionactuator();
+
+		/**
+		 * The meta object literal for the '<em><b>Applies Constraint</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation TURTLEBOTMOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getTurtlebotmotionactuator__AppliesConstraint__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '{@link omcri.impl.Legomindstormnxt2motionactuatorImpl <em>Legomindstormnxt2motionactuator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see omcri.impl.Legomindstormnxt2motionactuatorImpl
+		 * @see omcri.impl.OmcriPackageImpl#getLegomindstormnxt2motionactuator()
+		 * @generated
+		 */
+		EClass LEGOMINDSTORMNXT2MOTIONACTUATOR = eINSTANCE.getLegomindstormnxt2motionactuator();
+
+		/**
+		 * The meta object literal for the '<em><b>Applies Constraint</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation LEGOMINDSTORMNXT2MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getLegomindstormnxt2motionactuator__AppliesConstraint__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link omcri.Color <em>Color</em>}' enum.

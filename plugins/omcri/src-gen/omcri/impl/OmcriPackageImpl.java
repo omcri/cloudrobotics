@@ -18,6 +18,7 @@ import omcri.Color;
 import omcri.Colorsensor;
 import omcri.Flightactuator;
 import omcri.Legomindstormnxt2;
+import omcri.Legomindstormnxt2motionactuator;
 import omcri.Motionactuator;
 import omcri.Mouthactuator;
 import omcri.OmcriFactory;
@@ -27,6 +28,7 @@ import omcri.Sensor;
 import omcri.Touch;
 import omcri.Touchsensor;
 import omcri.Turtlebot;
+import omcri.Turtlebotmotionactuator;
 import omcri.Ultrasonicsensor;
 
 import omcri.util.OmcriValidator;
@@ -133,6 +135,20 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * @generated
 	 */
 	private EClass flightactuatorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass turtlebotmotionactuatorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass legomindstormnxt2motionactuatorEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -442,15 +458,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getMotionactuator__AppliesConstraint__DiagnosticChain_Map() {
-		return motionactuatorEClass.getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getSensor() {
 		return sensorEClass;
 	}
@@ -685,6 +692,42 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getTurtlebotmotionactuator() {
+		return turtlebotmotionactuatorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTurtlebotmotionactuator__AppliesConstraint__DiagnosticChain_Map() {
+		return turtlebotmotionactuatorEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLegomindstormnxt2motionactuator() {
+		return legomindstormnxt2motionactuatorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getLegomindstormnxt2motionactuator__AppliesConstraint__DiagnosticChain_Map() {
+		return legomindstormnxt2motionactuatorEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getColor() {
 		return colorEEnum;
 	}
@@ -756,7 +799,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___TURNRIGHT);
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___TURNLEFT);
 		createEOperation(motionactuatorEClass, MOTIONACTUATOR___STOP);
-		createEOperation(motionactuatorEClass, MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		sensorEClass = createEClass(SENSOR);
 		createEOperation(sensorEClass, SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
@@ -788,6 +830,12 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___LAND);
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___TAKEOFF);
 		createEOperation(flightactuatorEClass, FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
+
+		turtlebotmotionactuatorEClass = createEClass(TURTLEBOTMOTIONACTUATOR);
+		createEOperation(turtlebotmotionactuatorEClass, TURTLEBOTMOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
+
+		legomindstormnxt2motionactuatorEClass = createEClass(LEGOMINDSTORMNXT2MOTIONACTUATOR);
+		createEOperation(legomindstormnxt2motionactuatorEClass, LEGOMINDSTORMNXT2MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		// Create enums
 		colorEEnum = createEEnum(COLOR);
@@ -843,6 +891,10 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		mouthactuatorEClass.getESuperTypes().add(this.getActuator());
 		flightactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		flightactuatorEClass.getESuperTypes().add(this.getActuator());
+		turtlebotmotionactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		turtlebotmotionactuatorEClass.getESuperTypes().add(this.getMotionactuator());
+		legomindstormnxt2motionactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		legomindstormnxt2motionactuatorEClass.getESuperTypes().add(this.getMotionactuator());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(robotEClass, Robot.class, "Robot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -897,15 +949,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		initEOperation(getMotionactuator__Turnleft(), null, "turnleft", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEOperation(getMotionactuator__Stop(), null, "stop", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getMotionactuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(sensorEClass, Sensor.class, "Sensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -985,6 +1028,28 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		initEClass(turtlebotmotionactuatorEClass, Turtlebotmotionactuator.class, "Turtlebotmotionactuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = initEOperation(getTurtlebotmotionactuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(legomindstormnxt2motionactuatorEClass, Legomindstormnxt2motionactuator.class, "Legomindstormnxt2motionactuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = initEOperation(getLegomindstormnxt2motionactuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(colorEEnum, Color.class, "Color");
 		addEEnumLiteral(colorEEnum, Color.WHITE);
@@ -1033,12 +1098,6 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 			 "constraints", "appliesConstraint"
 		   });	
 		addAnnotation
-		  (motionactuatorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "appliesConstraint"
-		   });	
-		addAnnotation
 		  (sensorEClass, 
 		   source, 
 		   new String[] {
@@ -1064,6 +1123,18 @@ public class OmcriPackageImpl extends EPackageImpl implements OmcriPackage {
 		   });	
 		addAnnotation
 		  (flightactuatorEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "appliesConstraint"
+		   });	
+		addAnnotation
+		  (turtlebotmotionactuatorEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "appliesConstraint"
+		   });	
+		addAnnotation
+		  (legomindstormnxt2motionactuatorEClass, 
 		   source, 
 		   new String[] {
 			 "constraints", "appliesConstraint"

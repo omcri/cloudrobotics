@@ -10,7 +10,7 @@
  * - Philippe Merle <philippe.merle@inria.fr>
  * - Faiez Zalila <faiez.zalila@inria.fr>
  *
- * Generated at Thu Aug 03 14:00:32 CEST 2017 from platform:/resource/omcri/model/omcri.occie by org.eclipse.cmf.occi.core.gen.connector
+ * Generated at Fri Aug 04 08:01:09 CEST 2017 from platform:/resource/omcri/model/omcri.occie by org.eclipse.cmf.occi.core.gen.connector
  */
 package omcri.connector;
 
@@ -151,6 +151,28 @@ public class ConnectorFactory extends omcri.impl.OmcriFactoryImpl
 	@Override
 	public omcri.Flightactuator createFlightactuator() {
 		return new FlightactuatorConnector();
+	}
+
+	/**
+	 * EFactory method for OCCI kind:
+	 * - scheme: http://omcri.org/cloudrobotics#
+	 * - term: turtlebotmotionactuator
+	 * - title: 
+	 */
+	@Override
+	public omcri.Turtlebotmotionactuator createTurtlebotmotionactuator() {
+		return new TurtlebotmotionactuatorConnector();
+	}
+
+	/**
+	 * EFactory method for OCCI kind:
+	 * - scheme: http://omcri.org/cloudrobotics#
+	 * - term: legomindstormnxt2motionactuator
+	 * - title: 
+	 */
+	@Override
+	public omcri.Legomindstormnxt2motionactuator createLegomindstormnxt2motionactuator() {
+		return new Legomindstormnxt2motionactuatorConnector();
 	}
 
 }

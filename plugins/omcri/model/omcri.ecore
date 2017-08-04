@@ -91,12 +91,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Motionactuator" eSuperTypes="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase #//Actuator">
-    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="appliesConstraint"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="appliesConstraint" value="self.entity.oclIsKindOf(omcri::Legomindstormnxt2) or self.entity.oclIsKindOf(omcri::Turtlebot)"/>
-    </eAnnotations>
     <eOperations name="moveforward">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value=""/>
@@ -260,5 +254,21 @@
         <details key="documentation" value=""/>
       </eAnnotations>
     </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Turtlebotmotionactuator" eSuperTypes="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase #//Motionactuator">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="appliesConstraint"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="appliesConstraint" value="self.entity.oclIsKindOf(omcri::Turtlebot)"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Legomindstormnxt2motionactuator" eSuperTypes="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase #//Motionactuator">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="appliesConstraint"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="appliesConstraint" value="self.entity.oclIsKindOf(omcri::Legomindstormnxt2)"/>
+    </eAnnotations>
   </eClassifiers>
 </ecore:EPackage>

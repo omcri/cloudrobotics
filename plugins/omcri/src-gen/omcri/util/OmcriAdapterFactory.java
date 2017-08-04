@@ -130,6 +130,14 @@ public class OmcriAdapterFactory extends AdapterFactoryImpl {
 				return createFlightactuatorAdapter();
 			}
 			@Override
+			public Adapter caseTurtlebotmotionactuator(Turtlebotmotionactuator object) {
+				return createTurtlebotmotionactuatorAdapter();
+			}
+			@Override
+			public Adapter caseLegomindstormnxt2motionactuator(Legomindstormnxt2motionactuator object) {
+				return createLegomindstormnxt2motionactuatorAdapter();
+			}
+			@Override
 			public Adapter caseEntity(Entity object) {
 				return createEntityAdapter();
 			}
@@ -326,6 +334,34 @@ public class OmcriAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFlightactuatorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link omcri.Turtlebotmotionactuator <em>Turtlebotmotionactuator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see omcri.Turtlebotmotionactuator
+	 * @generated
+	 */
+	public Adapter createTurtlebotmotionactuatorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link omcri.Legomindstormnxt2motionactuator <em>Legomindstormnxt2motionactuator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see omcri.Legomindstormnxt2motionactuator
+	 * @generated
+	 */
+	public Adapter createLegomindstormnxt2motionactuatorAdapter() {
 		return null;
 	}
 

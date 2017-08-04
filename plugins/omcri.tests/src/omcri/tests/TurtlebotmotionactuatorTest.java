@@ -16,35 +16,35 @@ import junit.framework.TestCase;
 
 import junit.textui.TestRunner;
 
-import omcri.Motionactuator;
 import omcri.OmcriFactory;
+import omcri.Turtlebotmotionactuator;
 
 /**
  * <!-- begin-user-doc -->
- * A test case for the model object '<em><b>Motionactuator</b></em>'.
+ * A test case for the model object '<em><b>Turtlebotmotionactuator</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following operations are tested:
  * <ul>
+ *   <li>{@link omcri.Turtlebotmotionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}</li>
  *   <li>{@link omcri.Motionactuator#moveforward() <em>Moveforward</em>}</li>
  *   <li>{@link omcri.Motionactuator#movebackward() <em>Movebackward</em>}</li>
  *   <li>{@link omcri.Motionactuator#turnright() <em>Turnright</em>}</li>
  *   <li>{@link omcri.Motionactuator#turnleft() <em>Turnleft</em>}</li>
  *   <li>{@link omcri.Motionactuator#stop() <em>Stop</em>}</li>
- *   <li>{@link omcri.Actuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}</li>
  * </ul>
  * </p>
  * @generated
  */
-public class MotionactuatorTest extends TestCase {
+public class TurtlebotmotionactuatorTest extends TestCase {
 
 	/**
-	 * The fixture for this Motionactuator test case.
+	 * The fixture for this Turtlebotmotionactuator test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Motionactuator fixture = null;
+	protected Turtlebotmotionactuator fixture = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -52,36 +52,36 @@ public class MotionactuatorTest extends TestCase {
 	 * @generated
 	 */
 	public static void main(String[] args) {
-		TestRunner.run(MotionactuatorTest.class);
+		TestRunner.run(TurtlebotmotionactuatorTest.class);
 	}
 
 	/**
-	 * Constructs a new Motionactuator test case with the given name.
+	 * Constructs a new Turtlebotmotionactuator test case with the given name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotionactuatorTest(String name) {
+	public TurtlebotmotionactuatorTest(String name) {
 		super(name);
 	}
 
 	/**
-	 * Sets the fixture for this Motionactuator test case.
+	 * Sets the fixture for this Turtlebotmotionactuator test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void setFixture(Motionactuator fixture) {
+	protected void setFixture(Turtlebotmotionactuator fixture) {
 		this.fixture = fixture;
 	}
 
 	/**
-	 * Returns the fixture for this Motionactuator test case.
+	 * Returns the fixture for this Turtlebotmotionactuator test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Motionactuator getFixture() {
+	protected Turtlebotmotionactuator getFixture() {
 		return fixture;
 	}
 
@@ -93,7 +93,7 @@ public class MotionactuatorTest extends TestCase {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(OmcriFactory.eINSTANCE.createMotionactuator());
+		setFixture(OmcriFactory.eINSTANCE.createTurtlebotmotionactuator());
 	}
 
 	/**
@@ -105,6 +105,19 @@ public class MotionactuatorTest extends TestCase {
 	@Override
 	protected void tearDown() throws Exception {
 		setFixture(null);
+	}
+
+	/**
+	 * Tests the '{@link omcri.Turtlebotmotionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see omcri.Turtlebotmotionactuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testAppliesConstraint__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
 	}
 
 	/**
@@ -172,17 +185,4 @@ public class MotionactuatorTest extends TestCase {
 		fail();
 	}
 
-	/**
-	 * Tests the '{@link omcri.Actuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see omcri.Actuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	public void testAppliesConstraint__DiagnosticChain_Map() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
-	}
-
-} //MotionactuatorTest
+} //TurtlebotmotionactuatorTest

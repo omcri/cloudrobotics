@@ -140,6 +140,24 @@ public interface OmcriFactory extends EFactory {
 	Flightactuator createFlightactuator();
 
 	/**
+	 * Returns a new object of class '<em>Turtlebotmotionactuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Turtlebotmotionactuator</em>'.
+	 * @generated
+	 */
+	Turtlebotmotionactuator createTurtlebotmotionactuator();
+
+	/**
+	 * Returns a new object of class '<em>Legomindstormnxt2motionactuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Legomindstormnxt2motionactuator</em>'.
+	 * @generated
+	 */
+	Legomindstormnxt2motionactuator createLegomindstormnxt2motionactuator();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
