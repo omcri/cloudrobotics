@@ -43,6 +43,7 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	 */
 	TurtlebotConnector() {
 		// LOGGER.debug("Constructor called on " + this);
+		
 	}
 
 	
@@ -72,6 +73,7 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 		// LOGGER.debug("occiCreate() called on " + this + " for the user " + this.getUser() + " at ip " + this.getIp_address());
 		turtlebotControl = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIPAddress());
 		hasController = true;
+		connect();
 	}
 
 	/**

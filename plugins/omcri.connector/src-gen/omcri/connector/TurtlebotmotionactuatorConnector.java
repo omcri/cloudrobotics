@@ -63,6 +63,7 @@ public class TurtlebotmotionactuatorConnector extends omcri.impl.Turtlebotmotion
 		
 		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
 			turtlebot.getTurtlebotControl().move_forward(this.getDuration());
+			System.out.println("Called student code");				
 		}
 	}
 
