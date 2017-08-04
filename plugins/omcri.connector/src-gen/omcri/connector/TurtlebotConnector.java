@@ -45,13 +45,24 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 		// LOGGER.debug("Constructor called on " + this);
 	}
 
-	//
-	// OCCI CRUD callback operations.
-	//
 	
 	public TurtlebotControl getTurtlebotControl() {
 		return turtlebotControl;
 	}
+	
+	public boolean isConnected()
+	{ 
+		return isConnected;
+	}
+	
+	public boolean hasController()
+	{ 
+		return hasController;
+	}
+
+	//
+	// OCCI CRUD callback operations.
+	//
 
 	/**
 	 * Called when this Turtlebot instance is completely created.
@@ -94,57 +105,7 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	// Turtlebot actions.
 	//
 
-	/**
-	 * Implement OCCI action:
-     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
-     * - term: move_forward
-     * - title: The turtlebot move forward
-	 */
-	public void move_forward() {
-		// LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
-		if (isConnected && hasController) {
-			// turtlebotControl.move_forward(this.getDuration());
-		}
-	}
-
-	/**
-	 * Implement OCCI action:
-     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
-     * - term: move_backward
-     * - title: The turtlebot move backward
-	 */
-	public void move_backward() {
-		// LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());
-		if (isConnected && hasController) {
-			// turtlebotControl.move_backward(this.getDuration());
-		}
-	}
-
-	/**
-	 * Implement OCCI action:
-     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
-     * - term: turn_left
-     * - title: The turtlebot turn left
-	 */
-	public void turn_left() {
-		// LOGGER.debug("Action turn_left() called on " + this + " during " + this.getDuration());
-		if (isConnected && hasController) {
-			// turtlebotControl.turnLeft(this.getDuration());
-		}
-	}
-
-	/**
-	 * Implement OCCI action:
-     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
-     * - term: turn_right
-     * - title: The turtlebot turn right
-	 */
-	public void turn_right() {
-		// LOGGER.debug("Action turn_right() called on " + this + " during " + this.getDuration());
-		if (isConnected && hasController) {
-			// turtlebotControl.turnRight(this.getDuration());
-		}
-	}
+	
 
 	/**
 	 * Implement OCCI action:

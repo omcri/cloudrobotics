@@ -56,12 +56,36 @@ public class TurtlebotmotionactuatorConnector extends omcri.impl.Turtlebotmotion
 		System.out.println("TurtlebotmotionactuatorConnector moveForward");	
 
 		Entity entity = getEntity();
-		if (entity != null)
-		{
-			TurtlebotConnector turtlebot = (TurtlebotConnector)entity;
+		TurtlebotConnector turtlebot = null;
+		if (entity != null) {
+			turtlebot = (TurtlebotConnector)entity;
+		}
+		
+		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
 			turtlebot.getTurtlebotControl().move_forward(this.getDuration());
 		}
-		//turtlebotControl.move_forward(this.getDuration());
+	}
+
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 */
+	public void movebackward() 
+	{
+		LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());
+		
+		System.out.println("TurtlebotmotionactuatorConnector moveBackward");	
+
+		Entity entity = getEntity();
+		TurtlebotConnector turtlebot = null;
+		if (entity != null) {
+			turtlebot = (TurtlebotConnector)entity;
+		}
+		
+		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
+			turtlebot.getTurtlebotControl().move_backward(this.getDuration());
+		}
 	}
 
 	// End of user code
