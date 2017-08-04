@@ -40,7 +40,7 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 		// TODO: Implement this constructor.
 	}
 	// End of user code
-	//
+	
 	// OCCI CRUD callback operations.
 	//
 	
@@ -79,7 +79,7 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 		// TODO: Implement this callback or remove this method.
 	}
 	// End of user code
-
+	
 	// Start of user code Legomindstormnxt2occiDelete_method
 	/**
 	 * Called when this Legomindstormnxt2 instance will be deleted.

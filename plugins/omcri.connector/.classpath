@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="src" path="/omcri"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="/home/gdherbom/dev/omcri/CloudRoboticsOCCI/maven-jars/PFETurtlebotControl-0.1.0-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

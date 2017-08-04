@@ -14,6 +14,7 @@
  */
 package omcri.connector;
 
+import org.eclipse.cmf.occi.core.Entity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,6 +39,7 @@ public class MotionactuatorConnector extends omcri.impl.MotionactuatorImpl
 	{
 		LOGGER.debug("Constructor called on " + this);
 		// TODO: Implement this constructor.
+
 	}
 	// End of user code
 	// Start of user code Motionactuator_Kind_moveForward_action
@@ -69,6 +71,16 @@ public class MotionactuatorConnector extends omcri.impl.MotionactuatorImpl
 		LOGGER.debug("Action movebackward() called on " + this);
 
 		// TODO: Implement how to movebackward this motionactuator.
+		
+		Entity entity = getEntity();
+		if ( (entity != null) && ( entity instanceof TurtlebotConnector ) )
+		{
+			// code tb 
+		}
+		if ( (entity != null) && ( entity instanceof Legomindstormnxt2Connector) )
+		{
+			// code lego
+		}
 	}
 		// End of user code
 

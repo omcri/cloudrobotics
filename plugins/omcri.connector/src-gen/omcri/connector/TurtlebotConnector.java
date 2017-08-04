@@ -17,6 +17,8 @@ package omcri.connector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import tb.TurtlebotControl;
+
 /**
  * Connector implementation for the OCCI kind:
  * - scheme: http://omcri.org/cloudrobotics#
@@ -29,6 +31,7 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	 * Initialize the logger.
 	 */
 	private static Logger LOGGER = LoggerFactory.getLogger(TurtlebotConnector.class);
+	private TurtlebotControl turtlebotControl;
 
 	// Start of user code Turtlebotconnector_constructor
 	/**
@@ -53,6 +56,8 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	{
 		LOGGER.debug("occiCreate() called on " + this);
 		// TODO: Implement this callback or remove this method.
+		turtlebotControl = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIPAddress());
+		turtlebotControl.connect();
 	}
 	// End of user code
 
@@ -89,6 +94,8 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	{
 		LOGGER.debug("occiDelete() called on " + this);
 		// TODO: Implement this callback or remove this method.
+		turtlebotControl.disconnect();
+
 	}
 	// End of user code
 
