@@ -32,77 +32,153 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	 */
 	private static Logger LOGGER = LoggerFactory.getLogger(TurtlebotConnector.class);
 
-	private TurtlebotControl turtlebotController = null;
+	private TurtlebotControl turtlebotControl;
+
+	private boolean isConnected = false;
+	// Define if controller is instanced.
+	private boolean hasController = false;
 	
-	// Start of user code Turtlebotconnector_constructor
 	/**
 	 * Constructs a turtlebot connector.
 	 */
-	TurtlebotConnector()
-	{
-		LOGGER.debug("Constructor called on " + this);
-		// TODO: Implement this constructor.
+	TurtlebotConnector() {
+		// LOGGER.debug("Constructor called on " + this);
 	}
-	// End of user code
+
 	//
 	// OCCI CRUD callback operations.
 	//
-	
-	// Start of user code TurtlebotocciCreate
+
 	/**
 	 * Called when this Turtlebot instance is completely created.
 	 */
 	@Override
-	public void occiCreate()
-	{
-		LOGGER.debug("occiCreate() called on " + this);
-		// TODO: Implement this callback or remove this method.
-		turtlebotController = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIPAddress());
-		turtlebotController.connect();
+	public void occiCreate() {
+		// LOGGER.debug("occiCreate() called on " + this + " for the user " + this.getUser() + " at ip " + this.getIp_address());
+		turtlebotControl = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIPAddress());
+		hasController = true;
 	}
-	// End of user code
 
-	// Start of user code Turtlebot_occiRetrieve_method
 	/**
 	 * Called when this Turtlebot instance must be retrieved.
 	 */
 	@Override
-	public void occiRetrieve()
-	{
-		LOGGER.debug("occiRetrieve() called on " + this);
-		// TODO: Implement this callback or remove this method.
+	public void occiRetrieve() {
+		// LOGGER.debug("occiRetrieve() called on " + this);
 	}
-	// End of user code
 
-	// Start of user code Turtlebot_occiUpdate_method
 	/**
 	 * Called when this Turtlebot instance is completely updated.
 	 */
 	@Override
-	public void occiUpdate()
-	{
-		LOGGER.debug("occiUpdate() called on " + this);
-		// TODO: Implement this callback or remove this method.
+	public void occiUpdate() {
+		// LOGGER.debug("occiUpdate() called on " + this);
 	}
-	// End of user code
 
-	// Start of user code TurtlebotocciDelete_method
 	/**
 	 * Called when this Turtlebot instance will be deleted.
 	 */
 	@Override
-	public void occiDelete()
-	{
-		LOGGER.debug("occiDelete() called on " + this);
-		// TODO: Implement this callback or remove this method.
-		if (turtlebotController != null) {
-			turtlebotController.disconnect();
+	public void occiDelete() {
+		// LOGGER.debug("occiDelete() called on " + this);
+		if (hasController) {
+			this.disconnect();
 		}
-
 	}
-	// End of user code
 
 	//
 	// Turtlebot actions.
 	//
+
+	/**
+	 * Implement OCCI action:
+     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
+     * - term: move_forward
+     * - title: The turtlebot move forward
+	 */
+	public void move_forward() {
+		// LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
+		if (isConnected && hasController) {
+			// turtlebotControl.move_forward(this.getDuration());
+		}
+	}
+
+	/**
+	 * Implement OCCI action:
+     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
+     * - term: move_backward
+     * - title: The turtlebot move backward
+	 */
+	public void move_backward() {
+		// LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());
+		if (isConnected && hasController) {
+			// turtlebotControl.move_backward(this.getDuration());
+		}
+	}
+
+	/**
+	 * Implement OCCI action:
+     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
+     * - term: turn_left
+     * - title: The turtlebot turn left
+	 */
+	public void turn_left() {
+		// LOGGER.debug("Action turn_left() called on " + this + " during " + this.getDuration());
+		if (isConnected && hasController) {
+			// turtlebotControl.turnLeft(this.getDuration());
+		}
+	}
+
+	/**
+	 * Implement OCCI action:
+     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
+     * - term: turn_right
+     * - title: The turtlebot turn right
+	 */
+	public void turn_right() {
+		// LOGGER.debug("Action turn_right() called on " + this + " during " + this.getDuration());
+		if (isConnected && hasController) {
+			// turtlebotControl.turnRight(this.getDuration());
+		}
+	}
+
+	/**
+	 * Implement OCCI action:
+     * - scheme: http://occiware.org/turtlebot/turtlebot/action#
+     * - term: stop
+     * - title: Force the turtlebot to stop
+	 */
+	public void stop() {
+		// LOGGER.debug("Action stop() called on " + this);
+		if (isConnected && hasController) {
+			// turtlebotControl.stop(this.getDuration());
+		}
+	}
+	
+	
+	public void connect() {
+		// LOGGER.debug("Connect action to this turtlebot : " + this.getId());
+		try {
+			if (!isConnected && hasController) {
+				turtlebotControl.connect();
+				isConnected = true;
+			}
+		} catch (Exception ex) {
+			LOGGER.error("Error while connecting to turtlebot : " + this.getId() + " --> " + ex.getMessage());
+			isConnected = false;
+		}
+	}
+	
+	
+	public void disconnect() {
+		// LOGGER.debug("Disconnect from this turtlebot : " + this.getId());
+		try {
+			if (isConnected && hasController) {
+				turtlebotControl.disconnect();
+			}
+		} catch (Exception ex) {
+			LOGGER.error("Error while disconnecting from turtlebot : " + this.getId() + " --> " + ex.getMessage());
+		}
+		
+	}
 }	
