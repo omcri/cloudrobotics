@@ -30,7 +30,7 @@
     <attributes name="touch" mutable="true" type="//@types.0"/>
     <actions name="senseTouch" scheme="http://omcri.org/cloudrobotics/touchsensor/action#" title=""/>
   </mixins>
-  <mixins name="MotionActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='actuator']" applies="//@kinds[term='legomindstormnxt2'] //@kinds[term='turtlebot']">
+  <mixins name="MotionActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='actuator']">
     <attributes name="angle" mutable="true" default="45">
       <type xsi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
     </attributes>
@@ -85,6 +85,8 @@
     <actions name="land" scheme="http://omcri.org/cloudrobotics/flightactuator/action#"/>
     <actions name="takeOff" scheme="http://omcri.org/cloudrobotics/flightactuator/action#"/>
   </mixins>
+  <mixins name="TurtlebotMotionActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='motionactuator']" applies="//@kinds[term='turtlebot']"/>
+  <mixins name="LegoMindstormNXT2MotionActuator" scheme="http://omcri.org/cloudrobotics#" depends="//@mixins[term='motionactuator']" applies="//@kinds[term='legomindstormnxt2']"/>
   <types xsi:type="occi:EnumerationType" name="Color">
     <literals name="WHITE"/>
     <literals name="BLACK"/>
