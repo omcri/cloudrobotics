@@ -14,8 +14,11 @@
  */
 package omcri.connector;
 
+import org.eclipse.cmf.occi.core.Entity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import omcri.connector.TurtlebotConnector;
 
 /**
  * Connector implementation for the OCCI kind:
@@ -38,6 +41,28 @@ public class TurtlebotmotionactuatorConnector extends omcri.impl.Turtlebotmotion
 	{
 		LOGGER.debug("Constructor called on " + this);
 		// TODO: Implement this constructor.
+		System.out.println("TurtlebotmotionactuatorConnector ctor");	
 	}
+	
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 */
+	public void moveforward() 
+	{
+		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
+		
+		System.out.println("TurtlebotmotionactuatorConnector moveForward");	
+
+		Entity entity = getEntity();
+		if (entity != null)
+		{
+			TurtlebotConnector turtlebot = (TurtlebotConnector)entity;
+			turtlebot.getTurtlebotControl().move_forward(this.getDuration());
+		}
+		//turtlebotControl.move_forward(this.getDuration());
+	}
+
 	// End of user code
 }	

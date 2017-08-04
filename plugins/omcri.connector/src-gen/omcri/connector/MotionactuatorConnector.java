@@ -53,6 +53,8 @@ public class MotionactuatorConnector extends omcri.impl.MotionactuatorImpl
 	public void moveforward()
 	{
 		LOGGER.debug("Action moveforward() called on " + this);
+		
+		System.out.println("MotionactuatorConnector moveForward() method");	
 
 		// TODO: Implement how to moveforward this motionactuator.
 	}
@@ -72,7 +74,7 @@ public class MotionactuatorConnector extends omcri.impl.MotionactuatorImpl
 
 		// TODO: Implement how to movebackward this motionactuator.
 		
-		Entity entity = getEntity();
+		/** Entity entity = getEntity();
 		if ( (entity != null) && ( entity instanceof TurtlebotConnector ) )
 		{
 			// code tb 
@@ -80,7 +82,8 @@ public class MotionactuatorConnector extends omcri.impl.MotionactuatorImpl
 		if ( (entity != null) && ( entity instanceof Legomindstormnxt2Connector) )
 		{
 			// code lego
-		}
+		}*/
+		
 	}
 		// End of user code
 

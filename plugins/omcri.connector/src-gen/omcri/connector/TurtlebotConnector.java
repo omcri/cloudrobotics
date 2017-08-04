@@ -48,6 +48,10 @@ public class TurtlebotConnector extends omcri.impl.TurtlebotImpl
 	//
 	// OCCI CRUD callback operations.
 	//
+	
+	public TurtlebotControl getTurtlebotControl() {
+		return turtlebotControl;
+	}
 
 	/**
 	 * Called when this Turtlebot instance is completely created.
