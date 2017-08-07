@@ -181,35 +181,6 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
-<subNodeMappings name="Motionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Motionactuator">
-              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['angle = ' + self.angle.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              </style>
-            </subNodeMappings>
-<subNodeMappings name="Motionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Motionactuator">
-              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['speed = ' + self.speed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              </style>
-            </subNodeMappings>
-<subNodeMappings name="Motionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Motionactuator">
-              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['duration = ' + self.duration.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              </style>
-            </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
 <subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
 <subNodeMappings name="Colorsensorcolor" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['color = ' + self.color.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
@@ -262,6 +233,35 @@
             </style>
           </subContainerMappings>
 <subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="LegoMindstormNXT2MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Legomindstormnxt2motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Legomindstormnxt2motionactuator" childrenPresentation="List">
+<subNodeMappings name="Legomindstormnxt2motionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['angle = ' + self.angle.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+<subNodeMappings name="Legomindstormnxt2motionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['speed = ' + self.speed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+<subNodeMappings name="Legomindstormnxt2motionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['duration = ' + self.duration.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
 <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -485,22 +485,22 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
 </subContainerMappings>
-<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
-<subNodeMappings name="Motionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Motionactuator">
+<subContainerMappings name="TurtlebotMotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Turtlebotmotionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Turtlebotmotionactuator" childrenPresentation="List">
+<subNodeMappings name="Turtlebotmotionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['angle = ' + self.angle.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Motionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Motionactuator">
+<subNodeMappings name="Turtlebotmotionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['speed = ' + self.speed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Motionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Motionactuator">
+<subNodeMappings name="Turtlebotmotionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['duration = ' + self.duration.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -610,8 +610,6 @@
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MotionActuator" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='MotionActuatorMixin']
- //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='MotionActuatorMixin']
 ">
             <variable name="container"/>
             <viewVariable name="containerView"/>
@@ -673,6 +671,28 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Flightactuator" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create TurtlebotMotionActuator" containerMappings="
+//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='TurtlebotMotionActuatorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Turtlebotmotionactuator" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create LegoMindstormNXT2MotionActuator" containerMappings="
+//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='LegoMindstormNXT2MotionActuatorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Legomindstormnxt2motionactuator" referenceName="parts"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -964,6 +984,102 @@
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Flightactuator).takeoff()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditTurtlebotmotionactuatorAngle" inputLabelExpression="feature:angle">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="angle" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditTurtlebotmotionactuatorSpeed" inputLabelExpression="feature:speed">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="speed" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditTurtlebotmotionactuatorDuration" inputLabelExpression="feature:duration">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="duration" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="TurtlebotmotionactuatorMoveforwardAction" label="Moveforward" precondition="[self.oclIsKindOf(Turtlebotmotionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Turtlebotmotionactuator).moveforward()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="TurtlebotmotionactuatorMovebackwardAction" label="Movebackward" precondition="[self.oclIsKindOf(Turtlebotmotionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Turtlebotmotionactuator).movebackward()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="TurtlebotmotionactuatorTurnrightAction" label="Turnright" precondition="[self.oclIsKindOf(Turtlebotmotionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Turtlebotmotionactuator).turnright()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="TurtlebotmotionactuatorTurnleftAction" label="Turnleft" precondition="[self.oclIsKindOf(Turtlebotmotionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Turtlebotmotionactuator).turnleft()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="TurtlebotmotionactuatorStopAction" label="Stop" precondition="[self.oclIsKindOf(Turtlebotmotionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Turtlebotmotionactuator).stop()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditLegomindstormnxt2motionactuatorAngle" inputLabelExpression="feature:angle">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="angle" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditLegomindstormnxt2motionactuatorSpeed" inputLabelExpression="feature:speed">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="speed" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditLegomindstormnxt2motionactuatorDuration" inputLabelExpression="feature:duration">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="duration" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="Legomindstormnxt2motionactuatorMoveforwardAction" label="Moveforward" precondition="[self.oclIsKindOf(Legomindstormnxt2motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Legomindstormnxt2motionactuator).moveforward()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="Legomindstormnxt2motionactuatorMovebackwardAction" label="Movebackward" precondition="[self.oclIsKindOf(Legomindstormnxt2motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Legomindstormnxt2motionactuator).movebackward()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="Legomindstormnxt2motionactuatorTurnrightAction" label="Turnright" precondition="[self.oclIsKindOf(Legomindstormnxt2motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Legomindstormnxt2motionactuator).turnright()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="Legomindstormnxt2motionactuatorTurnleftAction" label="Turnleft" precondition="[self.oclIsKindOf(Legomindstormnxt2motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Legomindstormnxt2motionactuator).turnleft()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="Legomindstormnxt2motionactuatorStopAction" label="Stop" precondition="[self.oclIsKindOf(Legomindstormnxt2motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Legomindstormnxt2motionactuator).stop()/]"/>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:PopupMenu" name="CRUD operations" precondition="[self.oclIsKindOf(Entity)/]">
