@@ -14,8 +14,11 @@
  */
 package omcri.connector;
 
+import org.eclipse.cmf.occi.core.Entity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import main.omcri.mindstorms.MindstormsControl;
 
 /**
  * Connector implementation for the OCCI kind:
@@ -39,5 +42,53 @@ public class Legomindstormnxt2motionactuatorConnector extends omcri.impl.Legomin
 		LOGGER.debug("Constructor called on " + this);
 		// TODO: Implement this constructor.
 	}
+	
+	
+
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 */
+	public void moveforward() 
+	{
+		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
+		
+		System.out.println("Legomindstormnxt2motionactuatorConnector moveForward");	
+
+		Entity entity = getEntity();
+		Legomindstormnxt2Connector nxt2Mindstorms = null;
+		if (entity != null) {
+			nxt2Mindstorms = (Legomindstormnxt2Connector)entity;
+		}
+		
+		if (nxt2Mindstorms != null) {
+			nxt2Mindstorms.getMindstormsControl().move_forward(this.getDuration());
+			System.out.println("The mindstorms must move forward during " + this.getDuration() + "ms");				
+		}
+	}
+
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 */
+	public void movebackward() 
+	{
+		LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());
+		
+		System.out.println("Legomindstormnxt2motionactuatorConnector moveBackward");	
+/*
+		Entity entity = getEntity();
+		TurtlebotConnector turtlebot = null;
+		if (entity != null) {
+			turtlebot = (TurtlebotConnector)entity;
+		}
+		
+		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
+			turtlebot.getTurtlebotControl().move_backward(this.getDuration());
+		}*/
+	}
+	
 	// End of user code
 }	

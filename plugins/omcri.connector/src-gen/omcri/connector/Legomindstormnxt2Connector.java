@@ -17,6 +17,8 @@ package omcri.connector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import main.omcri.mindstorms.MindstormsControl;
+
 /**
  * Connector implementation for the OCCI kind:
  * - scheme: http://omcri.org/cloudrobotics#
@@ -29,6 +31,8 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 	 * Initialize the logger.
 	 */
 	private static Logger LOGGER = LoggerFactory.getLogger(Legomindstormnxt2Connector.class);
+	private MindstormsControl mindstormControl = new MindstormsControl();
+
 
 	// Start of user code Legomindstormnxt2connector_constructor
 	/**
@@ -51,8 +55,17 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 	@Override
 	public void occiCreate()
 	{
-		LOGGER.debug("occiCreate() called on " + this);
+		LOGGER.info("occiCreate() called on " + this);
 		// TODO: Implement this callback or remove this method.
+		
+		// Try to connect via Bluetooth
+		mindstormControl.BTconnect(this.getTitle(), macAddress); // GD: warning, check if getTitle() is similar to a getName()? 
+		System.out.println("bluetooth connection to NXT2!");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	// End of user code
 
@@ -89,10 +102,17 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 	{
 		LOGGER.debug("occiDelete() called on " + this);
 		// TODO: Implement this callback or remove this method.
+		
+		mindstormControl.BTdisconnect();
 	}
 	// End of user code
 
 	//
 	// Legomindstormnxt2 actions.
 	//
+	
+	public MindstormsControl getMindstormsControl()
+	{
+		return mindstormControl;
+	}
 }	
