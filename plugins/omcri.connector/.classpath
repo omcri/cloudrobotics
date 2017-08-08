@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/charting.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jtools.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/pccomm.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/pctools.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/TurtlebotControl.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src-gen"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="/omcri"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="/opt/leJOS_NXJ_0.9.1beta-3/lib/pc/charting.jar"/>
+	<classpathentry kind="lib" path="/opt/leJOS_NXJ_0.9.1beta-3/lib/pc/jtools.jar"/>
+	<classpathentry kind="lib" path="/opt/leJOS_NXJ_0.9.1beta-3/lib/pc/pccomm.jar"/>
+	<classpathentry kind="lib" path="/opt/leJOS_NXJ_0.9.1beta-3/lib/pc/pctools.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
