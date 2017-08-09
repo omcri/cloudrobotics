@@ -44,17 +44,12 @@ public class Legomindstormnxt2motionactuatorConnector extends omcri.impl.Legomin
 	}
 	
 	
-
-	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Move forward the NXT2 robot during n milliseconds specified by the duration attribute.
 	 */
 	public void moveforward() 
 	{
-		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
-		
-		System.out.println("Legomindstormnxt2motionactuatorConnector moveForward");	
+		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());	
 
 		Entity entity = getEntity();
 		Legomindstormnxt2Connector nxt2Mindstorms = null;
@@ -70,25 +65,59 @@ public class Legomindstormnxt2motionactuatorConnector extends omcri.impl.Legomin
 
 	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Move backward the NXT2 robot during n milliseconds specified by the duration attribute.
 	 */
 	public void movebackward() 
 	{
-		LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());
-		
-		System.out.println("Legomindstormnxt2motionactuatorConnector moveBackward");	
-/*
+		LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());	
+
 		Entity entity = getEntity();
-		TurtlebotConnector turtlebot = null;
+		Legomindstormnxt2Connector nxt2Mindstorms = null;
 		if (entity != null) {
-			turtlebot = (TurtlebotConnector)entity;
+			nxt2Mindstorms = (Legomindstormnxt2Connector)entity;
 		}
 		
-		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
-			turtlebot.getTurtlebotControl().move_backward(this.getDuration());
-		}*/
+		if (nxt2Mindstorms != null) {
+			nxt2Mindstorms.getMindstormsControl().move_backward(this.getDuration());
+		}
 	}
+	
+	/**
+	 * Make turn left the NXT2 to X degrees specified by the angle attribute. 
+	 */
+	public void turnleft() 
+	{
+		LOGGER.debug("Action turnleft() called on " + this + " to " + this.getAngle());	
+
+		Entity entity = getEntity();
+		Legomindstormnxt2Connector nxt2Mindstorms = null;
+		if (entity != null) {
+			nxt2Mindstorms = (Legomindstormnxt2Connector)entity;
+		}
+		
+		if (nxt2Mindstorms != null) {
+			nxt2Mindstorms.getMindstormsControl().turnLeft(this.getAngle());
+		}
+	}
+	
+	/**
+	 * Make turn right the NXT2 to X degrees specified by the angle attribute. 
+	 */
+	public void turnright() 
+	{
+		LOGGER.debug("Action turnright() called on " + this + " to " + this.getAngle());	
+
+		Entity entity = getEntity();
+		Legomindstormnxt2Connector nxt2Mindstorms = null;
+		if (entity != null) {
+			nxt2Mindstorms = (Legomindstormnxt2Connector)entity;
+		}
+		
+		if (nxt2Mindstorms != null) {
+			nxt2Mindstorms.getMindstormsControl().turnRight(this.getAngle());
+		}
+	}
+	
 	
 	// End of user code
 }	

@@ -56,10 +56,10 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 	public void occiCreate()
 	{
 		LOGGER.info("occiCreate() called on " + this);
-		// TODO: Implement this callback or remove this method.
 		
-		// Try to connect via Bluetooth
-		mindstormControl.BTconnect(this.getTitle(), macAddress); // GD: warning, check if getTitle() is similar to a getName()? 
+		// Try to connect to the mindstorms NXT2 via Bluetooth. 
+		// If fail, check the bluetooth pairing on the host machine. 
+		mindstormControl.BTconnect(this.getTitle(), macAddress);  
 		System.out.println("bluetooth connection to NXT2!");
 		try {
 			Thread.sleep(500);
@@ -101,8 +101,8 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 	public void occiDelete()
 	{
 		LOGGER.debug("occiDelete() called on " + this);
-		// TODO: Implement this callback or remove this method.
 		
+		// Close the Bluetooth connection
 		mindstormControl.BTdisconnect();
 	}
 	// End of user code
