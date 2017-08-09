@@ -14,6 +14,7 @@
  */
 package omcri.connector;
 
+import org.eclipse.cmf.occi.core.Entity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -51,8 +52,16 @@ public class UltrasonicsensorConnector extends omcri.impl.UltrasonicsensorImpl
 	public void sensedistance()
 	{
 		LOGGER.debug("Action sensedistance() called on " + this);
-
-		// TODO: Implement how to sensedistance this ultrasonicsensor.
+		
+		Entity entity = getEntity();
+		Legomindstormnxt2Connector nxt2Mindstorms = null;
+		if (entity != null) {
+			nxt2Mindstorms = (Legomindstormnxt2Connector)entity;
+		}
+		if (nxt2Mindstorms != null) {
+			Integer distance = nxt2Mindstorms.getMindstormsControl().getUltraSonic();
+			System.out.println("Measured distance: " + distance);
+		}
 	}
 		// End of user code
 
