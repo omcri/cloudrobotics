@@ -56,9 +56,9 @@ public class Legomindstormnxt2Connector extends omcri.impl.Legomindstormnxt2Impl
 	public void occiCreate()
 	{
 		LOGGER.info("occiCreate() called on " + this);
-		
+		System.out.println("occiCreate() called on " + this);
 		// Try to connect to the mindstorms NXT2 via Bluetooth. 
-		// If fail, check the bluetooth pairing on the host machine. 
+		// If fail, check the bluetooth pairing on the host machine.
 		mindstormControl.BTconnect(this.getTitle(), macAddress);  
 		System.out.println("bluetooth connection to NXT2!");
 		try {

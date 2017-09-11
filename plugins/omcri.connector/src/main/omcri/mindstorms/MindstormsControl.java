@@ -24,13 +24,24 @@ public class MindstormsControl {
 		try {
 			this.name = name;
 			this.macAddress = macAddress;
+			System.out.println("Connecting to nxt2 bluetooth with parameters: " + name + " --> " + macAddress);
 			nxtComm = NXTCommFactory.createNXTComm(NXTCommFactory.BLUETOOTH);
 			nxt = new NXTInfo(NXTCommFactory.BLUETOOTH, name, macAddress);
-			while(!nxtComm.open(nxt)) {}
+			int i = 0;
+			while(!nxtComm.open(nxt)) {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException ex) {
+				}
+				i++;
+				System.out.println("Tentative de connection nb : " + i);
+			}
 		} catch (NXTCommException e) {
 			e.printStackTrace();
 		}
-
+		
+		System.out.println("connected !");
+		
 		dos = new DataOutputStream(nxtComm.getOutputStream());
 		dis = new DataInputStream(nxtComm.getInputStream());
 	}

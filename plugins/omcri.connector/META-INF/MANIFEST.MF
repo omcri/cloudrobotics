@@ -8,11 +8,13 @@ Bundle-ClassPath: .,
  lib/charting.jar,
  lib/jtools.jar,
  lib/pccomm.jar,
- lib/pctools.jar
+ lib/pctools.jar,
+ lib/LegoMindstorm2_fat_macosx.jar
 Bundle-Vendor: OCCIware
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Require-Bundle: org.slf4j.api,
+Require-Bundle: org.slf4j.api;visibility:=reexport,
  org.eclipse.cmf.occi.core,
- omcri
-Export-Package: omcri.connector
+ omcri;visibility:=reexport
+Export-Package: main.omcri.mindstorms,
+ omcri.connector

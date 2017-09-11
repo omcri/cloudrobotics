@@ -49,6 +49,7 @@ public class TurtlebotmotionactuatorConnector extends omcri.impl.Turtlebotmotion
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 */
+	@Override
 	public void moveforward() 
 	{
 		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
@@ -72,6 +73,7 @@ public class TurtlebotmotionactuatorConnector extends omcri.impl.Turtlebotmotion
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 */
+	@Override
 	public void movebackward() 
 	{
 		LOGGER.debug("Action move_backward() called on " + this + " during " + this.getDuration());
@@ -88,6 +90,52 @@ public class TurtlebotmotionactuatorConnector extends omcri.impl.Turtlebotmotion
 			turtlebot.getTurtlebotControl().move_backward(this.getDuration());
 		}
 	}
-
+	
+	@Override
+	public void turnleft() {
+		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
+		System.out.println("TurtlebotmotionactuatorConnector turnleft");	
+		Entity entity = getEntity();
+		TurtlebotConnector turtlebot = null;
+		if (entity != null) {
+			turtlebot = (TurtlebotConnector)entity;
+		}
+		
+		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
+			turtlebot.getTurtlebotControl().turnLeft(this.getDuration());
+		}
+	}
+	
+	@Override
+	public void turnright() {
+		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
+		System.out.println("TurtlebotmotionactuatorConnector turnright");	
+		Entity entity = getEntity();
+		TurtlebotConnector turtlebot = null;
+		if (entity != null) {
+			turtlebot = (TurtlebotConnector)entity;
+		}
+		
+		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
+			turtlebot.getTurtlebotControl().turnRight(this.getDuration());
+		}
+	}
+	
+	@Override
+	public void stop() {
+		LOGGER.debug("Action move_forward() called on " + this + " during " + this.getDuration());
+		System.out.println("TurtlebotmotionactuatorConnector stop");	
+		Entity entity = getEntity();
+		TurtlebotConnector turtlebot = null;
+		if (entity != null) {
+			turtlebot = (TurtlebotConnector)entity;
+		}
+		
+		if (turtlebot != null && turtlebot.isConnected() && turtlebot.hasController()) {
+			turtlebot.getTurtlebotControl().stop(this.getDuration());
+		}
+	}
+	
+	
 	// End of user code
 }	
