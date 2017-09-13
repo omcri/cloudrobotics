@@ -659,8 +659,12 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Ardrone__Ardrone = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Ardrone__Entity = {
 			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */,
 			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Ardrone__OclAny = {
@@ -795,8 +799,12 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2__Legomindstormnxt2 = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2__Entity = {
 			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */,
 			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Legomindstormnxt2__OclAny = {
@@ -937,8 +945,12 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Robot__Robot = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Robot__Entity = {
 			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */,
 			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Robot__OclAny = {
@@ -1067,8 +1079,12 @@ public class OmcriTables
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebot__Turtlebot = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebot__Entity = {
 			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiCreate /* occiCreate() */,
+			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiDelete /* occiDelete() */,
 			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiRetrieve /* occiRetrieve() */,
+			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */,
 			OCCITables.Operations._Entity__occiUpdate /* occiUpdate() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Turtlebot__OclAny = {

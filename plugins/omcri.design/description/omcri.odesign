@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="omcri" version="10.0.0.201505222000">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="omcri" version="12.0.0.2017041100">
   <ownedViewpoints name="OmcriConfiguration" label="Omcri Configuration">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="OmcriConfiguration Diagram" domainClass="Configuration">
       <metamodel href="http://schemas.ogf.org/occi/core/ecore#/"/>
-      <metamodel href="http://omcri.org/cloudrobotics/ecore#/"/>
+      <metamodel href="file:/Users/cgourdin/workspaces/robotv2/cloudrobotics/plugins/omcri/model/omcri.ecore#/"/>
       <defaultLayer name="Default">
-        <edgeMappings name="RobotLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']" targetMapping="" targetFinderExpression="feature:links">
+        <edgeMappings name="RobotLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']" targetFinderExpression="feature:links">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -13,7 +13,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="Legomindstormnxt2LinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']" targetMapping="" targetFinderExpression="feature:links">
+        <edgeMappings name="Legomindstormnxt2LinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']" targetFinderExpression="feature:links">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -21,7 +21,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="ArdroneLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']" targetMapping="" targetFinderExpression="feature:links">
+        <edgeMappings name="ArdroneLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']" targetFinderExpression="feature:links">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -29,7 +29,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="TurtlebotLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']" targetMapping="" targetFinderExpression="feature:links">
+        <edgeMappings name="TurtlebotLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']" targetFinderExpression="feature:links">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -37,64 +37,53 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="RobotContainer"
-            labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
-			semanticCandidatesExpression="feature:resources" 
-			domainClass="Robot">
-<subContainerMappings name="SubRobotContainer" semanticCandidatesExpression="[self/]" domainClass="Robot" childrenPresentation="List">
-          <subNodeMappings name="RobotId"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotId']"
-                semanticCandidatesExpression="[self/]" domainClass="Robot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="RobotTitle"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotTitle']"
-                semanticCandidatesExpression="[self/]" domainClass="Robot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="RobotLocation"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotLocation']"
-                semanticCandidatesExpression="[self/]" domainClass="Robot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="RobotSummary"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotSummary']"
-                semanticCandidatesExpression="[self/]" domainClass="Robot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-</subContainerMappings>
-<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+        <containerMappings name="RobotContainer" preconditionExpression="[self.oclIsTypeOf(Robot)/]" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']" semanticCandidatesExpression="feature:resources" domainClass="Robot">
+          <subContainerMappings name="SubRobotContainer" semanticCandidatesExpression="[self/]" domainClass="Robot" childrenPresentation="List">
+            <subNodeMappings name="RobotId" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotId']" semanticCandidatesExpression="[self/]" domainClass="Robot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="RobotTitle" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotTitle']" semanticCandidatesExpression="[self/]" domainClass="Robot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="RobotLocation" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotLocation']" semanticCandidatesExpression="[self/]" domainClass="Robot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="RobotSummary" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditRobotSummary']" semanticCandidatesExpression="[self/]" domainClass="Robot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -106,179 +95,165 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style> 
-
+          </style>
         </containerMappings>
-        <containerMappings name="Legomindstormnxt2Container"
-            labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
-			semanticCandidatesExpression="feature:resources" 
-			domainClass="Legomindstormnxt2">
-<subContainerMappings name="SubLegomindstormnxt2Container" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2" childrenPresentation="List">
-          <subNodeMappings name="Legomindstormnxt2Id"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Id']"
-                semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="Legomindstormnxt2Title"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Title']"
-                semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="Legomindstormnxt2Location"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Location']"
-                semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="Legomindstormnxt2Summary"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Summary']"
-                semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="Legomindstormnxt2MacAddress"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2MacAddress']"
-                semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['macAddress = ' + self.macAddress.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
+        <containerMappings name="Legomindstormnxt2Container" preconditionExpression="[self.oclIsTypeOf(Legomindstormnxt2)/]" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']" semanticCandidatesExpression="feature:resources" domainClass="Legomindstormnxt2">
+          <subContainerMappings name="SubLegomindstormnxt2Container" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2" childrenPresentation="List">
+            <subNodeMappings name="Legomindstormnxt2Id" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Id']" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Legomindstormnxt2Title" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Title']" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Legomindstormnxt2Location" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Location']" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Legomindstormnxt2Summary" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2Summary']" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Legomindstormnxt2MacAddress" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditLegomindstormnxt2MacAddress']" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['macAddress = ' + self.macAddress.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
-</subContainerMappings>
-<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
-<subNodeMappings name="Touchsensortouch" semanticCandidatesExpression="[self/]" domainClass="Touchsensor">
+          </subContainerMappings>
+          <subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+            <subNodeMappings name="Touchsensortouch" semanticCandidatesExpression="[self/]" domainClass="Touchsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['touch = ' + self.touch.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
-<subNodeMappings name="Colorsensorcolor" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
+          <subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+            <subNodeMappings name="Colorsensorcolor" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['color = ' + self.color.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Colorsensorlight" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
+            <subNodeMappings name="Colorsensorlight" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['light = ' + self.light.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Colorsensordarkness" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
+            <subNodeMappings name="Colorsensordarkness" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['darkness = ' + self.darkness.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="ColorsensorcolorLamp" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
+            <subNodeMappings name="ColorsensorcolorLamp" semanticCandidatesExpression="[self/]" domainClass="Colorsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['colorLamp = ' + self.colorLamp.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
-<subNodeMappings name="Ultrasonicsensordistance" semanticCandidatesExpression="[self/]" domainClass="Ultrasonicsensor">
+          <subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+            <subNodeMappings name="Ultrasonicsensordistance" semanticCandidatesExpression="[self/]" domainClass="Ultrasonicsensor">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['distance = ' + self.distance.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="LegoMindstormNXT2MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Legomindstormnxt2motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Legomindstormnxt2motionactuator" childrenPresentation="List">
-<subNodeMappings name="Legomindstormnxt2motionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
+          <subContainerMappings name="LegoMindstormNXT2MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Legomindstormnxt2motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Legomindstormnxt2motionactuator" childrenPresentation="List">
+            <subNodeMappings name="Legomindstormnxt2motionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['angle = ' + self.angle.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Legomindstormnxt2motionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
+            <subNodeMappings name="Legomindstormnxt2motionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['speed = ' + self.speed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Legomindstormnxt2motionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
+            <subNodeMappings name="Legomindstormnxt2motionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2motionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['duration = ' + self.duration.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -290,112 +265,98 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style> 
-
+          </style>
         </containerMappings>
-        <containerMappings name="ArdroneContainer"
-            labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
-			semanticCandidatesExpression="feature:resources" 
-			domainClass="Ardrone">
-<subContainerMappings name="SubArdroneContainer" semanticCandidatesExpression="[self/]" domainClass="Ardrone" childrenPresentation="List">
-          <subNodeMappings name="ArdroneId"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneId']"
-                semanticCandidatesExpression="[self/]" domainClass="Ardrone">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="ArdroneTitle"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneTitle']"
-                semanticCandidatesExpression="[self/]" domainClass="Ardrone">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="ArdroneLocation"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneLocation']"
-                semanticCandidatesExpression="[self/]" domainClass="Ardrone">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="ArdroneSummary"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneSummary']"
-                semanticCandidatesExpression="[self/]" domainClass="Ardrone">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="ArdroneIPAddress"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneIPAddress']"
-                semanticCandidatesExpression="[self/]" domainClass="Ardrone">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['IPAddress = ' + self.IPAddress.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
+        <containerMappings name="ArdroneContainer" preconditionExpression="[self.oclIsTypeOf(Ardrone)/]" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']" semanticCandidatesExpression="feature:resources" domainClass="Ardrone">
+          <subContainerMappings name="SubArdroneContainer" semanticCandidatesExpression="[self/]" domainClass="Ardrone" childrenPresentation="List">
+            <subNodeMappings name="ArdroneId" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneId']" semanticCandidatesExpression="[self/]" domainClass="Ardrone">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="ArdroneTitle" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneTitle']" semanticCandidatesExpression="[self/]" domainClass="Ardrone">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="ArdroneLocation" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneLocation']" semanticCandidatesExpression="[self/]" domainClass="Ardrone">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="ArdroneSummary" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneSummary']" semanticCandidatesExpression="[self/]" domainClass="Ardrone">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="ArdroneIPAddress" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditArdroneIPAddress']" semanticCandidatesExpression="[self/]" domainClass="Ardrone">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['IPAddress = ' + self.IPAddress.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
-</subContainerMappings>
-<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
-<subNodeMappings name="FlightactuatorhorizontalTilt" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
+          </subContainerMappings>
+          <subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+            <subNodeMappings name="FlightactuatorhorizontalTilt" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['horizontalTilt = ' + self.horizontalTilt.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="FlightactuatorverticalTilt" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
+            <subNodeMappings name="FlightactuatorverticalTilt" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['verticalTilt = ' + self.verticalTilt.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="FlightactuatorhorizontalSpeed" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
+            <subNodeMappings name="FlightactuatorhorizontalSpeed" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['horizontalSpeed = ' + self.horizontalSpeed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="FlightactuatorverticalSpeed" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
+            <subNodeMappings name="FlightactuatorverticalSpeed" semanticCandidatesExpression="[self/]" domainClass="Flightactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['verticalSpeed = ' + self.verticalSpeed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -407,123 +368,105 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style> 
-
+          </style>
         </containerMappings>
-        <containerMappings name="TurtlebotContainer"
-            labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
-			semanticCandidatesExpression="feature:resources" 
-			domainClass="Turtlebot">
-<subContainerMappings name="SubTurtlebotContainer" semanticCandidatesExpression="[self/]" domainClass="Turtlebot" childrenPresentation="List">
-          <subNodeMappings name="TurtlebotId"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotId']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="TurtlebotTitle"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotTitle']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="TurtlebotLocation"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotLocation']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="TurtlebotSummary"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotSummary']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="TurtlebotUser"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotUser']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['user = ' + self.user.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="TurtlebotPassword"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotPassword']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['password = ' + self.password.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="TurtlebotIPAddress"
-                labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotIPAddress']"
-                semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
-            <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['IPAddress = ' + self.IPAddress.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            </style>
-          </subNodeMappings>
-			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
+        <containerMappings name="TurtlebotContainer" preconditionExpression="[self.oclIsTypeOf(Turtlebot)/]" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']" semanticCandidatesExpression="feature:resources" domainClass="Turtlebot">
+          <subContainerMappings name="SubTurtlebotContainer" semanticCandidatesExpression="[self/]" domainClass="Turtlebot" childrenPresentation="List">
+            <subNodeMappings name="TurtlebotId" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotId']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['id = ' + self.id.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="TurtlebotTitle" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotTitle']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['title = ' + self.title.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="TurtlebotLocation" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotLocation']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['location = ' + self.location.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="TurtlebotSummary" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotSummary']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['summary = ' + self.summary.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="TurtlebotUser" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotUser']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['user = ' + self.user.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="TurtlebotPassword" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotPassword']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['password = ' + self.password.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="TurtlebotIPAddress" labelDirectEdit="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditTurtlebotIPAddress']" semanticCandidatesExpression="[self/]" domainClass="Turtlebot">
+              <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['IPAddress = ' + self.IPAddress.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.kind.scheme+self.kind.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
-</subContainerMappings>
-<subContainerMappings name="TurtlebotMotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Turtlebotmotionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Turtlebotmotionactuator" childrenPresentation="List">
-<subNodeMappings name="Turtlebotmotionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
+          </subContainerMappings>
+          <subContainerMappings name="TurtlebotMotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Turtlebotmotionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Turtlebotmotionactuator" childrenPresentation="List">
+            <subNodeMappings name="Turtlebotmotionactuatorangle" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['angle = ' + self.angle.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Turtlebotmotionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
+            <subNodeMappings name="Turtlebotmotionactuatorspeed" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['speed = ' + self.speed.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<subNodeMappings name="Turtlebotmotionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
+            <subNodeMappings name="Turtlebotmotionactuatorduration" semanticCandidatesExpression="[self/]" domainClass="Turtlebotmotionactuator">
               <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="['duration = ' + self.duration.toString()/]" labelAlignment="LEFT" hideLabelByDefault="true" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subNodeMappings>
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
-<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
+          <subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.mixin.scheme+self.mixin.term/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -535,13 +478,10 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style> 
-
+          </style>
         </containerMappings>
         <toolSections name="Omcri resources">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" 
-			name="Create Robot"
-			containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']"> 
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Robot" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -550,9 +490,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" 
-			name="Create Legomindstormnxt2"
-			containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']"> 
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Legomindstormnxt2" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -561,9 +499,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" 
-			name="Create Ardrone"
-			containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']"> 
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Ardrone" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -572,9 +508,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" 
-			name="Create Turtlebot"
-			containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']"> 
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Turtlebot" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -583,13 +517,10 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-</toolSections>
- <toolSections name="Omcri links">
-   </toolSections>   
- <toolSections name="Omcri mixins">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Actuator" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='ActuatorMixin']
-">
+        </toolSections>
+        <toolSections name="Omcri links"/>
+        <toolSections name="Omcri mixins">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Actuator" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='ActuatorMixin'] //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='ActuatorMixin'] //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='ActuatorMixin'] //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='ActuatorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -598,9 +529,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create TouchSensor" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='TouchSensorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create TouchSensor" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='TouchSensorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -609,8 +538,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MotionActuator" containerMappings="
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MotionActuator">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -619,9 +547,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Sensor" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='SensorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Sensor" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='SensorMixin'] //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='SensorMixin'] //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='SensorMixin'] //@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='SensorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -630,9 +556,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create ColorSensor" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='ColorSensorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create ColorSensor" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='ColorSensorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -641,9 +565,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create UltrasonicSensor" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='UltrasonicSensorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create UltrasonicSensor" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='UltrasonicSensorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -652,9 +574,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MouthActuator" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='MouthActuatorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MouthActuator" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='MouthActuatorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -663,9 +583,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create FlightActuator" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='FlightActuatorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create FlightActuator" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='FlightActuatorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -674,9 +592,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create TurtlebotMotionActuator" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='TurtlebotMotionActuatorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create TurtlebotMotionActuator" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='TurtlebotMotionActuatorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -685,9 +601,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create LegoMindstormNXT2MotionActuator" containerMappings="
-//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='LegoMindstormNXT2MotionActuatorMixin']
-">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create LegoMindstormNXT2MotionActuator" containerMappings="//@ownedViewpoints[name='OmcriConfiguration']/@ownedRepresentations[name='OmcriConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='Legomindstormnxt2Container']/@subContainerMappings[name='LegoMindstormNXT2MotionActuatorMixin']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -696,7 +610,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-   </toolSections>    
+        </toolSections>
         <toolSections name="Tools">
           <ownedTools xsi:type="tool:DirectEditLabel" name="EditEntityTitle" inputLabelExpression="feature:title">
             <mask mask="{0}"/>
@@ -858,36 +772,6 @@
             <mask mask="{0}"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="duration" valueExpression="var:arg0"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="MotionactuatorMoveforwardAction" label="Moveforward" precondition="[self.oclIsKindOf(Motionactuator)/]">
-            <view name="views"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).moveforward()/]"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="MotionactuatorMovebackwardAction" label="Movebackward" precondition="[self.oclIsKindOf(Motionactuator)/]">
-            <view name="views"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).movebackward()/]"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="MotionactuatorTurnrightAction" label="Turnright" precondition="[self.oclIsKindOf(Motionactuator)/]">
-            <view name="views"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).turnright()/]"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="MotionactuatorTurnleftAction" label="Turnleft" precondition="[self.oclIsKindOf(Motionactuator)/]">
-            <view name="views"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).turnleft()/]"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="MotionactuatorStopAction" label="Stop" precondition="[self.oclIsKindOf(Motionactuator)/]">
-            <view name="views"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).stop()/]"/>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool:DirectEditLabel" name="EditColorsensorColor" inputLabelExpression="feature:color">
@@ -1111,8 +995,5 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
-<!--
-    <ownedJavaExtensions qualifiedClassName="org.occiware.clouddesigner.occi.design.services.DesignServices"/>
--->
   </ownedViewpoints>
 </description:Group>
