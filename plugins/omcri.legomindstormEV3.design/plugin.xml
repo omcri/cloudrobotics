@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="omcri.legomindstormEV3.design.Activator"
+               id="omcri.legomindstormEV3.design"
+	       name="legomindstormev3">
+    </component>
+  </extension>
+   <!-- Popup menu for creating a legomindstormev3 configuration file. -->
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.cmf.occi.core.category.ID"
+            name="OCCI Studio"/>
+      <wizard
+            category="org.eclipse.cmf.occi.core.occi-studio.category.ID"
+            class="omcri.legomindstormEV3.design.wizard.NewConfigurationWizard"
+            icon="platform:/plugin/org.eclipse.cmf.occi.core.edit/icons/full/obj16/Configuration.gif"
+            id="omcri.legomindstormEV3.design.wizard.NewConfigurationWizard"
+            name="legomindstormev3 Configuration File"/>
+   </extension>
+</plugin>

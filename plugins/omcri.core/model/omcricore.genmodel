@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2015-2017 Obeo, Inria&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#x9;&#xA;Contributors:&#xA;- William Piers &lt;william.piers@obeo.fr>&#xA;- Philippe Merle &lt;philippe.merle@inria.fr>&#xA;- Faiez Zalila &lt;faiez.zalila@inria.fr>" modelDirectory="/omcri.core/src-gen" editDirectory="/omcri.core.edit/src-gen" editorDirectory="/omcri.core.editor/src-gen" modelPluginID="omcri.core" modelName="Omcricore" testsDirectory="/omcri.core.tests/src" complianceLevel="8.0" copyrightFields="false" editPluginID="omcri.core.edit" editorPluginID="omcri.core.editor" testsPluginID="omcri.core.tests" operationReflection="true">
+  <genAnnotations source="http://www.eclipse.org/OCL/GenModel">
+    <details key="Use Delegates" value="false"/>
+  </genAnnotations>
+  <foreignModel>omcricore.ecore</foreignModel>
+  <genPackages prefix="Omcricore" disposableProviderFactory="true">
+    <ecorePackage href="omcricore.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="omcricore.ecore#//Color"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Color/WHITE"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Color/BLACK"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Color/BLUE"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Color/YELLOW"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Color/RED"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Color/GREEN"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="omcricore.ecore#//Touch"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Touch/PRESSED"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Touch/RELEASED"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="omcricore.ecore#//Touch/HIT"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Robotlink"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Robot"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Connection"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Connection/timeOut"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Connection/connect"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Connection/disconnect"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Sensor"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Colorsensor"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Colorsensor/color"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Colorsensor/light"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Colorsensor/darkness"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Colorsensor/colorLamp"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Colorsensor/sensecolor"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Flightactuator"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Flightactuator/horizontalTilt"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Flightactuator/verticalTilt"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Flightactuator/horizontalSpeed"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Flightactuator/verticalSpeed"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Flightactuator/move"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Flightactuator/land"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Flightactuator/takeoff"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Touchsensor"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Touchsensor/touch"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Touchsensor/sensetouch"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Ultrasonicsensor"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Ultrasonicsensor/distance"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Ultrasonicsensor/sensedistance"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Actuator"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Motionactuator"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Motionactuator/angle"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Motionactuator/speed"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="omcricore.ecore#//Motionactuator/duration"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Motionactuator/moveforward"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Motionactuator/movebackward"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Motionactuator/turnright"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Motionactuator/turnleft"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Motionactuator/stop"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="omcricore.ecore#//Mouthactuator"/>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Mouthactuator/openmouth"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="omcricore.ecore#//Mouthactuator/closemouth"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+  <usedGenPackages href="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.genmodel#//occi"/>
+</genmodel:GenModel>

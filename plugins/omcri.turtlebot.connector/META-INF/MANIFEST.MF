@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: omcri.turtlebot.connector
+Bundle-SymbolicName: omcri.turtlebot.connector;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .,
+ lib/TurtlebotControl.jar
+Bundle-Vendor: OCCIware
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.slf4j.api,
+ org.eclipse.cmf.occi.core,
+ omcri.turtlebot
+Export-Package: omcri.turtlebot.connector

@@ -1,0 +1,32 @@
+h1. OCCI parrotardrone extension
+
+
+
+| *Name* | parrotardrone |
+| *Scheme* | http://omcri.org/cloudrobotics/parrotardrone# |
+
+
+Imported OCCI Extensions:
+
+| *Name* | *Scheme* |
+| <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
+| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
+
+h1. Kinds
+
+h2. Kind ardrone
+
+| *Term* | ardrone |
+| *Scheme* | http://omcri.org/cloudrobotics/parrotardrone# |
+| *Title* |  |
+| *Parent* | <a href="omcricore.textile#kind-robot">http://omcri.org/cloudrobotics/core#robot</a> |
+
+Attributes of ardrone are:
+
+| *Attribute* | *Type* | *Required* | *Mutable* | *Default* | *Description* |
+| ipadress | <a href="core.textile#-string">String</a> | true | true |  |  |
+| ssid | <a href="core.textile#-string">String</a> | false | true |  |  |
+
+
+
+Generated at Mon Oct 02 10:22:38 CEST 2017 from platform:/resource/omcri.parrot.ardrone/model/parrotardrone.occie by org.eclipse.cmf.occi.core.gen.textile

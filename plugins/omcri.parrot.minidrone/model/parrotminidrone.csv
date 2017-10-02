@@ -1,0 +1,7 @@
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/","GET","","Retrieves all minidrone instances."
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/","POST","","Creates a new minidrone instance."
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/","DELETE","","Removes all minidrone instances."
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/{minidrone_id}","GET","","Retrieves this minidrone instance."
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/{minidrone_id}","POST","","Updates partially this minidrone instance."
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/{minidrone_id}","PUT","","Creates/Updates a minidrone instance."
+"OCCI","Parrotminidrone","http://occi.provider.com/minidrone/{minidrone_id}","DELETE","","Deletes this minidrone instance."

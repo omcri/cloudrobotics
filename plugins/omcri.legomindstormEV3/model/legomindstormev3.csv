@@ -1,0 +1,7 @@
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/","GET","","Retrieves all legomindstormev3 instances."
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/","POST","","Creates a new legomindstormev3 instance."
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/","DELETE","","Removes all legomindstormev3 instances."
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/{legomindstormev3_id}","GET","","Retrieves this legomindstormev3 instance."
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/{legomindstormev3_id}","POST","","Updates partially this legomindstormev3 instance."
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/{legomindstormev3_id}","PUT","","Creates/Updates a legomindstormev3 instance."
+"OCCI","Legomindstormev3","http://occi.provider.com/legomindstormev3/{legomindstormev3_id}","DELETE","","Deletes this legomindstormev3 instance."

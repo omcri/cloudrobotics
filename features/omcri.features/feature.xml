@@ -471,43 +471,230 @@ litigation.
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+    
     <!-- omcri modules part -->
     <plugin
-        id="omcri"
+        id="omcri.core"
         download-size="0"
         install-size="0"
         version="0.0.0"
         unpack="false"/>
     <plugin
-        id="omcri.edit"
+        id="omcri.core.edit"
         download-size="0"
         install-size="0"
         version="0.0.0"
         unpack="false"/>
     <plugin
-        id="omcri.editor"
+        id="omcri.core.editor"
         download-size="0"
         install-size="0"
         version="0.0.0"
         unpack="false"/>
     <plugin
-        id="omcri.tests"
+        id="omcri.core.tests"
         download-size="0"
         install-size="0"
         version="0.0.0"
         unpack="false"/>
     <plugin
-        id="omcri.design"
+        id="omcri.core.design"
         download-size="0"
         install-size="0"
         version="0.0.0"
         unpack="false"/>
     <plugin
-        id="omcri.connector"
+        id="omcri.core.connector"
         download-size="0"
         install-size="0"
         version="0.0.0"
         unpack="false"/>
+    
+    <plugin
+       id="omcri.legomindstormEV3"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormEV3.edit"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormEV3.editor"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormEV3.tests"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormEV3.design"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormEV3.connector"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    
+    <plugin
+       id="omcri.legomindstormNXT2"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormNXT2.edit"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormNXT2.editor"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormNXT2.tests"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormNXT2.design"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.legomindstormNXT2.connector"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    
+    <plugin
+       id="omcri.turtlebot"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.turtlebot.edit"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.turtlebot.editor"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.turtlebot.tests"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.turtlebot.design"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.turtlebot.connector"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    
+    <plugin
+       id="omcri.parrot.ardrone"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.ardrone.edit"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.ardrone.editor"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.ardrone.tests"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.ardrone.design"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.ardrone.connector"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    
+    <plugin
+       id="omcri.parrot.minidrone"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.minidrone.edit"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.minidrone.editor"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.minidrone.tests"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    <plugin
+       id="omcri.parrot.minidrone.design"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+        unpack="false"/>
+    <plugin
+       id="omcri.parrot.minidrone.connector"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+    
     <requires>
             <!-- Eclipse Modeling Framework and tools. -->
         <import feature="org.eclipse.emf" version="2.12.0.v20160526-0356"/>

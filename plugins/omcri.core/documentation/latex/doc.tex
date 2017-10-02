@@ -1,0 +1,519 @@
+\section{OCCI omcricore extension}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & omcricore \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Specification} &  \\
+  \hline
+\end{tabular}
+\end{center}
+
+\subsection{Imported OCCI extensions}
+
+\begin{center} 
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & core \\
+  \hline  
+  \textbf{Scheme} & http://schemas.ogf.org/occi/core\# \\
+  \hline
+\end{tabular}
+\end{center}
+
+
+\subsection{Types}
+\subsubsection{\texttt{Color} type}
+
+\textbf{Literals}
+\begin{itemize}
+\item \textbf{WHITE} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{BLACK} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{BLUE} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{YELLOW} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{RED} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{GREEN} 
+\end{itemize}
+
+\subsubsection{\texttt{Touch} type}
+
+\textbf{Literals}
+\begin{itemize}
+\item \textbf{PRESSED} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{RELEASED} 
+\end{itemize}
+\begin{itemize}
+\item \textbf{HIT} 
+\end{itemize}
+
+\subsection{Kinds}
+\subsubsection{\texttt{RobotLink} kind}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & RobotLink \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Generic robotlink to link resources with a robot \\
+  \hline
+  \textbf{Parent} & Link (http://schemas.ogf.org/occi/core\#) \\
+  \hline
+\end{tabular}
+\end{center}
+
+
+
+\subsubsection{\texttt{Robot} kind}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & Robot \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Generic robot \\
+  \hline
+  \textbf{Parent} & Resource (http://schemas.ogf.org/occi/core\#) \\
+  \hline
+\end{tabular}
+\end{center}
+
+
+
+\subsection{Mixins}
+\subsubsection{\texttt{Connection} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & Connection \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Connect/disconnect to robot \\
+  \hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item \textbf{Applies to}:
+\begin{itemize}
+	\item Robot (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize} 
+
+\begin{itemize}
+\item \textbf{\texttt{Connection} attributes}
+
+\begin{tabularx}{\textwidth}{|l|l|p{1.4cm}|p{1.3cm}|l|X|}
+  \hline
+  \textbf{Attribute} & \textbf{Type} & \textbf{Required} & \textbf{Mutable} & \textbf{Default} & \textbf{Description} \\
+  \hline  
+  timeOut &  & false & true &  & Timeout session in seconds if no connections \\
+  \hline
+\end{tabularx}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{Connection} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/connection/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  connect & &  \\
+  \hline
+  disconnect & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 
+\subsubsection{\texttt{Sensor} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & Sensor \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Generic sensor \\
+  \hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item \textbf{Applies to}:
+\begin{itemize}
+	\item Robot (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize} 
+
+
+
+ 
+\subsubsection{\texttt{ColorSensor} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & ColorSensor \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Sensor color detection \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Depends on}:
+\begin{itemize}
+	\item Sensor (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{ColorSensor} attributes}
+
+\begin{tabularx}{\textwidth}{|l|l|p{1.4cm}|p{1.3cm}|l|X|}
+  \hline
+  \textbf{Attribute} & \textbf{Type} & \textbf{Required} & \textbf{Mutable} & \textbf{Default} & \textbf{Description} \\
+  \hline  
+  color & Color & false & true &  &  \\
+  \hline
+  light &  & false & true &  &  \\
+  \hline
+  darkness &  & false & true &  &  \\
+  \hline
+  colorLamp & Color & false & true &  &  \\
+  \hline
+\end{tabularx}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{ColorSensor} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/colorsensor/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  sensecolor & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 
+\subsubsection{\texttt{FlightActuator} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & FlightActuator \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} &  \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Depends on}:
+\begin{itemize}
+	\item Actuator (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{FlightActuator} attributes}
+
+\begin{tabularx}{\textwidth}{|l|l|p{1.4cm}|p{1.3cm}|l|X|}
+  \hline
+  \textbf{Attribute} & \textbf{Type} & \textbf{Required} & \textbf{Mutable} & \textbf{Default} & \textbf{Description} \\
+  \hline  
+  horizontalTilt &  & false & true &  &  \\
+  \hline
+  verticalTilt &  & false & true &  &  \\
+  \hline
+  horizontalSpeed &  & false & true &  &  \\
+  \hline
+  verticalSpeed &  & false & true &  &  \\
+  \hline
+\end{tabularx}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{FlightActuator} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/flightactuator/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  move & &  \\
+  \hline
+  land & &  \\
+  \hline
+  takeoff & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 
+\subsubsection{\texttt{TouchSensor} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & TouchSensor \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Touch detection \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Depends on}:
+\begin{itemize}
+	\item Sensor (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{TouchSensor} attributes}
+
+\begin{tabularx}{\textwidth}{|l|l|p{1.4cm}|p{1.3cm}|l|X|}
+  \hline
+  \textbf{Attribute} & \textbf{Type} & \textbf{Required} & \textbf{Mutable} & \textbf{Default} & \textbf{Description} \\
+  \hline  
+  touch & Color & false & true &  &  \\
+  \hline
+\end{tabularx}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{TouchSensor} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/touchsensor/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  sensetouch & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 
+\subsubsection{\texttt{UltrasonicSensor} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & UltrasonicSensor \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Sensor distance detection \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Depends on}:
+\begin{itemize}
+	\item Sensor (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{UltrasonicSensor} attributes}
+
+\begin{tabularx}{\textwidth}{|l|l|p{1.4cm}|p{1.3cm}|l|X|}
+  \hline
+  \textbf{Attribute} & \textbf{Type} & \textbf{Required} & \textbf{Mutable} & \textbf{Default} & \textbf{Description} \\
+  \hline  
+  distance &  & false & true &  &  \\
+  \hline
+\end{tabularx}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{UltrasonicSensor} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/ultrasonicsensor/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  sensedistance & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 
+\subsubsection{\texttt{Actuator} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & Actuator \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} & Generic actuator \\
+  \hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item \textbf{Applies to}:
+\begin{itemize}
+	\item Robot (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize} 
+
+
+
+ 
+\subsubsection{\texttt{MotionActuator} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & MotionActuator \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} &  \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Depends on}:
+\begin{itemize}
+	\item Actuator (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{MotionActuator} attributes}
+
+\begin{tabularx}{\textwidth}{|l|l|p{1.4cm}|p{1.3cm}|l|X|}
+  \hline
+  \textbf{Attribute} & \textbf{Type} & \textbf{Required} & \textbf{Mutable} & \textbf{Default} & \textbf{Description} \\
+  \hline  
+  angle &  & false & true & 45 &  \\
+  \hline
+  speed &  & false & true & 100 &  \\
+  \hline
+  duration &  & false & true & 1000 &  \\
+  \hline
+\end{tabularx}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{\texttt{MotionActuator} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/motionactuator/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  moveforward & &  \\
+  \hline
+  movebackward & &  \\
+  \hline
+  turnright & &  \\
+  \hline
+  turnleft & &  \\
+  \hline
+  stop & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 
+\subsubsection{\texttt{MouthActuator} mixin}
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Name} & MouthActuator \\
+  \hline  
+  \textbf{Scheme} & http://omcri.org/cloudrobotics/core\# \\
+  \hline
+  \textbf{Title} &  \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Depends on}:
+\begin{itemize}
+	\item Actuator (http://omcri.org/cloudrobotics/core\#)
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{\texttt{MouthActuator} actions}
+
+\begin{itemize}
+	\item \textbf{Scheme}: http://omcri.org/cloudrobotics/core/mouthactuator/action\#
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Term}  & \textbf{Attributes} & \textbf{Title} \\
+  \hline  
+  openmouth & &  \\
+  \hline
+  closemouth & &  \\
+  \hline
+\end{tabular}
+\end{center}
+\end{itemize}
+
+ 

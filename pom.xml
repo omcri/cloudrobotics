@@ -151,12 +151,64 @@
     </dependencies>
     <modules>
         <!-- OMCRI modules -->
-        <module>plugins/omcri</module>
+        
+        <!-- OMCRI core -->
+        <module>plugins/omcri.core</module>
+        <module>plugins/omcri.core.edit</module>
+        <module>plugins/omcri.core.editor</module>
+        <module>plugins/omcri.core.connector</module>
+        <module>plugins/omcri.core.design</module>
+        <module>plugins/omcri.core.tests</module>
+        
+        <!-- OMCRI Lego mindstorm EV3 -->
+        <module>plugins/omcri.legomindstormEV3</module>
+        <module>plugins/omcri.legomindstormEV3.edit</module>
+        <module>plugins/omcri.legomindstormEV3.editor</module>
+        <module>plugins/omcri.legomindstormEV3.connector</module>
+        <module>plugins/omcri.legomindstormEV3.design</module>
+        <module>plugins/omcri.legomindstormEV3.tests</module>
+        
+        <!-- OMCRI Lego mindstorm NXT2 -->
+        <module>plugins/omcri.legomindstormNXT2</module>
+        <module>plugins/omcri.legomindstormNXT2.edit</module>
+        <module>plugins/omcri.legomindstormNXT2.editor</module>
+        <module>plugins/omcri.legomindstormNXT2.connector</module>
+        <module>plugins/omcri.legomindstormNXT2.design</module>
+        <module>plugins/omcri.legomindstormNXT2.tests</module>
+        
+        <!-- OMCRI Turtlebot -->
+        <module>plugins/omcri.turtlebot</module>
+        <module>plugins/omcri.turtlebot.edit</module>
+        <module>plugins/omcri.turtlebot.editor</module>
+        <module>plugins/omcri.turtlebot.connector</module>
+        <module>plugins/omcri.turtlebot.design</module>
+        <module>plugins/omcri.turtlebot.tests</module>
+        
+        <!-- OMCRI Parrot ARDrone -->
+        <module>plugins/omcri.parrot.ardrone</module>
+        <module>plugins/omcri.parrot.ardrone.edit</module>
+        <module>plugins/omcri.parrot.ardrone.editor</module>
+        <module>plugins/omcri.parrot.ardrone.connector</module>
+        <module>plugins/omcri.parrot.ardrone.design</module>
+        <module>plugins/omcri.parrot.ardrone.tests</module>
+        
+        
+        <!-- OMCRI Parrot Minidrone current: Cargo Mars -->
+        <module>plugins/omcri.parrot.minidrone</module>
+        <module>plugins/omcri.parrot.minidrone.edit</module>
+        <module>plugins/omcri.parrot.minidrone.editor</module>
+        <module>plugins/omcri.parrot.minidrone.connector</module>
+        <module>plugins/omcri.parrot.minidrone.design</module>
+        <module>plugins/omcri.parrot.minidrone.tests</module>
+        
+        
+        <!-- old modules -->
+        <!--<module>plugins/omcri</module>
         <module>plugins/omcri.edit</module>
         <module>plugins/omcri.editor</module>
         <module>plugins/omcri.tests</module>
         <module>plugins/omcri.connector</module>
-        <module>plugins/omcri.design</module>
+        <module>plugins/omcri.design</module> -->
         
         <!-- Releng -->
         <module>features/omcri.features</module>
