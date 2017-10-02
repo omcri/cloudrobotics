@@ -1,0 +1,31 @@
+h1. OCCI legomindstormnxt2 extension
+
+
+
+| *Name* | legomindstormnxt2 |
+| *Scheme* | http://omcri.org/cloudrobotics/mindstormnxt# |
+
+
+Imported OCCI Extensions:
+
+| *Name* | *Scheme* |
+| <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
+| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
+
+h1. Kinds
+
+h2. Kind legomindstormnxt2
+
+| *Term* | legomindstormnxt2 |
+| *Scheme* | http://omcri.org/cloudrobotics/mindstormnxt# |
+| *Title* |  |
+| *Parent* | <a href="omcricore.textile#kind-robot">http://omcri.org/cloudrobotics/core#robot</a> |
+
+Attributes of legomindstormnxt2 are:
+
+| *Attribute* | *Type* | *Required* | *Mutable* | *Default* | *Description* |
+| macAddress | <a href="core.textile#-string">String</a> | false | true |  |  |
+
+
+
+Generated at Mon Oct 02 16:49:24 CEST 2017 from http://omcri.org/cloudrobotics/mindstormnxt by org.eclipse.cmf.occi.core.gen.textile

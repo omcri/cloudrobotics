@@ -16,6 +16,8 @@ package omcri.turtlebot.connector;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import omcri.core.IRobotController;
 import tb.TurtlebotControl;
 
 /**
@@ -29,15 +31,12 @@ public class TurtlebotConnector extends omcri.turtlebot.impl.TurtlebotImpl {
 	 */
 	private static Logger LOGGER = LoggerFactory.getLogger(TurtlebotConnector.class);
 
-	private TurtlebotControl turtlebotControl;
-
+	private IRobotController robotController = null;
+	
+	
 	private boolean isConnected = false;
 	// Define if controller is instanced.
 	private boolean hasController = false;
-
-	public TurtlebotControl getTurtlebotControl() {
-		return turtlebotControl;
-	}
 	
 	public boolean isConnected()
 	{ 
@@ -69,7 +68,13 @@ public class TurtlebotConnector extends omcri.turtlebot.impl.TurtlebotImpl {
 	@Override
 	public void occiCreate() {
 		LOGGER.debug("occiCreate() called on " + this);
-		turtlebotControl = new TurtlebotControl(this.getUser(), this.getPassword(), this.getIpaddress());
+		if (robotController == null) {
+			robotController = new TurtlebotMotionController(this.getUser(), this.getPassword(), this.getIpaddress());
+		} else {
+			((TurtlebotMotionController) robotController).setHostAddress(getIpaddress());
+			((TurtlebotMotionController) robotController).setUsername(getUser());
+			((TurtlebotMotionController) robotController).setPassword(getPassword());
+		}
 		hasController = true;
 		connect();
 	}
@@ -93,7 +98,11 @@ public class TurtlebotConnector extends omcri.turtlebot.impl.TurtlebotImpl {
 	@Override
 	public void occiUpdate() {
 		LOGGER.debug("occiUpdate() called on " + this);
-		// TODO: Implement this callback or remove this method.
+		if (robotController != null) {
+			((TurtlebotMotionController) robotController).setHostAddress(getIpaddress());
+			((TurtlebotMotionController) robotController).setUsername(getUser());
+			((TurtlebotMotionController) robotController).setPassword(getPassword());
+		}
 	}
 	// End of user code
 
@@ -121,7 +130,7 @@ public class TurtlebotConnector extends omcri.turtlebot.impl.TurtlebotImpl {
 		LOGGER.info("Connect to this turtlebot : " + this.getId());
 		try {
 			if (!isConnected && hasController) {
-				turtlebotControl.connect();
+				robotController.connect();
 				isConnected = true;
 			}
 		} catch (Exception ex) {
@@ -137,11 +146,17 @@ public class TurtlebotConnector extends omcri.turtlebot.impl.TurtlebotImpl {
 		// LOGGER.debug("Disconnect from this turtlebot : " + this.getId());
 		try {
 			if (isConnected && hasController) {
-				turtlebotControl.disconnect();
+				robotController.disconnect();
 			}
 		} catch (Exception ex) {
 			LOGGER.error("Error while disconnecting from turtlebot : " + this.getId() + " --> " + ex.getMessage());
 		}
 		
 	}
+	
+	@Override
+	public IRobotController getRobotController() {
+		return robotController;
+	}
+	
 }

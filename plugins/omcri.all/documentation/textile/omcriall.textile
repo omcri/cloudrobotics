@@ -1,0 +1,20 @@
+h1. OCCI omcriall extension
+
+
+
+| *Name* | omcriall |
+| *Scheme* | http://omcri.org/cloudrobotics/all# |
+
+
+Imported OCCI Extensions:
+
+| *Name* | *Scheme* |
+| <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
+| <a href="legomindstormnxt2.textile">legomindstormnxt2</a> | http://omcri.org/cloudrobotics/mindstormnxt# |
+| <a href="turtlebot.textile">turtlebot</a> | http://omcri.org/cloudrobotics/turtlebot# |
+| <a href=".textile"></a> |  |
+| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
+| <a href=".textile"></a> |  |
+| <a href=".textile"></a> |  |
+
+Generated at Mon Oct 02 16:49:24 CEST 2017 from platform:/resource/omcri.all/model/omcriall.occie by org.eclipse.cmf.occi.core.gen.textile
