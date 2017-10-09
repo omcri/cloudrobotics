@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <occi:Extension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" name="omcricore" scheme="http://omcri.org/cloudrobotics/core#">
   <import href="http://schemas.ogf.org/occi/core#/"/>
-  <kinds name="RobotLink" scheme="http://omcri.org/cloudrobotics/core#" title="Generic robotlink to link resources with a robot">
+  <kinds name="RobotLink" scheme="http://omcri.org/cloudrobotics/core#" title="Generic robotlink to link resources with a robot" target="//@kinds[term='robot']">
     <parent href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
   </kinds>
   <kinds name="Robot" scheme="http://omcri.org/cloudrobotics/core#" title="Generic robot">
