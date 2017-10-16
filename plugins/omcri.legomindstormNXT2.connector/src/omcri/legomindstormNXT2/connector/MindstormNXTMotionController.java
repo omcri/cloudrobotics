@@ -17,22 +17,21 @@ import omcri.core.IRobotController;
 public class MindstormNXTMotionController implements IMotionController {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(MindstormNXTMotionController.class);
-	
+
 	private NXTComm nxtComm = null;
 	private NXTInfo nxt = null;
 	DataOutputStream dos;
 	DataInputStream dis;
-	
+
 	private int angle;
 	private int duration;
 	private int speed;
-	
+
 	private boolean connected = false;
-	
-	
+
 	public String name; // "ClapTrap"
 	public String macAddress; // "00:16:53:10:10:C3"
-	
+
 	public MindstormNXTMotionController(final String name, final String macAddress) {
 		this.name = name;
 		this.macAddress = macAddress;
@@ -43,8 +42,7 @@ public class MindstormNXTMotionController implements IMotionController {
 			LOGGER.warn("No mac address is specified on controller, must be updated to control the lego nxt.");
 		}
 	}
-	
-	
+
 	@Override
 	public IRobotController getRobotController() {
 		return this;
@@ -58,7 +56,7 @@ public class MindstormNXTMotionController implements IMotionController {
 	@Override
 	public void setAngle(int value) {
 		this.angle = value;
-		
+
 	}
 
 	@Override
@@ -69,7 +67,7 @@ public class MindstormNXTMotionController implements IMotionController {
 	@Override
 	public void setSpeed(int value) {
 		this.speed = value;
-		
+
 	}
 
 	@Override
@@ -84,44 +82,49 @@ public class MindstormNXTMotionController implements IMotionController {
 
 	@Override
 	public void moveforward() {
-		try {
-			dos.writeInt(1);
-			dos.flush();
-			dos.writeInt(duration);
-			dos.flush();
-			getAcknowledgement();
-		} catch (IOException e) {
-			e.printStackTrace();
+		if (connected) {
+			try {
+				dos.writeInt(1);
+				dos.flush();
+				dos.writeInt(duration);
+				dos.flush();
+				getAcknowledgement();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-		
+
 	}
 
 	@Override
 	public void movebackward() {
-		try {
-			dos.writeInt(5);
-			dos.flush();
-			dos.writeInt(duration);
-			dos.flush();
-			getAcknowledgement();
-		} catch (IOException e) {
-			e.printStackTrace();
+		if (connected) {
+			try {
+				dos.writeInt(5);
+				dos.flush();
+				dos.writeInt(duration);
+				dos.flush();
+				getAcknowledgement();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-		
 	}
 
 	@Override
 	public void turnright() {
-		try {
-			dos.writeInt(4);
-			dos.flush();
-			dos.writeInt(angle);
-			dos.flush();
-			getAcknowledgement();
-		} catch (IOException e) {
-			e.printStackTrace();
+		if (connected) {
+			try {
+				dos.writeInt(4);
+				dos.flush();
+				dos.writeInt(angle);
+				dos.flush();
+				getAcknowledgement();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-		
+
 	}
 
 	@Override
@@ -135,50 +138,53 @@ public class MindstormNXTMotionController implements IMotionController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	@Override
 	public void stop() {
-		try {
-			dos.writeInt(6);
-			dos.flush();
-			dos.writeInt(0);
-			dos.flush();
-			getAcknowledgement();
-		} catch (IOException e) {
-			e.printStackTrace();
+		if (connected) {
+			try {
+				dos.writeInt(6);
+				dos.flush();
+				dos.writeInt(0);
+				dos.flush();
+				getAcknowledgement();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
 	@Override
 	public void connect() {
-		try {
-			System.out.println("Connecting to nxt2 bluetooth with parameters: " + name + " --> " + macAddress);
-			nxtComm = NXTCommFactory.createNXTComm(NXTCommFactory.BLUETOOTH);
-			nxt = new NXTInfo(NXTCommFactory.BLUETOOTH, name, macAddress);
-			int i = 0;
-			while (!nxtComm.open(nxt)) {
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException ex) {
+		if (!connected) {
+			try {
+				System.out.println("Connecting to nxt2 bluetooth with parameters: " + name + " --> " + macAddress);
+				nxtComm = NXTCommFactory.createNXTComm(NXTCommFactory.BLUETOOTH);
+				nxt = new NXTInfo(NXTCommFactory.BLUETOOTH, name, macAddress);
+				int i = 0;
+				while (!nxtComm.open(nxt)) {
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException ex) {
+					}
+					i++;
+					LOGGER.warn("Tentative de connection nb : " + i);
 				}
-				i++;
-				LOGGER.warn("Tentative de connection nb : " + i);
+				connected = true;
+			} catch (NXTCommException e) {
+				e.printStackTrace();
+				LOGGER.error(e.getMessage());
+				connected = false;
 			}
-			connected = true;
-		} catch (NXTCommException e) {
-			e.printStackTrace();
-			LOGGER.error(e.getMessage());
-			connected = false;
 		}
 		if (connected) {
 			LOGGER.info("connected to mindstorm nxt2 for name: " + name);
 			dos = new DataOutputStream(nxtComm.getOutputStream());
 			dis = new DataInputStream(nxtComm.getInputStream());
 		}
-		
-		
+
 	}
 
 	@Override
@@ -194,7 +200,7 @@ public class MindstormNXTMotionController implements IMotionController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	/**
@@ -203,13 +209,15 @@ public class MindstormNXTMotionController implements IMotionController {
 	 * @throws IOException
 	 */
 	private Integer getAcknowledgement() throws IOException {
-		try {
-			int command = dis.readInt();
+		if (connected) {
+			try {
+				int command = dis.readInt();
 
-			System.out.println("Command successful.");
-			return command;
-		} catch (IOException e) {
-			failedAcknowledgment();
+				System.out.println("Command successful.");
+				return command;
+			} catch (IOException e) {
+				failedAcknowledgment();
+			}
 		}
 		return null;
 	}
@@ -226,11 +234,9 @@ public class MindstormNXTMotionController implements IMotionController {
 		nxtComm.close();
 	}
 
-
 	@Override
 	public boolean isConnected() {
 		return connected;
 	}
-	
 
 }
