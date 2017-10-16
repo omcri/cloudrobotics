@@ -37,7 +37,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class UltrasonicsensorItemProvider extends MixinBaseItemProvider {
+public class UltrasonicsensorItemProvider extends SensorItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -105,7 +105,8 @@ public class UltrasonicsensorItemProvider extends MixinBaseItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Ultrasonicsensor)object).getDistance();
+		Integer labelValue = ((Ultrasonicsensor)object).getDistance();
+		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Ultrasonicsensor_type") :
 			getString("_UI_Ultrasonicsensor_type") + " " + label;
@@ -141,17 +142,6 @@ public class UltrasonicsensorItemProvider extends MixinBaseItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-	}
-
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return OmcricoreEditPlugin.INSTANCE;
 	}
 
 }

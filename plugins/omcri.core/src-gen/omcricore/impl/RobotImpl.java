@@ -50,6 +50,7 @@ public class RobotImpl extends ResourceImpl implements Robot {
 
 	/**
 	 * Get default controller for this robot.
+	 * @notgenerated
 	 */
 	public IRobotController getRobotController() {
 		// Default to no controller.

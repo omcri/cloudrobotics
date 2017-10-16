@@ -709,7 +709,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='BooleanTypeContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='BooleanTypeContainer']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__I_W5KUZEeegWPP5Rj9Jsg" name="boolean" tooltipText="org.eclipse.cmf.occi.core.impl.BooleanTypeImpl@19d27788 (name: Boolean, documentation: Data type for booleans)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__I_W5KUZEeegWPP5Rj9Jsg" name="boolean" tooltipText="org.eclipse.cmf.occi.core.impl.BooleanTypeImpl@2cc3e1d6 (name: Boolean, documentation: Data type for booleans)">
           <target xmi:type="occi:BooleanType" href="http://schemas.ogf.org/occi/core#//@types.1"/>
           <semanticElements xmi:type="occi:BooleanType" href="http://schemas.ogf.org/occi/core#//@types.1"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="__I_W5aUZEeegWPP5Rj9Jsg" labelSize="10" showIcon="false">
@@ -730,7 +730,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='StringTypeContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='StringTypeContainer']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__I_W6KUZEeegWPP5Rj9Jsg" name="java.lang.String" tooltipText="org.eclipse.cmf.occi.core.impl.StringTypeImpl@4d61d93a (name: String, documentation: Data type for strings) (pattern: null, length: &lt;unset>, minLength: &lt;unset>, maxLength: &lt;unset>)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__I_W6KUZEeegWPP5Rj9Jsg" name="java.lang.String" tooltipText="org.eclipse.cmf.occi.core.impl.StringTypeImpl@793b9030 (name: String, documentation: Data type for strings) (pattern: null, length: &lt;unset>, minLength: &lt;unset>, maxLength: &lt;unset>)">
           <target xmi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
           <semanticElements xmi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="__I_W6aUZEeegWPP5Rj9Jsg" labelSize="10" showIcon="false">
@@ -751,7 +751,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='NumericTypeContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='NumericTypeContainer']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__I_W7KUZEeegWPP5Rj9Jsg" name="Integer" tooltipText="org.eclipse.cmf.occi.core.impl.NumericTypeImpl@541cca3f (name: Integer, documentation: Data type for integers) (type: Integer, totalDigits: &lt;unset>, minExclusive: &lt;unset>, maxExclusive: &lt;unset>, minInclusive: &lt;unset>, maxInclusive: &lt;unset>)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__I_W7KUZEeegWPP5Rj9Jsg" name="Integer" tooltipText="org.eclipse.cmf.occi.core.impl.NumericTypeImpl@1c131508 (name: Integer, documentation: Data type for integers) (type: Integer, totalDigits: &lt;unset>, minExclusive: &lt;unset>, maxExclusive: &lt;unset>, minInclusive: &lt;unset>, maxInclusive: &lt;unset>)">
           <target xmi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
           <semanticElements xmi:type="occi:NumericType" href="http://schemas.ogf.org/occi/core#//@types.2"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="__I_W7aUZEeegWPP5Rj9Jsg" labelSize="10" showIcon="false">
@@ -833,7 +833,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HirlsKUaEeegWPP5Rj9Jsg" name="timeOut">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HirlsKUaEeegWPP5Rj9Jsg" name="timeOut: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='connection']/@attributes.0"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='connection']/@attributes.0"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi4aAKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -889,7 +889,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi6PMaUaEeegWPP5Rj9Jsg" name="light">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi6PMaUaEeegWPP5Rj9Jsg" name="light: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='colorsensor']/@attributes.1"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='colorsensor']/@attributes.1"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi62QKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -897,7 +897,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi62QaUaEeegWPP5Rj9Jsg" name="darkness">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi62QaUaEeegWPP5Rj9Jsg" name="darkness: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='colorsensor']/@attributes.2"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='colorsensor']/@attributes.2"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi7dUKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -933,7 +933,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi8EY6UaEeegWPP5Rj9Jsg" name="horizontalTilt">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi8EY6UaEeegWPP5Rj9Jsg" name="horizontalTilt: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.0"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.0"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi9SgKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -941,7 +941,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi9SgaUaEeegWPP5Rj9Jsg" name="verticalTilt">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi9SgaUaEeegWPP5Rj9Jsg" name="verticalTilt: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.1"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.1"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi95kKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -949,7 +949,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi95kaUaEeegWPP5Rj9Jsg" name="horizontalSpeed">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi95kaUaEeegWPP5Rj9Jsg" name="horizontalSpeed: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.2"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.2"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi-goKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -957,7 +957,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi-goaUaEeegWPP5Rj9Jsg" name="verticalSpeed">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Hi-goaUaEeegWPP5Rj9Jsg" name="verticalSpeed: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.3"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='flightactuator']/@attributes.3"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_Hi_HsKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -1029,7 +1029,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjA84qUaEeegWPP5Rj9Jsg" name="distance">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjA84qUaEeegWPP5Rj9Jsg" name="distance: Integer">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='ultrasonicsensor']/@attributes.0"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='ultrasonicsensor']/@attributes.0"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_HjBj8KUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -1069,7 +1069,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjCLAqUaEeegWPP5Rj9Jsg" name="angle=45">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjCLAqUaEeegWPP5Rj9Jsg" name="angle: Integer=45">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='motionactuator']/@attributes.0"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='motionactuator']/@attributes.0"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_HjDZIKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -1077,7 +1077,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjDZIaUaEeegWPP5Rj9Jsg" name="speed=100">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjDZIaUaEeegWPP5Rj9Jsg" name="speed: Integer=100">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='motionactuator']/@attributes.1"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='motionactuator']/@attributes.1"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_HjEAMKUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">
@@ -1085,7 +1085,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']/@ownedRepresentations[name='Extension%20diagram']/@defaultLayer/@containerMappings[name='MixinContainer']/@subNodeMappings[name='MixinAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjEAMaUaEeegWPP5Rj9Jsg" name="duration=1000">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_HjEAMaUaEeegWPP5Rj9Jsg" name="duration: Integer=1000">
         <target xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='motionactuator']/@attributes.2"/>
         <semanticElements xmi:type="occi:Attribute" href="model/omcricore.occie#//@mixins[term='motionactuator']/@attributes.2"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_HjEAMqUaEeegWPP5Rj9Jsg" labelSize="10" labelAlignment="LEFT" labelPosition="node">

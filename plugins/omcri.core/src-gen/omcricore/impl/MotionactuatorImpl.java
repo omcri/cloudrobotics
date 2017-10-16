@@ -66,7 +66,7 @@ import org.eclipse.ocl.pivot.values.IntegerValue;
  *
  * @generated
  */
-public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator {
+public class MotionactuatorImpl extends ActuatorImpl implements Motionactuator {
 	/**
 	 * The default value of the '{@link #getAngle() <em>Angle</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,7 +75,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ANGLE_EDEFAULT = "45";
+	protected static final Integer ANGLE_EDEFAULT = new Integer(45);
 
 	/**
 	 * The cached value of the '{@link #getAngle() <em>Angle</em>}' attribute.
@@ -85,7 +85,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String angle = ANGLE_EDEFAULT;
+	protected Integer angle = ANGLE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getSpeed() <em>Speed</em>}' attribute.
@@ -95,7 +95,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String SPEED_EDEFAULT = "100";
+	protected static final Integer SPEED_EDEFAULT = new Integer(100);
 
 	/**
 	 * The cached value of the '{@link #getSpeed() <em>Speed</em>}' attribute.
@@ -105,7 +105,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String speed = SPEED_EDEFAULT;
+	protected Integer speed = SPEED_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getDuration() <em>Duration</em>}' attribute.
@@ -115,7 +115,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DURATION_EDEFAULT = "1000";
+	protected static final Integer DURATION_EDEFAULT = new Integer(1000);
 
 	/**
 	 * The cached value of the '{@link #getDuration() <em>Duration</em>}' attribute.
@@ -125,7 +125,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String duration = DURATION_EDEFAULT;
+	protected Integer duration = DURATION_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +151,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getAngle() {
+	public Integer getAngle() {
 		return angle;
 	}
 
@@ -160,8 +160,8 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAngle(String newAngle) {
-		String oldAngle = angle;
+	public void setAngle(Integer newAngle) {
+		Integer oldAngle = angle;
 		angle = newAngle;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.MOTIONACTUATOR__ANGLE, oldAngle, angle));
@@ -172,7 +172,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSpeed() {
+	public Integer getSpeed() {
 		return speed;
 	}
 
@@ -181,8 +181,8 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSpeed(String newSpeed) {
-		String oldSpeed = speed;
+	public void setSpeed(Integer newSpeed) {
+		Integer oldSpeed = speed;
 		speed = newSpeed;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.MOTIONACTUATOR__SPEED, oldSpeed, speed));
@@ -193,7 +193,7 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDuration() {
+	public Integer getDuration() {
 		return duration;
 	}
 
@@ -202,8 +202,8 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDuration(String newDuration) {
-		String oldDuration = duration;
+	public void setDuration(Integer newDuration) {
+		Integer oldDuration = duration;
 		duration = newDuration;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.MOTIONACTUATOR__DURATION, oldDuration, duration));
@@ -259,43 +259,6 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean appliesConstraint(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
-		/**
-		 *
-		 * inv appliesConstraint:
-		 *   let severity : Integer[1] = 'Actuator::appliesConstraint'.getSeverity()
-		 *   in
-		 *     if severity <= 0
-		 *     then true
-		 *     else
-		 *       let result : occi::Boolean[1] = self.entity.oclIsKindOf(Robot)
-		 *       in
-		 *         'Actuator::appliesConstraint'.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
-		 *     endif
-		 */
-		final /*@NonInvalid*/ Executor executor = PivotUtilInternal.getExecutor(this);
-		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
-		final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, OmcricoreTables.STR_Actuator_c_c_appliesConstraint);
-		final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, OmcricoreTables.INT_0).booleanValue();
-		/*@NonInvalid*/ boolean symbol_0;
-		if (le) {
-			symbol_0 = ValueUtil.TRUE_VALUE;
-		}
-		else {
-			final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcricore_c_c_Robot_0 = idResolver.getClass(OmcricoreTables.CLSSid_Robot, null);
-			final /*@NonInvalid*/ Entity entity = this.getEntity();
-			final /*@NonInvalid*/ boolean result = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity, TYP_omcricore_c_c_Robot_0).booleanValue();
-			final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, OmcricoreTables.STR_Actuator_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, OmcricoreTables.INT_0).booleanValue();
-			symbol_0 = logDiagnostic;
-		}
-		return Boolean.TRUE == symbol_0;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -318,13 +281,13 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case OmcricorePackage.MOTIONACTUATOR__ANGLE:
-				setAngle((String)newValue);
+				setAngle((Integer)newValue);
 				return;
 			case OmcricorePackage.MOTIONACTUATOR__SPEED:
-				setSpeed((String)newValue);
+				setSpeed((Integer)newValue);
 				return;
 			case OmcricorePackage.MOTIONACTUATOR__DURATION:
-				setDuration((String)newValue);
+				setDuration((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -375,22 +338,6 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 	 * @generated
 	 */
 	@Override
-	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
-		if (baseClass == Actuator.class) {
-			switch (baseOperationID) {
-				case OmcricorePackage.ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP: return OmcricorePackage.MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
-				default: return -1;
-			}
-		}
-		return super.eDerivedOperationID(baseOperationID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
@@ -409,8 +356,6 @@ public class MotionactuatorImpl extends MixinBaseImpl implements Motionactuator 
 			case OmcricorePackage.MOTIONACTUATOR___STOP:
 				stop();
 				return null;
-			case OmcricorePackage.MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP:
-				return appliesConstraint((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
 		}
 		return super.eInvoke(operationID, arguments);
 	}

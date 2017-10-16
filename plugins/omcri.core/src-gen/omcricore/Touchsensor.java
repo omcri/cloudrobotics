@@ -30,7 +30,7 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * @model
  * @generated
  */
-public interface Touchsensor extends MixinBase, Sensor {
+public interface Touchsensor extends Sensor, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Touch</b></em>' attribute.
 	 * The literals are from the enumeration {@link omcricore.Color}.

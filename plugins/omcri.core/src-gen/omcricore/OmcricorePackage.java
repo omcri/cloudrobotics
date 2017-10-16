@@ -224,13 +224,22 @@ public interface OmcricorePackage extends EPackage {
 	int ROBOTLINK___LINK_SOURCE_INVARIANT__KIND_KIND = OCCIPackage.LINK___LINK_SOURCE_INVARIANT__KIND_KIND;
 
 	/**
+	 * The operation id for the '<em>Target Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROBOTLINK___TARGET_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.LINK_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Robotlink</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROBOTLINK_OPERATION_COUNT = OCCIPackage.LINK_OPERATION_COUNT + 0;
+	int ROBOTLINK_OPERATION_COUNT = OCCIPackage.LINK_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.RobotImpl <em>Robot</em>}' class.
@@ -558,7 +567,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
+	int COLORSENSOR__MIXIN = SENSOR__MIXIN;
 
 	/**
 	 * The feature id for the '<em><b>Entity</b></em>' container reference.
@@ -567,7 +576,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
+	int COLORSENSOR__ENTITY = SENSOR__ENTITY;
 
 	/**
 	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
@@ -576,7 +585,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
+	int COLORSENSOR__ATTRIBUTES = SENSOR__ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Color</b></em>' attribute.
@@ -585,7 +594,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__COLOR = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
+	int COLORSENSOR__COLOR = SENSOR_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Light</b></em>' attribute.
@@ -594,7 +603,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__LIGHT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
+	int COLORSENSOR__LIGHT = SENSOR_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Darkness</b></em>' attribute.
@@ -603,7 +612,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__DARKNESS = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 2;
+	int COLORSENSOR__DARKNESS = SENSOR_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Color Lamp</b></em>' attribute.
@@ -612,7 +621,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR__COLOR_LAMP = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 3;
+	int COLORSENSOR__COLOR_LAMP = SENSOR_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Colorsensor</em>' class.
@@ -621,7 +630,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 4;
+	int COLORSENSOR_FEATURE_COUNT = SENSOR_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Applies Constraint</em>' operation.
@@ -630,7 +639,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
+	int COLORSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Sensecolor</em>' operation.
@@ -639,7 +648,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR___SENSECOLOR = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+	int COLORSENSOR___SENSECOLOR = SENSOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Colorsensor</em>' class.
@@ -648,7 +657,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLORSENSOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
+	int COLORSENSOR_OPERATION_COUNT = SENSOR_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.FlightactuatorImpl <em>Flightactuator</em>}' class.
@@ -661,123 +670,6 @@ public interface OmcricorePackage extends EPackage {
 	int FLIGHTACTUATOR = 5;
 
 	/**
-	 * The feature id for the '<em><b>Mixin</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
-
-	/**
-	 * The feature id for the '<em><b>Entity</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
-
-	/**
-	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
-
-	/**
-	 * The feature id for the '<em><b>Horizontal Tilt</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__HORIZONTAL_TILT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Vertical Tilt</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__VERTICAL_TILT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Horizontal Speed</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__HORIZONTAL_SPEED = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Vertical Speed</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR__VERTICAL_SPEED = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Flightactuator</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 4;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Move</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR___MOVE = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Land</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR___LAND = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
-
-	/**
-	 * The operation id for the '<em>Takeoff</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR___TAKEOFF = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Flightactuator</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 4;
-
-	/**
 	 * The meta object id for the '{@link omcricore.impl.TouchsensorImpl <em>Touchsensor</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -788,78 +680,6 @@ public interface OmcricorePackage extends EPackage {
 	int TOUCHSENSOR = 6;
 
 	/**
-	 * The feature id for the '<em><b>Mixin</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
-
-	/**
-	 * The feature id for the '<em><b>Entity</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
-
-	/**
-	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
-
-	/**
-	 * The feature id for the '<em><b>Touch</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR__TOUCH = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Touchsensor</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Sensetouch</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR___SENSETOUCH = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Touchsensor</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
-
-	/**
 	 * The meta object id for the '{@link omcricore.impl.UltrasonicsensorImpl <em>Ultrasonicsensor</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -868,78 +688,6 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 */
 	int ULTRASONICSENSOR = 7;
-
-	/**
-	 * The feature id for the '<em><b>Mixin</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
-
-	/**
-	 * The feature id for the '<em><b>Entity</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
-
-	/**
-	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
-
-	/**
-	 * The feature id for the '<em><b>Distance</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR__DISTANCE = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Ultrasonicsensor</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Sensedistance</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR___SENSEDISTANCE = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Ultrasonicsensor</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.ActuatorImpl <em>Actuator</em>}' class.
@@ -1006,6 +754,267 @@ public interface OmcricorePackage extends EPackage {
 	int ACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__MIXIN = ACTUATOR__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__ENTITY = ACTUATOR__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__ATTRIBUTES = ACTUATOR__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Horizontal Tilt</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__HORIZONTAL_TILT = ACTUATOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Vertical Tilt</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__VERTICAL_TILT = ACTUATOR_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Horizontal Speed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__HORIZONTAL_SPEED = ACTUATOR_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Vertical Speed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR__VERTICAL_SPEED = ACTUATOR_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>Flightactuator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR_FEATURE_COUNT = ACTUATOR_FEATURE_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Applies Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Move</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR___MOVE = ACTUATOR_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Land</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR___LAND = ACTUATOR_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Takeoff</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR___TAKEOFF = ACTUATOR_OPERATION_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Flightactuator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLIGHTACTUATOR_OPERATION_COUNT = ACTUATOR_OPERATION_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR__MIXIN = SENSOR__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR__ENTITY = SENSOR__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR__ATTRIBUTES = SENSOR__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Touch</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR__TOUCH = SENSOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Touchsensor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR_FEATURE_COUNT = SENSOR_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Applies Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Sensetouch</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR___SENSETOUCH = SENSOR_OPERATION_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Touchsensor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOUCHSENSOR_OPERATION_COUNT = SENSOR_OPERATION_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR__MIXIN = SENSOR__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR__ENTITY = SENSOR__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR__ATTRIBUTES = SENSOR__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Distance</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR__DISTANCE = SENSOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Ultrasonicsensor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR_FEATURE_COUNT = SENSOR_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Applies Constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Sensedistance</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR___SENSEDISTANCE = SENSOR_OPERATION_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Ultrasonicsensor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ULTRASONICSENSOR_OPERATION_COUNT = SENSOR_OPERATION_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link omcricore.impl.MotionactuatorImpl <em>Motionactuator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1022,7 +1031,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
+	int MOTIONACTUATOR__MIXIN = ACTUATOR__MIXIN;
 
 	/**
 	 * The feature id for the '<em><b>Entity</b></em>' container reference.
@@ -1031,7 +1040,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
+	int MOTIONACTUATOR__ENTITY = ACTUATOR__ENTITY;
 
 	/**
 	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
@@ -1040,7 +1049,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
+	int MOTIONACTUATOR__ATTRIBUTES = ACTUATOR__ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Angle</b></em>' attribute.
@@ -1049,7 +1058,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR__ANGLE = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
+	int MOTIONACTUATOR__ANGLE = ACTUATOR_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Speed</b></em>' attribute.
@@ -1058,7 +1067,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR__SPEED = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 1;
+	int MOTIONACTUATOR__SPEED = ACTUATOR_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Duration</b></em>' attribute.
@@ -1067,7 +1076,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR__DURATION = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 2;
+	int MOTIONACTUATOR__DURATION = ACTUATOR_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Motionactuator</em>' class.
@@ -1076,7 +1085,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 3;
+	int MOTIONACTUATOR_FEATURE_COUNT = ACTUATOR_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Applies Constraint</em>' operation.
@@ -1085,7 +1094,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
+	int MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Moveforward</em>' operation.
@@ -1094,7 +1103,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR___MOVEFORWARD = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+	int MOTIONACTUATOR___MOVEFORWARD = ACTUATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Movebackward</em>' operation.
@@ -1103,7 +1112,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR___MOVEBACKWARD = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
+	int MOTIONACTUATOR___MOVEBACKWARD = ACTUATOR_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Turnright</em>' operation.
@@ -1112,7 +1121,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR___TURNRIGHT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 3;
+	int MOTIONACTUATOR___TURNRIGHT = ACTUATOR_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Turnleft</em>' operation.
@@ -1121,7 +1130,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR___TURNLEFT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 4;
+	int MOTIONACTUATOR___TURNLEFT = ACTUATOR_OPERATION_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Stop</em>' operation.
@@ -1130,7 +1139,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR___STOP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 5;
+	int MOTIONACTUATOR___STOP = ACTUATOR_OPERATION_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Motionactuator</em>' class.
@@ -1139,7 +1148,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTIONACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 6;
+	int MOTIONACTUATOR_OPERATION_COUNT = ACTUATOR_OPERATION_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.MouthactuatorImpl <em>Mouthactuator</em>}' class.
@@ -1158,7 +1167,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR__MIXIN = OCCIPackage.MIXIN_BASE__MIXIN;
+	int MOUTHACTUATOR__MIXIN = ACTUATOR__MIXIN;
 
 	/**
 	 * The feature id for the '<em><b>Entity</b></em>' container reference.
@@ -1167,7 +1176,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR__ENTITY = OCCIPackage.MIXIN_BASE__ENTITY;
+	int MOUTHACTUATOR__ENTITY = ACTUATOR__ENTITY;
 
 	/**
 	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
@@ -1176,7 +1185,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR__ATTRIBUTES = OCCIPackage.MIXIN_BASE__ATTRIBUTES;
+	int MOUTHACTUATOR__ATTRIBUTES = ACTUATOR__ATTRIBUTES;
 
 	/**
 	 * The number of structural features of the '<em>Mouthactuator</em>' class.
@@ -1185,7 +1194,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
+	int MOUTHACTUATOR_FEATURE_COUNT = ACTUATOR_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Applies Constraint</em>' operation.
@@ -1194,7 +1203,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
+	int MOUTHACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Openmouth</em>' operation.
@@ -1203,7 +1212,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR___OPENMOUTH = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+	int MOUTHACTUATOR___OPENMOUTH = ACTUATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Closemouth</em>' operation.
@@ -1212,7 +1221,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR___CLOSEMOUTH = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
+	int MOUTHACTUATOR___CLOSEMOUTH = ACTUATOR_OPERATION_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Mouthactuator</em>' class.
@@ -1221,7 +1230,7 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOUTHACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 3;
+	int MOUTHACTUATOR_OPERATION_COUNT = ACTUATOR_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link omcricore.Color <em>Color</em>}' enum.
@@ -1253,6 +1262,16 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRobotlink();
+
+	/**
+	 * Returns the meta object for the '{@link omcricore.Robotlink#targetConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Target Constraint</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Target Constraint</em>' operation.
+	 * @see omcricore.Robotlink#targetConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getRobotlink__TargetConstraint__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link omcricore.Robot <em>Robot</em>}'.
@@ -1740,6 +1759,14 @@ public interface OmcricorePackage extends EPackage {
 		 * @generated
 		 */
 		EClass ROBOTLINK = eINSTANCE.getRobotlink();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Constraint</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROBOTLINK___TARGET_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getRobotlink__TargetConstraint__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link omcricore.impl.RobotImpl <em>Robot</em>}' class.

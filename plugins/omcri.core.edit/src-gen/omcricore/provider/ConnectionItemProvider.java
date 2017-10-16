@@ -105,7 +105,8 @@ public class ConnectionItemProvider extends MixinBaseItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Connection)object).getTimeOut();
+		Integer labelValue = ((Connection)object).getTimeOut();
+		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Connection_type") :
 			getString("_UI_Connection_type") + " " + label;

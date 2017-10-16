@@ -33,7 +33,7 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * @model
  * @generated
  */
-public interface Colorsensor extends MixinBase, Sensor {
+public interface Colorsensor extends Sensor, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Color</b></em>' attribute.
 	 * The literals are from the enumeration {@link omcricore.Color}.
@@ -70,12 +70,13 @@ public interface Colorsensor extends MixinBase, Sensor {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Light</em>' attribute.
-	 * @see #setLight(String)
+	 * @see #setLight(Integer)
 	 * @see omcricore.OmcricorePackage#getColorsensor_Light()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!light'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!light'"
 	 * @generated
 	 */
-	String getLight();
+	Integer getLight();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Colorsensor#getLight <em>Light</em>}' attribute.
@@ -85,7 +86,7 @@ public interface Colorsensor extends MixinBase, Sensor {
 	 * @see #getLight()
 	 * @generated
 	 */
-	void setLight(String value);
+	void setLight(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Darkness</b></em>' attribute.
@@ -95,12 +96,13 @@ public interface Colorsensor extends MixinBase, Sensor {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Darkness</em>' attribute.
-	 * @see #setDarkness(String)
+	 * @see #setDarkness(Integer)
 	 * @see omcricore.OmcricorePackage#getColorsensor_Darkness()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!darkness'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!darkness'"
 	 * @generated
 	 */
-	String getDarkness();
+	Integer getDarkness();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Colorsensor#getDarkness <em>Darkness</em>}' attribute.
@@ -110,7 +112,7 @@ public interface Colorsensor extends MixinBase, Sensor {
 	 * @see #getDarkness()
 	 * @generated
 	 */
-	void setDarkness(String value);
+	void setDarkness(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Color Lamp</b></em>' attribute.

@@ -37,7 +37,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotionactuatorItemProvider extends MixinBaseItemProvider {
+public class MotionactuatorItemProvider extends ActuatorItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -151,7 +151,8 @@ public class MotionactuatorItemProvider extends MixinBaseItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Motionactuator)object).getAngle();
+		Integer labelValue = ((Motionactuator)object).getAngle();
+		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Motionactuator_type") :
 			getString("_UI_Motionactuator_type") + " " + label;
@@ -189,17 +190,6 @@ public class MotionactuatorItemProvider extends MixinBaseItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-	}
-
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return OmcricoreEditPlugin.INSTANCE;
 	}
 
 }

@@ -227,6 +227,15 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EOperation getRobotlink__TargetConstraint__DiagnosticChain_Map() {
+		return robotlinkEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRobot() {
 		return robotEClass;
 	}
@@ -647,6 +656,7 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 
 		// Create classes and their features
 		robotlinkEClass = createEClass(ROBOTLINK);
+		createEOperation(robotlinkEClass, ROBOTLINK___TARGET_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		robotEClass = createEClass(ROBOT);
 
@@ -740,36 +750,45 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		robotEClass.getESuperTypes().add(theOCCIPackage.getResource());
 		connectionEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		sensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
-		colorsensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		colorsensorEClass.getESuperTypes().add(this.getSensor());
-		flightactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		colorsensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		flightactuatorEClass.getESuperTypes().add(this.getActuator());
-		touchsensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		flightactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		touchsensorEClass.getESuperTypes().add(this.getSensor());
-		ultrasonicsensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		touchsensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		ultrasonicsensorEClass.getESuperTypes().add(this.getSensor());
+		ultrasonicsensorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		actuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
-		motionactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		motionactuatorEClass.getESuperTypes().add(this.getActuator());
-		mouthactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		motionactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		mouthactuatorEClass.getESuperTypes().add(this.getActuator());
+		mouthactuatorEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(robotlinkEClass, Robotlink.class, "Robotlink", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		EOperation op = initEOperation(getRobotlink__TargetConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "targetConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
+		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(robotEClass, Robot.class, "Robot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(connectionEClass, Connection.class, "Connection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getConnection_TimeOut(), ecorePackage.getEString(), "timeOut", null, 0, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getConnection_TimeOut(), theOCCIPackage.getInteger(), "timeOut", null, 0, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getConnection__Connect(), null, "connect", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEOperation(getConnection__Disconnect(), null, "disconnect", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		EOperation op = initEOperation(getConnection__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getConnection__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
-		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
@@ -788,17 +807,17 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 
 		initEClass(colorsensorEClass, Colorsensor.class, "Colorsensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getColorsensor_Color(), this.getColor(), "color", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getColorsensor_Light(), ecorePackage.getEString(), "light", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getColorsensor_Darkness(), ecorePackage.getEString(), "darkness", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColorsensor_Light(), theOCCIPackage.getInteger(), "light", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColorsensor_Darkness(), theOCCIPackage.getInteger(), "darkness", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColorsensor_ColorLamp(), this.getColor(), "colorLamp", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getColorsensor__Sensecolor(), null, "sensecolor", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(flightactuatorEClass, Flightactuator.class, "Flightactuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFlightactuator_HorizontalTilt(), ecorePackage.getEString(), "horizontalTilt", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFlightactuator_VerticalTilt(), ecorePackage.getEString(), "verticalTilt", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFlightactuator_HorizontalSpeed(), ecorePackage.getEString(), "horizontalSpeed", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFlightactuator_VerticalSpeed(), ecorePackage.getEString(), "verticalSpeed", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFlightactuator_HorizontalTilt(), theOCCIPackage.getInteger(), "horizontalTilt", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFlightactuator_VerticalTilt(), theOCCIPackage.getInteger(), "verticalTilt", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFlightactuator_HorizontalSpeed(), theOCCIPackage.getInteger(), "horizontalSpeed", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFlightactuator_VerticalSpeed(), theOCCIPackage.getInteger(), "verticalSpeed", null, 0, 1, Flightactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getFlightactuator__Move(), null, "move", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -812,7 +831,7 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		initEOperation(getTouchsensor__Sensetouch(), null, "sensetouch", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(ultrasonicsensorEClass, Ultrasonicsensor.class, "Ultrasonicsensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getUltrasonicsensor_Distance(), ecorePackage.getEString(), "distance", null, 0, 1, Ultrasonicsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUltrasonicsensor_Distance(), theOCCIPackage.getInteger(), "distance", null, 0, 1, Ultrasonicsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getUltrasonicsensor__Sensedistance(), null, "sensedistance", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -828,9 +847,9 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(motionactuatorEClass, Motionactuator.class, "Motionactuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getMotionactuator_Angle(), ecorePackage.getEString(), "angle", "45", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getMotionactuator_Speed(), ecorePackage.getEString(), "speed", "100", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getMotionactuator_Duration(), ecorePackage.getEString(), "duration", "1000", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMotionactuator_Angle(), theOCCIPackage.getInteger(), "angle", "45", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMotionactuator_Speed(), theOCCIPackage.getInteger(), "speed", "100", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMotionactuator_Duration(), theOCCIPackage.getInteger(), "duration", "1000", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getMotionactuator__Moveforward(), null, "moveforward", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -882,6 +901,12 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		  (this, 
 		   source, 
 		   new String[] {
+		   });	
+		addAnnotation
+		  (robotlinkEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "targetConstraint"
 		   });	
 		addAnnotation
 		  (connectionEClass, 

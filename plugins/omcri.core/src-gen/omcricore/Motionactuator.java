@@ -32,7 +32,7 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * @model
  * @generated
  */
-public interface Motionactuator extends MixinBase, Actuator {
+public interface Motionactuator extends Actuator, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Angle</b></em>' attribute.
 	 * The default value is <code>"45"</code>.
@@ -42,13 +42,13 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Angle</em>' attribute.
-	 * @see #setAngle(String)
+	 * @see #setAngle(Integer)
 	 * @see omcricore.OmcricorePackage#getMotionactuator_Angle()
-	 * @model default="45"
+	 * @model default="45" dataType="org.eclipse.cmf.occi.core.Integer"
 	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!angle'"
 	 * @generated
 	 */
-	String getAngle();
+	Integer getAngle();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Motionactuator#getAngle <em>Angle</em>}' attribute.
@@ -58,7 +58,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * @see #getAngle()
 	 * @generated
 	 */
-	void setAngle(String value);
+	void setAngle(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Speed</b></em>' attribute.
@@ -69,13 +69,13 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Speed</em>' attribute.
-	 * @see #setSpeed(String)
+	 * @see #setSpeed(Integer)
 	 * @see omcricore.OmcricorePackage#getMotionactuator_Speed()
-	 * @model default="100"
+	 * @model default="100" dataType="org.eclipse.cmf.occi.core.Integer"
 	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!speed'"
 	 * @generated
 	 */
-	String getSpeed();
+	Integer getSpeed();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Motionactuator#getSpeed <em>Speed</em>}' attribute.
@@ -85,7 +85,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * @see #getSpeed()
 	 * @generated
 	 */
-	void setSpeed(String value);
+	void setSpeed(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Duration</b></em>' attribute.
@@ -96,13 +96,13 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Duration</em>' attribute.
-	 * @see #setDuration(String)
+	 * @see #setDuration(Integer)
 	 * @see omcricore.OmcricorePackage#getMotionactuator_Duration()
-	 * @model default="1000"
+	 * @model default="1000" dataType="org.eclipse.cmf.occi.core.Integer"
 	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!duration'"
 	 * @generated
 	 */
-	String getDuration();
+	Integer getDuration();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Motionactuator#getDuration <em>Duration</em>}' attribute.
@@ -112,7 +112,7 @@ public interface Motionactuator extends MixinBase, Actuator {
 	 * @see #getDuration()
 	 * @generated
 	 */
-	void setDuration(String value);
+	void setDuration(Integer value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -4,10 +4,8 @@
     <semanticResources>model/legomindstormnxt2.occie</semanticResources>
     <semanticResources>http://schemas.ogf.org/occi/core</semanticResources>
     <semanticResources>http://omcri.org/cloudrobotics/core</semanticResources>
-    <semanticResources>platform:/resource/omcri.core/model/omcricore.ecore</semanticResources>
     <semanticResources>platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
-    <semanticResources>platform:/resource/omcri.core/model/omcricore.genmodel</semanticResources>
     <semanticResources>platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.genmodel</semanticResources>
     <semanticResources>model/legomindstormnxt2.ecore</semanticResources>
     <semanticResources>model/legomindstormnxt2.genmodel</semanticResources>

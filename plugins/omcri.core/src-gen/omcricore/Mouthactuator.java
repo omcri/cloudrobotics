@@ -24,7 +24,7 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * @model
  * @generated
  */
-public interface Mouthactuator extends MixinBase, Actuator {
+public interface Mouthactuator extends Actuator, MixinBase {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

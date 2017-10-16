@@ -52,12 +52,20 @@ public class OmcricoreValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "omcricore";
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Target Constraint' of 'Robotlink'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ROBOTLINK__TARGET_CONSTRAINT = 1;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Connection'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONNECTION__APPLIES_CONSTRAINT = 1;
+	public static final int CONNECTION__APPLIES_CONSTRAINT = 2;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Sensor'.
@@ -65,7 +73,7 @@ public class OmcricoreValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SENSOR__APPLIES_CONSTRAINT = 2;
+	public static final int SENSOR__APPLIES_CONSTRAINT = 3;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Actuator'.
@@ -73,7 +81,7 @@ public class OmcricoreValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ACTUATOR__APPLIES_CONSTRAINT = 3;
+	public static final int ACTUATOR__APPLIES_CONSTRAINT = 4;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -81,7 +89,7 @@ public class OmcricoreValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 3;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 4;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -182,7 +190,18 @@ public class OmcricoreValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= occiValidator.validateLink_LinkKindIsInParent(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateLink_sourceReferenceInvariant(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateLink_targetReferenceInvariant(robotlink, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRobotlink_targetConstraint(robotlink, diagnostics, context);
 		return result;
+	}
+
+	/**
+	 * Validates the targetConstraint constraint of '<em>Robotlink</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRobotlink_targetConstraint(Robotlink robotlink, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return robotlink.targetConstraint(diagnostics, context);
 	}
 
 	/**

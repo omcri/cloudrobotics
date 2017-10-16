@@ -130,6 +130,11 @@ public class RobotlinkItemProvider extends LinkItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(OCCIPackage.Literals.ENTITY__PARTS,
+				 OmcricoreFactory.eINSTANCE.createActuator()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(OCCIPackage.Literals.ENTITY__PARTS,
 				 OmcricoreFactory.eINSTANCE.createFlightactuator()));
 
 		newChildDescriptors.add
@@ -141,11 +146,6 @@ public class RobotlinkItemProvider extends LinkItemProvider {
 			(createChildParameter
 				(OCCIPackage.Literals.ENTITY__PARTS,
 				 OmcricoreFactory.eINSTANCE.createUltrasonicsensor()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(OCCIPackage.Literals.ENTITY__PARTS,
-				 OmcricoreFactory.eINSTANCE.createActuator()));
 
 		newChildDescriptors.add
 			(createChildParameter

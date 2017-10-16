@@ -45,10 +45,9 @@ public class MotionactuatorConnector extends omcricore.impl.MotionactuatorImpl {
 	// End of user code
 	// Start of user code Motionactuator_Kind_moveForward_action
 	/**
-	 * Implement OCCI action:
-     * - scheme: http://omcri.org/cloudrobotics/core/motionactuator/action#
-     * - term: moveforward
-     * - title: 
+	 * Implement OCCI action: - scheme:
+	 * http://omcri.org/cloudrobotics/core/motionactuator/action# - term:
+	 * moveforward - title:
 	 */
 	@Override
 	public void moveforward() {
@@ -64,8 +63,6 @@ public class MotionactuatorConnector extends omcricore.impl.MotionactuatorImpl {
 		}
 	}
 	// End of user code
-		
-		
 
 	// Start of user code Motionactuator_Kind_moveBackward_action
 	/**
@@ -85,7 +82,7 @@ public class MotionactuatorConnector extends omcricore.impl.MotionactuatorImpl {
 				LOGGER.error("Cant move forward on : " + this.getEntity());
 			}
 		}
-		
+
 	}
 	// End of user code
 
@@ -187,7 +184,7 @@ public class MotionactuatorConnector extends omcricore.impl.MotionactuatorImpl {
 
 		return iMotion;
 	}
-	
+
 	/**
 	 * 
 	 * @param iMotion
@@ -200,30 +197,27 @@ public class MotionactuatorConnector extends omcricore.impl.MotionactuatorImpl {
 				iMotion.connect();
 			} catch (Exception ex) {
 				// TODO : throws exception on model as well on model@runtime.
-				LOGGER.error("Cannot connect to mindstorm : " + ex.getMessage() + " , exception: " + ex.getClass().getName());
+				LOGGER.error("Cannot connect to mindstorm : " + ex.getMessage() + " , exception: "
+						+ ex.getClass().getName());
 				throw ex;
 			}
 		}
-		
+
 		// Convert String to int.
-		try { 
-			if (angle == null) {
-				angle = "0";
-			}
-			if (duration == null) {
-				duration = "0";
-			}
-			if (speed == null) {
-				speed = "0";
-			}
-			iMotion.setAngle(Integer.valueOf(angle));
-			iMotion.setDuration(Integer.valueOf(duration));
-			iMotion.setSpeed(Integer.valueOf(speed));
-		} catch (NumberFormatException ex) {
-			LOGGER.error("One of the attribute of the motion mixin is not a number !");
-			ex.printStackTrace();
-			throw ex;
+
+		if (angle == null) {
+			angle = 45;
 		}
+		if (duration == null) {
+			duration = 1000;
+		}
+		if (speed == null) {
+			speed = 100;
+		}
+		iMotion.setAngle(angle);
+		iMotion.setDuration(duration);
+		iMotion.setSpeed(speed);
+
 		return false;
 	}
 

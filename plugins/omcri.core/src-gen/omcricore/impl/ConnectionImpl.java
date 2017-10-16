@@ -72,7 +72,7 @@ public class ConnectionImpl extends MixinBaseImpl implements Connection {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TIME_OUT_EDEFAULT = null;
+	protected static final Integer TIME_OUT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTimeOut() <em>Time Out</em>}' attribute.
@@ -82,7 +82,7 @@ public class ConnectionImpl extends MixinBaseImpl implements Connection {
 	 * @generated
 	 * @ordered
 	 */
-	protected String timeOut = TIME_OUT_EDEFAULT;
+	protected Integer timeOut = TIME_OUT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,7 +108,7 @@ public class ConnectionImpl extends MixinBaseImpl implements Connection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTimeOut() {
+	public Integer getTimeOut() {
 		return timeOut;
 	}
 
@@ -117,8 +117,8 @@ public class ConnectionImpl extends MixinBaseImpl implements Connection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeOut(String newTimeOut) {
-		String oldTimeOut = timeOut;
+	public void setTimeOut(Integer newTimeOut) {
+		Integer oldTimeOut = timeOut;
 		timeOut = newTimeOut;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.CONNECTION__TIME_OUT, oldTimeOut, timeOut));
@@ -170,9 +170,9 @@ public class ConnectionImpl extends MixinBaseImpl implements Connection {
 			symbol_0 = ValueUtil.TRUE_VALUE;
 		}
 		else {
-			final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcricore_c_c_Robot = idResolver.getClass(OmcricoreTables.CLSSid_Robot, null);
+			final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcricore_c_c_Robot_0 = idResolver.getClass(OmcricoreTables.CLSSid_Robot, null);
 			final /*@NonInvalid*/ Entity entity = this.getEntity();
-			final /*@NonInvalid*/ boolean result = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity, TYP_omcricore_c_c_Robot).booleanValue();
+			final /*@NonInvalid*/ boolean result = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity, TYP_omcricore_c_c_Robot_0).booleanValue();
 			final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, OmcricoreTables.STR_Connection_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, OmcricoreTables.INT_0).booleanValue();
 			symbol_0 = logDiagnostic;
 		}
@@ -202,7 +202,7 @@ public class ConnectionImpl extends MixinBaseImpl implements Connection {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case OmcricorePackage.CONNECTION__TIME_OUT:
-				setTimeOut((String)newValue);
+				setTimeOut((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

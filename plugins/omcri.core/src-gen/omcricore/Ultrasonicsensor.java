@@ -30,7 +30,7 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * @model
  * @generated
  */
-public interface Ultrasonicsensor extends MixinBase, Sensor {
+public interface Ultrasonicsensor extends Sensor, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Distance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -39,12 +39,13 @@ public interface Ultrasonicsensor extends MixinBase, Sensor {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Distance</em>' attribute.
-	 * @see #setDistance(String)
+	 * @see #setDistance(Integer)
 	 * @see omcricore.OmcricorePackage#getUltrasonicsensor_Distance()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Ultrasonicsensor!distance'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Ultrasonicsensor!distance'"
 	 * @generated
 	 */
-	String getDistance();
+	Integer getDistance();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Ultrasonicsensor#getDistance <em>Distance</em>}' attribute.
@@ -54,7 +55,7 @@ public interface Ultrasonicsensor extends MixinBase, Sensor {
 	 * @see #getDistance()
 	 * @generated
 	 */
-	void setDistance(String value);
+	void setDistance(Integer value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -67,7 +67,7 @@ import org.eclipse.ocl.pivot.values.IntegerValue;
  *
  * @generated
  */
-public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator {
+public class FlightactuatorImpl extends ActuatorImpl implements Flightactuator {
 	/**
 	 * The default value of the '{@link #getHorizontalTilt() <em>Horizontal Tilt</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -76,7 +76,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HORIZONTAL_TILT_EDEFAULT = null;
+	protected static final Integer HORIZONTAL_TILT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getHorizontalTilt() <em>Horizontal Tilt</em>}' attribute.
@@ -86,7 +86,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String horizontalTilt = HORIZONTAL_TILT_EDEFAULT;
+	protected Integer horizontalTilt = HORIZONTAL_TILT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVerticalTilt() <em>Vertical Tilt</em>}' attribute.
@@ -96,7 +96,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VERTICAL_TILT_EDEFAULT = null;
+	protected static final Integer VERTICAL_TILT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getVerticalTilt() <em>Vertical Tilt</em>}' attribute.
@@ -106,7 +106,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String verticalTilt = VERTICAL_TILT_EDEFAULT;
+	protected Integer verticalTilt = VERTICAL_TILT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getHorizontalSpeed() <em>Horizontal Speed</em>}' attribute.
@@ -116,7 +116,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HORIZONTAL_SPEED_EDEFAULT = null;
+	protected static final Integer HORIZONTAL_SPEED_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getHorizontalSpeed() <em>Horizontal Speed</em>}' attribute.
@@ -126,7 +126,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String horizontalSpeed = HORIZONTAL_SPEED_EDEFAULT;
+	protected Integer horizontalSpeed = HORIZONTAL_SPEED_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVerticalSpeed() <em>Vertical Speed</em>}' attribute.
@@ -136,7 +136,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VERTICAL_SPEED_EDEFAULT = null;
+	protected static final Integer VERTICAL_SPEED_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getVerticalSpeed() <em>Vertical Speed</em>}' attribute.
@@ -146,7 +146,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 * @ordered
 	 */
-	protected String verticalSpeed = VERTICAL_SPEED_EDEFAULT;
+	protected Integer verticalSpeed = VERTICAL_SPEED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,7 +172,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHorizontalTilt() {
+	public Integer getHorizontalTilt() {
 		return horizontalTilt;
 	}
 
@@ -181,8 +181,8 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHorizontalTilt(String newHorizontalTilt) {
-		String oldHorizontalTilt = horizontalTilt;
+	public void setHorizontalTilt(Integer newHorizontalTilt) {
+		Integer oldHorizontalTilt = horizontalTilt;
 		horizontalTilt = newHorizontalTilt;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.FLIGHTACTUATOR__HORIZONTAL_TILT, oldHorizontalTilt, horizontalTilt));
@@ -193,7 +193,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getVerticalTilt() {
+	public Integer getVerticalTilt() {
 		return verticalTilt;
 	}
 
@@ -202,8 +202,8 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalTilt(String newVerticalTilt) {
-		String oldVerticalTilt = verticalTilt;
+	public void setVerticalTilt(Integer newVerticalTilt) {
+		Integer oldVerticalTilt = verticalTilt;
 		verticalTilt = newVerticalTilt;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.FLIGHTACTUATOR__VERTICAL_TILT, oldVerticalTilt, verticalTilt));
@@ -214,7 +214,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHorizontalSpeed() {
+	public Integer getHorizontalSpeed() {
 		return horizontalSpeed;
 	}
 
@@ -223,8 +223,8 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHorizontalSpeed(String newHorizontalSpeed) {
-		String oldHorizontalSpeed = horizontalSpeed;
+	public void setHorizontalSpeed(Integer newHorizontalSpeed) {
+		Integer oldHorizontalSpeed = horizontalSpeed;
 		horizontalSpeed = newHorizontalSpeed;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.FLIGHTACTUATOR__HORIZONTAL_SPEED, oldHorizontalSpeed, horizontalSpeed));
@@ -235,7 +235,7 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getVerticalSpeed() {
+	public Integer getVerticalSpeed() {
 		return verticalSpeed;
 	}
 
@@ -244,8 +244,8 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalSpeed(String newVerticalSpeed) {
-		String oldVerticalSpeed = verticalSpeed;
+	public void setVerticalSpeed(Integer newVerticalSpeed) {
+		Integer oldVerticalSpeed = verticalSpeed;
 		verticalSpeed = newVerticalSpeed;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OmcricorePackage.FLIGHTACTUATOR__VERTICAL_SPEED, oldVerticalSpeed, verticalSpeed));
@@ -283,43 +283,6 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean appliesConstraint(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
-		/**
-		 *
-		 * inv appliesConstraint:
-		 *   let severity : Integer[1] = 'Actuator::appliesConstraint'.getSeverity()
-		 *   in
-		 *     if severity <= 0
-		 *     then true
-		 *     else
-		 *       let result : occi::Boolean[1] = self.entity.oclIsKindOf(Robot)
-		 *       in
-		 *         'Actuator::appliesConstraint'.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
-		 *     endif
-		 */
-		final /*@NonInvalid*/ Executor executor = PivotUtilInternal.getExecutor(this);
-		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
-		final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, OmcricoreTables.STR_Actuator_c_c_appliesConstraint);
-		final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, OmcricoreTables.INT_0).booleanValue();
-		/*@NonInvalid*/ boolean symbol_0;
-		if (le) {
-			symbol_0 = ValueUtil.TRUE_VALUE;
-		}
-		else {
-			final /*@NonInvalid*/ org.eclipse.ocl.pivot.Class TYP_omcricore_c_c_Robot_0 = idResolver.getClass(OmcricoreTables.CLSSid_Robot, null);
-			final /*@NonInvalid*/ Entity entity = this.getEntity();
-			final /*@NonInvalid*/ boolean result = OclAnyOclIsKindOfOperation.INSTANCE.evaluate(executor, entity, TYP_omcricore_c_c_Robot_0).booleanValue();
-			final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, OmcricoreTables.STR_Actuator_c_c_appliesConstraint, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, OmcricoreTables.INT_0).booleanValue();
-			symbol_0 = logDiagnostic;
-		}
-		return Boolean.TRUE == symbol_0;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -344,16 +307,16 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case OmcricorePackage.FLIGHTACTUATOR__HORIZONTAL_TILT:
-				setHorizontalTilt((String)newValue);
+				setHorizontalTilt((Integer)newValue);
 				return;
 			case OmcricorePackage.FLIGHTACTUATOR__VERTICAL_TILT:
-				setVerticalTilt((String)newValue);
+				setVerticalTilt((Integer)newValue);
 				return;
 			case OmcricorePackage.FLIGHTACTUATOR__HORIZONTAL_SPEED:
-				setHorizontalSpeed((String)newValue);
+				setHorizontalSpeed((Integer)newValue);
 				return;
 			case OmcricorePackage.FLIGHTACTUATOR__VERTICAL_SPEED:
-				setVerticalSpeed((String)newValue);
+				setVerticalSpeed((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -409,22 +372,6 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 	 * @generated
 	 */
 	@Override
-	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
-		if (baseClass == Actuator.class) {
-			switch (baseOperationID) {
-				case OmcricorePackage.ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP: return OmcricorePackage.FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
-				default: return -1;
-			}
-		}
-		return super.eDerivedOperationID(baseOperationID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
@@ -437,8 +384,6 @@ public class FlightactuatorImpl extends MixinBaseImpl implements Flightactuator 
 			case OmcricorePackage.FLIGHTACTUATOR___TAKEOFF:
 				takeoff();
 				return null;
-			case OmcricorePackage.FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP:
-				return appliesConstraint((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
 		}
 		return super.eInvoke(operationID, arguments);
 	}

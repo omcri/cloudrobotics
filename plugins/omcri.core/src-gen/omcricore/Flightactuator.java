@@ -33,7 +33,7 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * @model
  * @generated
  */
-public interface Flightactuator extends MixinBase, Actuator {
+public interface Flightactuator extends Actuator, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Horizontal Tilt</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -42,12 +42,13 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Horizontal Tilt</em>' attribute.
-	 * @see #setHorizontalTilt(String)
+	 * @see #setHorizontalTilt(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_HorizontalTilt()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!horizontalTilt'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!horizontalTilt'"
 	 * @generated
 	 */
-	String getHorizontalTilt();
+	Integer getHorizontalTilt();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Flightactuator#getHorizontalTilt <em>Horizontal Tilt</em>}' attribute.
@@ -57,7 +58,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #getHorizontalTilt()
 	 * @generated
 	 */
-	void setHorizontalTilt(String value);
+	void setHorizontalTilt(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Vertical Tilt</b></em>' attribute.
@@ -67,12 +68,13 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Vertical Tilt</em>' attribute.
-	 * @see #setVerticalTilt(String)
+	 * @see #setVerticalTilt(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_VerticalTilt()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!verticalTilt'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!verticalTilt'"
 	 * @generated
 	 */
-	String getVerticalTilt();
+	Integer getVerticalTilt();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Flightactuator#getVerticalTilt <em>Vertical Tilt</em>}' attribute.
@@ -82,7 +84,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #getVerticalTilt()
 	 * @generated
 	 */
-	void setVerticalTilt(String value);
+	void setVerticalTilt(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Horizontal Speed</b></em>' attribute.
@@ -92,12 +94,13 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Horizontal Speed</em>' attribute.
-	 * @see #setHorizontalSpeed(String)
+	 * @see #setHorizontalSpeed(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_HorizontalSpeed()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!horizontalSpeed'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!horizontalSpeed'"
 	 * @generated
 	 */
-	String getHorizontalSpeed();
+	Integer getHorizontalSpeed();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Flightactuator#getHorizontalSpeed <em>Horizontal Speed</em>}' attribute.
@@ -107,7 +110,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #getHorizontalSpeed()
 	 * @generated
 	 */
-	void setHorizontalSpeed(String value);
+	void setHorizontalSpeed(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Vertical Speed</b></em>' attribute.
@@ -117,12 +120,13 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Vertical Speed</em>' attribute.
-	 * @see #setVerticalSpeed(String)
+	 * @see #setVerticalSpeed(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_VerticalSpeed()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!verticalSpeed'"
+	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!verticalSpeed'"
 	 * @generated
 	 */
-	String getVerticalSpeed();
+	Integer getVerticalSpeed();
 
 	/**
 	 * Sets the value of the '{@link omcricore.Flightactuator#getVerticalSpeed <em>Vertical Speed</em>}' attribute.
@@ -132,7 +136,7 @@ public interface Flightactuator extends MixinBase, Actuator {
 	 * @see #getVerticalSpeed()
 	 * @generated
 	 */
-	void setVerticalSpeed(String value);
+	void setVerticalSpeed(Integer value);
 
 	/**
 	 * <!-- begin-user-doc -->
