@@ -1,9 +1,10 @@
 # cloudrobotics
+
 Mobile Cloud Robotics as a Service studio model project
 
 OMCRI acronym : Open Mobile Cloud Robotics Interface.
 
-## install
+## Install
 
 First get a working OCCI-Studio, in your working directory type:
 
@@ -22,4 +23,4 @@ Launch the application corresponding to your architecture.
 
 ## Testing
 
-Coming soon... 
+Coming soon...
