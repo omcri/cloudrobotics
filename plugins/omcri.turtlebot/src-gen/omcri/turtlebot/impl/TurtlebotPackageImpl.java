@@ -221,6 +221,8 @@ public class TurtlebotPackageImpl extends EPackageImpl implements TurtlebotPacka
 		// Create annotations
 		// http://www.eclipse.org/emf/2002/Ecore
 		createEcoreAnnotations();
+		// http://www.eclipse.org/OCL/Import
+		createImportAnnotations();
 	}
 
 	/**
@@ -235,6 +237,26 @@ public class TurtlebotPackageImpl extends EPackageImpl implements TurtlebotPacka
 		  (this, 
 		   source, 
 		   new String[] {
+			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createImportAnnotations() {
+		String source = "http://www.eclipse.org/OCL/Import";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "occi", "http://schemas.ogf.org/occi/core/ecore",
+			 "omcricore", "http://occiware.org/cloudrobotics/core/ecore"
 		   });
 	}
 

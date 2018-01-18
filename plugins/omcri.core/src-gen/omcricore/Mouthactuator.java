@@ -31,7 +31,7 @@ public interface Mouthactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Mouthactuator!openmouth()'"
+	 * @model
 	 * @generated
 	 */
 	void openmouth();
@@ -42,7 +42,7 @@ public interface Mouthactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Mouthactuator!closemouth()'"
+	 * @model
 	 * @generated
 	 */
 	void closemouth();

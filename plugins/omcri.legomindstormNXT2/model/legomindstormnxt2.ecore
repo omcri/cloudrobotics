@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="legomindstormnxt2" nsURI="http://omcri.org/cloudrobotics/mindstormnxt/ecore"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="legomindstormnxt2" nsURI="http://occiware.org/cloudrobotics/mindstormnxt/ecore"
     nsPrefix="legomindstormnxt2">
   <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
     <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
@@ -8,8 +8,8 @@
     <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
   </eAnnotations>
   <eAnnotations source="http://www.eclipse.org/OCL/Import">
-    <details key="core" value="http://schemas.ogf.org/occi/core/ecore"/>
-    <details key="omcricore" value="http://omcri.org/cloudrobotics/core/ecore"/>
+    <details key="occi" value="http://schemas.ogf.org/occi/core/ecore"/>
+    <details key="omcricore" value="http://occiware.org/cloudrobotics/core/ecore"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Legomindstormnxt2" eSuperTypes="platform:/resource/omcri.core/model/omcricore.ecore#//Robot">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

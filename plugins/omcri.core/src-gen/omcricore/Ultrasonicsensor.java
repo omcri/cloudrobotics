@@ -42,7 +42,6 @@ public interface Ultrasonicsensor extends Sensor, MixinBase {
 	 * @see #setDistance(Integer)
 	 * @see omcricore.OmcricorePackage#getUltrasonicsensor_Distance()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Ultrasonicsensor!distance'"
 	 * @generated
 	 */
 	Integer getDistance();
@@ -63,7 +62,7 @@ public interface Ultrasonicsensor extends Sensor, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Ultrasonicsensor!sensedistance()'"
+	 * @model
 	 * @generated
 	 */
 	void sensedistance();

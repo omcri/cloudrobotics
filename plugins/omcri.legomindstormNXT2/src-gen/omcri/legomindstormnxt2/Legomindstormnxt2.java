@@ -46,7 +46,6 @@ public interface Legomindstormnxt2 extends Robot {
 	 * @see #setMacAddress(String)
 	 * @see omcri.legomindstormnxt2.Legomindstormnxt2Package#getLegomindstormnxt2_MacAddress()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/mindstormnxt/ecore!Legomindstormnxt2!macAddress'"
 	 * @generated
 	 */
 	String getMacAddress();

@@ -18,6 +18,7 @@ import omcricore.*;
 
 import org.eclipse.cmf.occi.core.util.OCCIValidator;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
@@ -52,44 +53,12 @@ public class OmcricoreValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "omcricore";
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Target Constraint' of 'Robotlink'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ROBOTLINK__TARGET_CONSTRAINT = 1;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Connection'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int CONNECTION__APPLIES_CONSTRAINT = 2;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Sensor'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int SENSOR__APPLIES_CONSTRAINT = 3;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Applies Constraint' of 'Actuator'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ACTUATOR__APPLIES_CONSTRAINT = 4;
-
-	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 4;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -187,6 +156,7 @@ public class OmcricoreValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= occiValidator.validateEntity_IdUnique(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateEntity_AttributesNameUnique(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateEntity_KindCompatibleWithOneAppliesOfEachMixin(robotlink, diagnostics, context);
+		if (result || diagnostics != null) result &= occiValidator.validateEntity_DifferentMixins(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateLink_LinkKindIsInParent(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateLink_sourceReferenceInvariant(robotlink, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateLink_targetReferenceInvariant(robotlink, diagnostics, context);
@@ -195,13 +165,32 @@ public class OmcricoreValidator extends EObjectValidator {
 	}
 
 	/**
+	 * The cached validation expression for the targetConstraint constraint of '<em>Robotlink</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String ROBOTLINK__TARGET_CONSTRAINT__EEXPRESSION = "self.target.oclIsKindOf(omcricore::Robot)";
+
+	/**
 	 * Validates the targetConstraint constraint of '<em>Robotlink</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateRobotlink_targetConstraint(Robotlink robotlink, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return robotlink.targetConstraint(diagnostics, context);
+		return
+			validate
+				(OmcricorePackage.Literals.ROBOTLINK,
+				 robotlink,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "targetConstraint",
+				 ROBOTLINK__TARGET_CONSTRAINT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
 	}
 
 	/**
@@ -222,6 +211,7 @@ public class OmcricoreValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= occiValidator.validateEntity_IdUnique(robot, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateEntity_AttributesNameUnique(robot, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateEntity_KindCompatibleWithOneAppliesOfEachMixin(robot, diagnostics, context);
+		if (result || diagnostics != null) result &= occiValidator.validateEntity_DifferentMixins(robot, diagnostics, context);
 		if (result || diagnostics != null) result &= occiValidator.validateResource_ResourceKindIsInParent(robot, diagnostics, context);
 		return result;
 	}
@@ -246,13 +236,32 @@ public class OmcricoreValidator extends EObjectValidator {
 	}
 
 	/**
+	 * The cached validation expression for the appliesConstraint constraint of '<em>Connection</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String CONNECTION__APPLIES_CONSTRAINT__EEXPRESSION = "self.entity.oclIsKindOf(omcricore::Robot)";
+
+	/**
 	 * Validates the appliesConstraint constraint of '<em>Connection</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateConnection_appliesConstraint(Connection connection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return connection.appliesConstraint(diagnostics, context);
+		return
+			validate
+				(OmcricorePackage.Literals.CONNECTION,
+				 connection,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "appliesConstraint",
+				 CONNECTION__APPLIES_CONSTRAINT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
 	}
 
 	/**
@@ -275,13 +284,32 @@ public class OmcricoreValidator extends EObjectValidator {
 	}
 
 	/**
+	 * The cached validation expression for the appliesConstraint constraint of '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String SENSOR__APPLIES_CONSTRAINT__EEXPRESSION = "self.entity.oclIsKindOf(omcricore::Robot)";
+
+	/**
 	 * Validates the appliesConstraint constraint of '<em>Sensor</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateSensor_appliesConstraint(Sensor sensor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return sensor.appliesConstraint(diagnostics, context);
+		return
+			validate
+				(OmcricorePackage.Literals.SENSOR,
+				 sensor,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "appliesConstraint",
+				 SENSOR__APPLIES_CONSTRAINT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
 	}
 
 	/**
@@ -380,13 +408,32 @@ public class OmcricoreValidator extends EObjectValidator {
 	}
 
 	/**
+	 * The cached validation expression for the appliesConstraint constraint of '<em>Actuator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String ACTUATOR__APPLIES_CONSTRAINT__EEXPRESSION = "self.entity.oclIsKindOf(omcricore::Robot)";
+
+	/**
 	 * Validates the appliesConstraint constraint of '<em>Actuator</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateActuator_appliesConstraint(Actuator actuator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return actuator.appliesConstraint(diagnostics, context);
+		return
+			validate
+				(OmcricorePackage.Literals.ACTUATOR,
+				 actuator,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "appliesConstraint",
+				 ACTUATOR__APPLIES_CONSTRAINT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
 	}
 
 	/**

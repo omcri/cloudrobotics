@@ -1,13 +1,21 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: omcri.all
+Bundle-Name: %pluginName
 Bundle-SymbolicName: omcri.all;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Vendor: OCCIware
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ omcri.legomindstormNXT2;visibility:=reexport,
+ omcri.turtlebot;visibility:=reexport,
+ omcri.parrot.minidrone;visibility:=reexport,
+ omcri.core;visibility:=reexport,
+ omcri.parrot.ardrone;visibility:=reexport,
+ omcri.legomindstormEV3;visibility:=reexport,
  org.eclipse.cmf.occi.core;visibility:=reexport,
  org.eclipse.cmf.occi.core.ui,
  org.eclipse.cmf.occi.core.gen.emf.ui

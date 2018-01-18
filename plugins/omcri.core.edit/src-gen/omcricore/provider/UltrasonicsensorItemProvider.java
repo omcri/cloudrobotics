@@ -19,12 +19,8 @@ import java.util.List;
 import omcricore.OmcricorePackage;
 import omcricore.Ultrasonicsensor;
 
-import org.eclipse.cmf.occi.core.provider.MixinBaseItemProvider;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;

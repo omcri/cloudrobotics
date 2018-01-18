@@ -80,7 +80,9 @@ public class MouthactuatorImpl extends ActuatorImpl implements Mouthactuator {
 	 * @generated
 	 */
 	public void openmouth() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Mouthactuator!openmouth()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -89,7 +91,9 @@ public class MouthactuatorImpl extends ActuatorImpl implements Mouthactuator {
 	 * @generated
 	 */
 	public void closemouth() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Mouthactuator!closemouth()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

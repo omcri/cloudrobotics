@@ -131,7 +131,9 @@ public class UltrasonicsensorImpl extends SensorImpl implements Ultrasonicsensor
 	 * @generated
 	 */
 	public void sensedistance() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Ultrasonicsensor!sensedistance()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

@@ -257,7 +257,9 @@ public class FlightactuatorImpl extends ActuatorImpl implements Flightactuator {
 	 * @generated
 	 */
 	public void move() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!move()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -266,7 +268,9 @@ public class FlightactuatorImpl extends ActuatorImpl implements Flightactuator {
 	 * @generated
 	 */
 	public void land() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!land()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -275,7 +279,9 @@ public class FlightactuatorImpl extends ActuatorImpl implements Flightactuator {
 	 * @generated
 	 */
 	public void takeoff() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!takeoff()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

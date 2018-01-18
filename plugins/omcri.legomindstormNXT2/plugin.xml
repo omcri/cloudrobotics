@@ -53,9 +53,8 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated legomindstormnxt2 -->
       <package
-            uri="http://omcri.org/cloudrobotics/mindstormnxt/ecore"
-            class="omcri.legomindstormnxt2.Legomindstormnxt2Package"
-            genModel="model/legomindstormnxt2.genmodel"/>
+            uri="http://occiware.org/cloudrobotics/mindstormnxt/ecore"
+            class="omcri.legomindstormnxt2.Legomindstormnxt2Package"/>
    </extension>
 
 </plugin>

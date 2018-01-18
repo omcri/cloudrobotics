@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="omcriall" version="10.0.0.201505222000">
+  <ownedViewpoints name="OmcriallConfiguration" label="Extended omcri.all Configuration">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="OmcriallConfiguration Diagram" domainClass="Configuration">
+	  <metamodel href="http://occiware.org/cloudrobotics/all/ecore#/"/>
+ 	  <metamodel href="http://schemas.ogf.org/occi/core/ecore#/"/> 
+ 	  <metamodel href="http://occiware.org/cloudrobotics/mindstormnxt/ecore#/"/> 
+ 	  <metamodel href="http://occiware.org/cloudrobotics/turtlebot/ecore#/"/> 
+ 	  <metamodel href="http://occiware.org/cloudrobotics/parrotminidrone/ecore#/"/> 
+ 	  <metamodel href="http://occiware.org/cloudrobotics/core/ecore#/"/> 
+ 	  <metamodel href="http://occiware.org/cloudrobotics/parrotardrone/ecore#/"/> 
+ 	  <metamodel href="http://occiware.org/cloudrobotics/mindstormev3/ecore#/"/> 
+      <defaultLayer name="Default">
+        <edgeMappings name="LegoMindstormNXT2LinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']" targetMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetFinderExpression="feature:links">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="LegoMindstormEV3LinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']" targetMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetFinderExpression="feature:links">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RobotLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']" targetMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetFinderExpression="feature:links">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ArdroneLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']" targetMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetFinderExpression="feature:links">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="MinidroneLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']" targetMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetFinderExpression="feature:links">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="TurtlebotLinksEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']" targetMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetFinderExpression="feature:links">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RobotLinkTargetEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotLinkContainer']" targetMapping=" //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']" targetFinderExpression="feature:target">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RobotLinkEdge" sourceMapping="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container'] //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']" targetMapping=" //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']   //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']   //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']   //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']   //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']   //@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer'] " domainClass="Robotlink" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="LegoMindstormNXT2Container" preconditionExpression="[self.oclIsTypeOf(Legomindstormnxt2)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="feature:resources" 
+			domainClass="Legomindstormnxt2" childrenPresentation="VerticalStack">
+<subContainerMappings name="SubLegoMindstormNXT2Container" semanticCandidatesExpression="[self/]" domainClass="Legomindstormnxt2" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ConnectionMixin" preconditionExpression="[self.oclIsTypeOf(Connection)/]" semanticCandidatesExpression="feature:parts" domainClass="Connection" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': LegoMindstormNXT2'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <containerMappings name="LegoMindstormEV3Container" preconditionExpression="[self.oclIsTypeOf(Legomindstormev3)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="feature:resources" 
+			domainClass="Legomindstormev3" childrenPresentation="VerticalStack">
+<subContainerMappings name="SubLegoMindstormEV3Container" semanticCandidatesExpression="[self/]" domainClass="Legomindstormev3" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ConnectionMixin" preconditionExpression="[self.oclIsTypeOf(Connection)/]" semanticCandidatesExpression="feature:parts" domainClass="Connection" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': LegoMindstormEV3'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <containerMappings name="RobotContainer" preconditionExpression="[self.oclIsTypeOf(Robot)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="feature:resources" 
+			domainClass="Robot" childrenPresentation="VerticalStack">
+<subContainerMappings name="SubRobotContainer" semanticCandidatesExpression="[self/]" domainClass="Robot" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ConnectionMixin" preconditionExpression="[self.oclIsTypeOf(Connection)/]" semanticCandidatesExpression="feature:parts" domainClass="Connection" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': Robot'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <containerMappings name="RobotLinkContainer" preconditionExpression="[self.oclIsTypeOf(Robotlink)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="[resources.links->filter(Robotlink)/]" 
+			domainClass="Robotlink"  childrenPresentation="VerticalStack">
+<subContainerMappings name="SubRobotLinkContainer" semanticCandidatesExpression="[self/]" domainClass="Robotlink" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': RobotLink'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <containerMappings name="ArdroneContainer" preconditionExpression="[self.oclIsTypeOf(Ardrone)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="feature:resources" 
+			domainClass="Ardrone" childrenPresentation="VerticalStack">
+<subContainerMappings name="SubArdroneContainer" semanticCandidatesExpression="[self/]" domainClass="Ardrone" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ConnectionMixin" preconditionExpression="[self.oclIsTypeOf(Connection)/]" semanticCandidatesExpression="feature:parts" domainClass="Connection" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': Ardrone'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <containerMappings name="MinidroneContainer" preconditionExpression="[self.oclIsTypeOf(Minidrone)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="feature:resources" 
+			domainClass="Minidrone" childrenPresentation="VerticalStack">
+<subContainerMappings name="SubMinidroneContainer" semanticCandidatesExpression="[self/]" domainClass="Minidrone" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ConnectionMixin" preconditionExpression="[self.oclIsTypeOf(Connection)/]" semanticCandidatesExpression="feature:parts" domainClass="Connection" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': Minidrone'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <containerMappings name="TurtlebotContainer" preconditionExpression="[self.oclIsTypeOf(Turtlebot)/]"
+            labelDirectEdit="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='EditEntityTitle']"
+			semanticCandidatesExpression="feature:resources" 
+			domainClass="Turtlebot" childrenPresentation="VerticalStack">
+<subContainerMappings name="SubTurtlebotContainer" semanticCandidatesExpression="[self/]" domainClass="Turtlebot" childrenPresentation="List">
+			<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.kind.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+</subContainerMappings>
+<subContainerMappings name="TouchSensorMixin" preconditionExpression="[self.oclIsTypeOf(Touchsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Touchsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MotionActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Motionactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Motionactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="MouthActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Mouthactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Mouthactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="FlightActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Flightactuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Flightactuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ConnectionMixin" preconditionExpression="[self.oclIsTypeOf(Connection)/]" semanticCandidatesExpression="feature:parts" domainClass="Connection" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ActuatorMixin" preconditionExpression="[self.oclIsTypeOf(Actuator)/]" semanticCandidatesExpression="feature:parts" domainClass="Actuator" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="SensorMixin" preconditionExpression="[self.oclIsTypeOf(Sensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Sensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="ColorSensorMixin" preconditionExpression="[self.oclIsTypeOf(Colorsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Colorsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+<subContainerMappings name="UltrasonicSensorMixin" preconditionExpression="[self.oclIsTypeOf(Ultrasonicsensor)/]" semanticCandidatesExpression="feature:parts" domainClass="Ultrasonicsensor" childrenPresentation="List">
+<style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.mixin.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="[self.title + ': Turtlebot'/]" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style> 
+
+        </containerMappings>
+        <toolSections name="Omcriall resources">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" 
+			name="Create LegoMindstormNXT2"
+			containerMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']"> 
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Legomindstormnxt2" referenceName="resources">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="['legoMindstormNXT2' + container.oclAsType(Configuration).resources->size().toString()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" 
+			name="Create LegoMindstormEV3"
+			containerMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']"> 
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Legomindstormev3" referenceName="resources">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="['legoMindstormEV3' + container.oclAsType(Configuration).resources->size().toString()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" 
+			name="Create Robot"
+			containerMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']"> 
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Robot" referenceName="resources">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="['robot' + container.oclAsType(Configuration).resources->size().toString()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" 
+			name="Create Ardrone"
+			containerMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']"> 
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Ardrone" referenceName="resources">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="['ardrone' + container.oclAsType(Configuration).resources->size().toString()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" 
+			name="Create Minidrone"
+			containerMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']"> 
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Minidrone" referenceName="resources">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="['minidrone' + container.oclAsType(Configuration).resources->size().toString()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" 
+			name="Create Turtlebot"
+			containerMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']"> 
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Turtlebot" referenceName="resources">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="['turtlebot' + container.oclAsType(Configuration).resources->size().toString()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+</toolSections>
+ <toolSections name="Omcriall links">
+          <ownedTools xsi:type="tool:EdgeCreationDescription"
+			name="Create RobotLink"
+			edgeMappings="//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@edgeMappings[name='RobotLinkEdge']"> 
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Robotlink" referenceName="links" variableName="link">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+   </toolSections>   
+ <toolSections name="Omcriall mixins">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Connection" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='ConnectionMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='ConnectionMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='ConnectionMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='ConnectionMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='ConnectionMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='ConnectionMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Connection" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Sensor" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='SensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='SensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='SensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='SensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='SensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='SensorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Sensor" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create ColorSensor" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='ColorSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='ColorSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='ColorSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='ColorSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='ColorSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='ColorSensorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Colorsensor" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create FlightActuator" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='FlightActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='FlightActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='FlightActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='FlightActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='FlightActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='FlightActuatorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Flightactuator" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create TouchSensor" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='TouchSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='TouchSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='TouchSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='TouchSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='TouchSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='TouchSensorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Touchsensor" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create UltrasonicSensor" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='UltrasonicSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='UltrasonicSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='UltrasonicSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='UltrasonicSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='UltrasonicSensorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='UltrasonicSensorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Ultrasonicsensor" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Actuator" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='ActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='ActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='ActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='ActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='ActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='ActuatorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Actuator" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MotionActuator" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='MotionActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='MotionActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='MotionActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='MotionActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='MotionActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='MotionActuatorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Motionactuator" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create MouthActuator" containerMappings="
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormEV3Container']/@subContainerMappings[name='MouthActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='RobotContainer']/@subContainerMappings[name='MouthActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ArdroneContainer']/@subContainerMappings[name='MouthActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='TurtlebotContainer']/@subContainerMappings[name='MouthActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='LegoMindstormNXT2Container']/@subContainerMappings[name='MouthActuatorMixin']
+//@ownedViewpoints[name='OmcriallConfiguration']/@ownedRepresentations[name='OmcriallConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='MinidroneContainer']/@subContainerMappings[name='MouthActuatorMixin']
+">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Mouthactuator" referenceName="parts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+   </toolSections>    
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditEntityTitle" inputLabelExpression="feature:title">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="var:arg0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="TouchSensorSenseTouchAction" label="SenseTouch" precondition="[self.oclIsKindOf(Touchsensor)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Touchsensor).sensetouch()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MotionActuatorMoveForwardAction" label="MoveForward" precondition="[self.oclIsKindOf(Motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).moveforward()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MotionActuatorMoveBackwardAction" label="MoveBackward" precondition="[self.oclIsKindOf(Motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).movebackward()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MotionActuatorTurnRightAction" label="TurnRight" precondition="[self.oclIsKindOf(Motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).turnright()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MotionActuatorTurnLeftAction" label="TurnLeft" precondition="[self.oclIsKindOf(Motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).turnleft()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MotionActuatorStopAction" label="Stop" precondition="[self.oclIsKindOf(Motionactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Motionactuator).stop()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MouthActuatorOpenMouthAction" label="OpenMouth" precondition="[self.oclIsKindOf(Mouthactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Mouthactuator).openmouth()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="MouthActuatorCloseMouthAction" label="CloseMouth" precondition="[self.oclIsKindOf(Mouthactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Mouthactuator).closemouth()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="FlightActuatorMoveAction" label="Move" precondition="[self.oclIsKindOf(Flightactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Flightactuator).move()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="FlightActuatorLandAction" label="Land" precondition="[self.oclIsKindOf(Flightactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Flightactuator).land()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="FlightActuatorTakeOffAction" label="TakeOff" precondition="[self.oclIsKindOf(Flightactuator)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Flightactuator).takeoff()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="ConnectionConnectAction" label="Connect" precondition="[self.oclIsKindOf(Connection)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Connection).connect()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="ConnectionDisconnectAction" label="Disconnect" precondition="[self.oclIsKindOf(Connection)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Connection).disconnect()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="ColorSensorSenseColorAction" label="SenseColor" precondition="[self.oclIsKindOf(Colorsensor)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Colorsensor).sensecolor()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="UltrasonicSensorSenseDistanceAction" label="SenseDistance" precondition="[self.oclIsKindOf(Ultrasonicsensor)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Ultrasonicsensor).sensedistance()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PopupMenu" name="CRUD operations" precondition="[self.oclIsKindOf(Entity)/]">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Create">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Entity).occiCreate()/]"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Retrieve">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Entity).occiRetrieve()/]"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Update">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Entity).occiUpdate()/]"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Delete">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(Entity).occiDelete()/]"/>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+<!--
+    <ownedJavaExtensions qualifiedClassName="org.occiware.clouddesigner.occi.design.services.DesignServices"/>
+-->
+  </ownedViewpoints>
+</description:Group>

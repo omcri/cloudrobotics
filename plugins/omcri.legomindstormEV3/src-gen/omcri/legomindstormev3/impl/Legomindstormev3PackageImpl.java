@@ -233,8 +233,8 @@ public class Legomindstormev3PackageImpl extends EPackageImpl implements Legomin
 		  (this, 
 		   source, 
 		   new String[] {
-			 "core", "http://schemas.ogf.org/occi/core/ecore",
-			 "omcricore", "http://omcri.org/cloudrobotics/core/ecore"
+			 "occi", "http://schemas.ogf.org/occi/core/ecore",
+			 "omcricore", "http://occiware.org/cloudrobotics/core/ecore"
 		   });
 	}
 

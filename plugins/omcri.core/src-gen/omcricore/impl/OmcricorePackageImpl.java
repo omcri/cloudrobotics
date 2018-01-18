@@ -227,15 +227,6 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getRobotlink__TargetConstraint__DiagnosticChain_Map() {
-		return robotlinkEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getRobot() {
 		return robotEClass;
 	}
@@ -281,26 +272,8 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getConnection__AppliesConstraint__DiagnosticChain_Map() {
-		return connectionEClass.getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getSensor() {
 		return sensorEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getSensor__AppliesConstraint__DiagnosticChain_Map() {
-		return sensorEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -497,15 +470,6 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getActuator__AppliesConstraint__DiagnosticChain_Map() {
-		return actuatorEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getMotionactuator() {
 		return motionactuatorEClass;
 	}
@@ -656,7 +620,6 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 
 		// Create classes and their features
 		robotlinkEClass = createEClass(ROBOTLINK);
-		createEOperation(robotlinkEClass, ROBOTLINK___TARGET_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		robotEClass = createEClass(ROBOT);
 
@@ -664,10 +627,8 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		createEAttribute(connectionEClass, CONNECTION__TIME_OUT);
 		createEOperation(connectionEClass, CONNECTION___CONNECT);
 		createEOperation(connectionEClass, CONNECTION___DISCONNECT);
-		createEOperation(connectionEClass, CONNECTION___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		sensorEClass = createEClass(SENSOR);
-		createEOperation(sensorEClass, SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		colorsensorEClass = createEClass(COLORSENSOR);
 		createEAttribute(colorsensorEClass, COLORSENSOR__COLOR);
@@ -694,7 +655,6 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		createEOperation(ultrasonicsensorEClass, ULTRASONICSENSOR___SENSEDISTANCE);
 
 		actuatorEClass = createEClass(ACTUATOR);
-		createEOperation(actuatorEClass, ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
 
 		motionactuatorEClass = createEClass(MOTIONACTUATOR);
 		createEAttribute(motionactuatorEClass, MOTIONACTUATOR__ANGLE);
@@ -767,15 +727,6 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		// Initialize classes, features, and operations; add parameters
 		initEClass(robotlinkEClass, Robotlink.class, "Robotlink", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = initEOperation(getRobotlink__TargetConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "targetConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
-		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(robotEClass, Robot.class, "Robot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(connectionEClass, Connection.class, "Connection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -785,25 +736,7 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 
 		initEOperation(getConnection__Disconnect(), null, "disconnect", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getConnection__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(sensorEClass, Sensor.class, "Sensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = initEOperation(getSensor__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(colorsensorEClass, Colorsensor.class, "Colorsensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getColorsensor_Color(), this.getColor(), "color", null, 0, 1, Colorsensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -836,15 +769,6 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		initEOperation(getUltrasonicsensor__Sensedistance(), null, "sensedistance", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(actuatorEClass, Actuator.class, "Actuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = initEOperation(getActuator__AppliesConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "appliesConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(motionactuatorEClass, Motionactuator.class, "Motionactuator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMotionactuator_Angle(), theOCCIPackage.getInteger(), "angle", "45", 0, 1, Motionactuator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -887,6 +811,10 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		// Create annotations
 		// http://www.eclipse.org/emf/2002/Ecore
 		createEcoreAnnotations();
+		// http://www.eclipse.org/OCL/Import
+		createImportAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
+		createPivotAnnotations();
 	}
 
 	/**
@@ -901,6 +829,9 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		  (this, 
 		   source, 
 		   new String[] {
+			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
 		   });	
 		addAnnotation
 		  (robotlinkEClass, 
@@ -925,6 +856,56 @@ public class OmcricorePackageImpl extends EPackageImpl implements OmcricorePacka
 		   source, 
 		   new String[] {
 			 "constraints", "appliesConstraint"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createImportAnnotations() {
+		String source = "http://www.eclipse.org/OCL/Import";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "occi", "http://schemas.ogf.org/occi/core/ecore"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPivotAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";	
+		addAnnotation
+		  (robotlinkEClass, 
+		   source, 
+		   new String[] {
+			 "targetConstraint", "self.target.oclIsKindOf(omcricore::Robot)"
+		   });	
+		addAnnotation
+		  (connectionEClass, 
+		   source, 
+		   new String[] {
+			 "appliesConstraint", "self.entity.oclIsKindOf(omcricore::Robot)"
+		   });	
+		addAnnotation
+		  (sensorEClass, 
+		   source, 
+		   new String[] {
+			 "appliesConstraint", "self.entity.oclIsKindOf(omcricore::Robot)"
+		   });	
+		addAnnotation
+		  (actuatorEClass, 
+		   source, 
+		   new String[] {
+			 "appliesConstraint", "self.entity.oclIsKindOf(omcricore::Robot)"
 		   });
 	}
 

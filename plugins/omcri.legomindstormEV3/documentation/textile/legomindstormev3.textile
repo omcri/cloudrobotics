@@ -3,23 +3,23 @@ h1. OCCI legomindstormev3 extension
 
 
 | *Name* | legomindstormev3 |
-| *Scheme* | http://omcri.org/cloudrobotics/mindstormev3# |
+| *Scheme* | http://occiware.org/cloudrobotics/mindstormev3# |
 
 
 Imported OCCI Extensions:
 
 | *Name* | *Scheme* |
 | <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
-| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
+| <a href="omcricore.textile">omcricore</a> | http://occiware.org/cloudrobotics/core# |
 
 h1. Kinds
 
 h2. Kind legomindstormev3
 
 | *Term* | legomindstormev3 |
-| *Scheme* | http://omcri.org/cloudrobotics/mindstormev3# |
+| *Scheme* | http://occiware.org/cloudrobotics/mindstormev3# |
 | *Title* |  |
-| *Parent* | <a href="omcricore.textile#kind-robot">http://omcri.org/cloudrobotics/core#robot</a> |
+| *Parent* | <a href="omcricore.textile#kind-robot">http://occiware.org/cloudrobotics/core#robot</a> |
 
 Attributes of legomindstormev3 are:
 
@@ -28,4 +28,4 @@ Attributes of legomindstormev3 are:
 
 
 
-Generated at Fri Sep 29 16:16:06 CEST 2017 from platform:/resource/omcri.legomindstormEV3/model/legomindstormev3.occie by org.eclipse.cmf.occi.core.gen.textile
+Generated at Thu Jan 18 15:26:16 CET 2018 from platform:/resource/omcri.legomindstormEV3/model/legomindstormev3.occie by org.eclipse.cmf.occi.core.gen.textile

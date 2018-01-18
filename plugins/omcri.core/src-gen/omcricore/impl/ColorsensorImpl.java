@@ -258,7 +258,9 @@ public class ColorsensorImpl extends SensorImpl implements Colorsensor {
 	 * @generated
 	 */
 	public void sensecolor() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!sensecolor()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

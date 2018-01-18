@@ -3,23 +3,23 @@ h1. OCCI parrotminidrone extension
 
 
 | *Name* | parrotminidrone |
-| *Scheme* | http://omcri.org/cloudrobotics/parrotminidrone# |
+| *Scheme* | http://occiware.org/cloudrobotics/parrotminidrone# |
 
 
 Imported OCCI Extensions:
 
 | *Name* | *Scheme* |
 | <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
-| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
+| <a href="omcricore.textile">omcricore</a> | http://occiware.org/cloudrobotics/core# |
 
 h1. Kinds
 
 h2. Kind minidrone
 
 | *Term* | minidrone |
-| *Scheme* | http://omcri.org/cloudrobotics/parrotminidrone# |
+| *Scheme* | http://occiware.org/cloudrobotics/parrotminidrone# |
 | *Title* |  |
-| *Parent* | <a href="omcricore.textile#kind-robot">http://omcri.org/cloudrobotics/core#robot</a> |
+| *Parent* | <a href="omcricore.textile#kind-robot">http://occiware.org/cloudrobotics/core#robot</a> |
 
 Attributes of minidrone are:
 
@@ -29,4 +29,4 @@ Attributes of minidrone are:
 
 
 
-Generated at Fri Sep 29 17:03:41 CEST 2017 from platform:/resource/omcri.parrot.minidrone/model/parrotminidrone.occie by org.eclipse.cmf.occi.core.gen.textile
+Generated at Thu Dec 14 09:25:42 CET 2017 from platform:/resource/omcri.parrot.minidrone/model/parrotminidrone.occie by org.eclipse.cmf.occi.core.gen.textile

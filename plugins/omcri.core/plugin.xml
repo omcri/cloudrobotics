@@ -53,7 +53,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated omcricore -->
       <package
-            uri="http://omcri.org/cloudrobotics/core/ecore"
+            uri="http://occiware.org/cloudrobotics/core/ecore"
             class="omcricore.OmcricorePackage"/>
    </extension>
 

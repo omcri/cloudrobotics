@@ -3,23 +3,23 @@ h1. OCCI legomindstormnxt2 extension
 
 
 | *Name* | legomindstormnxt2 |
-| *Scheme* | http://omcri.org/cloudrobotics/mindstormnxt# |
+| *Scheme* | http://occiware.org/cloudrobotics/mindstormnxt# |
 
 
 Imported OCCI Extensions:
 
 | *Name* | *Scheme* |
 | <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
-| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
+| <a href="omcricore.textile">omcricore</a> | http://occiware.org/cloudrobotics/core# |
 
 h1. Kinds
 
 h2. Kind legomindstormnxt2
 
 | *Term* | legomindstormnxt2 |
-| *Scheme* | http://omcri.org/cloudrobotics/mindstormnxt# |
+| *Scheme* | http://occiware.org/cloudrobotics/mindstormnxt# |
 | *Title* |  |
-| *Parent* | <a href="omcricore.textile#kind-robot">http://omcri.org/cloudrobotics/core#robot</a> |
+| *Parent* | <a href="omcricore.textile#kind-robot">http://occiware.org/cloudrobotics/core#robot</a> |
 
 Attributes of legomindstormnxt2 are:
 
@@ -28,4 +28,4 @@ Attributes of legomindstormnxt2 are:
 
 
 
-Generated at Mon Oct 02 16:49:24 CEST 2017 from http://omcri.org/cloudrobotics/mindstormnxt by org.eclipse.cmf.occi.core.gen.textile
+Generated at Thu Jan 18 15:35:25 CET 2018 from http://occiware.org/cloudrobotics/mindstormnxt by org.eclipse.cmf.occi.core.gen.textile

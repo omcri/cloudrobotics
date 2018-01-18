@@ -215,7 +215,9 @@ public class MotionactuatorImpl extends ActuatorImpl implements Motionactuator {
 	 * @generated
 	 */
 	public void moveforward() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!moveforward()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -224,7 +226,9 @@ public class MotionactuatorImpl extends ActuatorImpl implements Motionactuator {
 	 * @generated
 	 */
 	public void movebackward() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!movebackward()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -233,7 +237,9 @@ public class MotionactuatorImpl extends ActuatorImpl implements Motionactuator {
 	 * @generated
 	 */
 	public void turnright() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!turnright()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -242,7 +248,9 @@ public class MotionactuatorImpl extends ActuatorImpl implements Motionactuator {
 	 * @generated
 	 */
 	public void turnleft() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!turnleft()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -251,7 +259,9 @@ public class MotionactuatorImpl extends ActuatorImpl implements Motionactuator {
 	 * @generated
 	 */
 	public void stop() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!stop()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

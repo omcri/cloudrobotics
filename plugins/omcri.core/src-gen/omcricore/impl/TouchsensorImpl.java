@@ -132,7 +132,9 @@ public class TouchsensorImpl extends SensorImpl implements Touchsensor {
 	 * @generated
 	 */
 	public void sensetouch() {
-		throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Touchsensor!sensetouch()
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

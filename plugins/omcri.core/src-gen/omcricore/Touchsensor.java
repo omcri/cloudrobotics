@@ -43,7 +43,7 @@ public interface Touchsensor extends Sensor, MixinBase {
 	 * @see omcricore.Color
 	 * @see #setTouch(Color)
 	 * @see omcricore.OmcricorePackage#getTouchsensor_Touch()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Touchsensor!touch'"
+	 * @model
 	 * @generated
 	 */
 	Color getTouch();
@@ -65,7 +65,7 @@ public interface Touchsensor extends Sensor, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Touchsensor!sensetouch()'"
+	 * @model
 	 * @generated
 	 */
 	void sensetouch();

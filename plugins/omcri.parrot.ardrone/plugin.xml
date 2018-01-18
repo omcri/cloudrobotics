@@ -53,7 +53,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated parrotardrone -->
       <package
-            uri="http://omcri.org/cloudrobotics/parrotardrone/ecore"
+            uri="http://occiware.org/cloudrobotics/parrotardrone/ecore"
             class="parrotardrone.ParrotardronePackage"/>
    </extension>
 

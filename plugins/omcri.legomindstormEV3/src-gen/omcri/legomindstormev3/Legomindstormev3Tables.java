@@ -57,6 +57,10 @@ public class Legomindstormev3Tables
 	public static final /*@NonNull*/ ExecutorStandardLibrary LIBRARY = OCLstdlibTables.LIBRARY;
 
 	/**
+	 *	Constants used by auto-generated code.
+	 */
+
+	/**
 	 *	The type parameters for templated types and operations.
 	 */
 	public static class TypeParameters {

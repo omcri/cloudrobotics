@@ -47,7 +47,6 @@ public interface Ardrone extends Robot {
 	 * @see #setIpadress(String)
 	 * @see parrotardrone.ParrotardronePackage#getArdrone_Ipadress()
 	 * @model dataType="org.eclipse.cmf.occi.core.String" required="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/parrotardrone/ecore!Ardrone!ipadress'"
 	 * @generated
 	 */
 	String getIpadress();
@@ -73,7 +72,6 @@ public interface Ardrone extends Robot {
 	 * @see #setSsid(String)
 	 * @see parrotardrone.ParrotardronePackage#getArdrone_Ssid()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/parrotardrone/ecore!Ardrone!ssid'"
 	 * @generated
 	 */
 	String getSsid();

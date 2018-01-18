@@ -45,7 +45,6 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * @see #setAngle(Integer)
 	 * @see omcricore.OmcricorePackage#getMotionactuator_Angle()
 	 * @model default="45" dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!angle'"
 	 * @generated
 	 */
 	Integer getAngle();
@@ -72,7 +71,6 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * @see #setSpeed(Integer)
 	 * @see omcricore.OmcricorePackage#getMotionactuator_Speed()
 	 * @model default="100" dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!speed'"
 	 * @generated
 	 */
 	Integer getSpeed();
@@ -99,7 +97,6 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * @see #setDuration(Integer)
 	 * @see omcricore.OmcricorePackage#getMotionactuator_Duration()
 	 * @model default="1000" dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!duration'"
 	 * @generated
 	 */
 	Integer getDuration();
@@ -120,7 +117,7 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!moveforward()'"
+	 * @model
 	 * @generated
 	 */
 	void moveforward();
@@ -131,7 +128,7 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!movebackward()'"
+	 * @model
 	 * @generated
 	 */
 	void movebackward();
@@ -142,7 +139,7 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!turnright()'"
+	 * @model
 	 * @generated
 	 */
 	void turnright();
@@ -153,7 +150,7 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!turnleft()'"
+	 * @model
 	 * @generated
 	 */
 	void turnleft();
@@ -164,7 +161,7 @@ public interface Motionactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Motionactuator!stop()'"
+	 * @model
 	 * @generated
 	 */
 	void stop();

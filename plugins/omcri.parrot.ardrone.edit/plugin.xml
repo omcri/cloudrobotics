@@ -19,7 +19,7 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated parrotardrone -->
       <factory
-            uri="http://omcri.org/cloudrobotics/parrotardrone/ecore"
+            uri="http://occiware.org/cloudrobotics/parrotardrone/ecore"
             class="parrotardrone.provider.ParrotardroneItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider

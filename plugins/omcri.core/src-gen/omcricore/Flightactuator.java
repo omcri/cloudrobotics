@@ -45,7 +45,6 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * @see #setHorizontalTilt(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_HorizontalTilt()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!horizontalTilt'"
 	 * @generated
 	 */
 	Integer getHorizontalTilt();
@@ -71,7 +70,6 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * @see #setVerticalTilt(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_VerticalTilt()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!verticalTilt'"
 	 * @generated
 	 */
 	Integer getVerticalTilt();
@@ -97,7 +95,6 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * @see #setHorizontalSpeed(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_HorizontalSpeed()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!horizontalSpeed'"
 	 * @generated
 	 */
 	Integer getHorizontalSpeed();
@@ -123,7 +120,6 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * @see #setVerticalSpeed(Integer)
 	 * @see omcricore.OmcricorePackage#getFlightactuator_VerticalSpeed()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!verticalSpeed'"
 	 * @generated
 	 */
 	Integer getVerticalSpeed();
@@ -144,7 +140,7 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!move()'"
+	 * @model
 	 * @generated
 	 */
 	void move();
@@ -155,7 +151,7 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!land()'"
+	 * @model
 	 * @generated
 	 */
 	void land();
@@ -166,7 +162,7 @@ public interface Flightactuator extends Actuator, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Flightactuator!takeoff()'"
+	 * @model
 	 * @generated
 	 */
 	void takeoff();

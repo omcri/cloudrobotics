@@ -3,18 +3,18 @@ h1. OCCI omcriall extension
 
 
 | *Name* | omcriall |
-| *Scheme* | http://omcri.org/cloudrobotics/all# |
+| *Scheme* | http://occiware.org/cloudrobotics/all# |
 
 
 Imported OCCI Extensions:
 
 | *Name* | *Scheme* |
 | <a href="core.textile">core</a> | http://schemas.ogf.org/occi/core# |
-| <a href="legomindstormnxt2.textile">legomindstormnxt2</a> | http://omcri.org/cloudrobotics/mindstormnxt# |
-| <a href="turtlebot.textile">turtlebot</a> | http://omcri.org/cloudrobotics/turtlebot# |
-| <a href=".textile"></a> |  |
-| <a href="omcricore.textile">omcricore</a> | http://omcri.org/cloudrobotics/core# |
-| <a href=".textile"></a> |  |
-| <a href=".textile"></a> |  |
+| <a href="legomindstormnxt2.textile">legomindstormnxt2</a> | http://occiware.org/cloudrobotics/mindstormnxt# |
+| <a href="turtlebot.textile">turtlebot</a> | http://occiware.org/cloudrobotics/turtlebot# |
+| <a href="parrotminidrone.textile">parrotminidrone</a> | http://occiware.org/cloudrobotics/parrotminidrone# |
+| <a href="omcricore.textile">omcricore</a> | http://occiware.org/cloudrobotics/core# |
+| <a href="parrotardrone.textile">parrotardrone</a> | http://occiware.org/cloudrobotics/parrotardrone# |
+| <a href="legomindstormev3.textile">legomindstormev3</a> | http://occiware.org/cloudrobotics/mindstormev3# |
 
-Generated at Mon Oct 02 16:49:24 CEST 2017 from platform:/resource/omcri.all/model/omcriall.occie by org.eclipse.cmf.occi.core.gen.textile
+Generated at Thu Jan 18 15:35:25 CET 2018 from platform:/resource/omcri.all/model/omcriall.occie by org.eclipse.cmf.occi.core.gen.textile

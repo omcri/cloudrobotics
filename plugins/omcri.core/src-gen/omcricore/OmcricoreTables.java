@@ -63,17 +63,17 @@ public class OmcricoreTables
 	 *	Constants used by auto-generated code.
 	 */
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.RootPackageId PACKid_$metamodel$ = org.eclipse.ocl.pivot.ids.IdManager.getRootPackageId("$metamodel$");
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.NsURIPackageId PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore = org.eclipse.ocl.pivot.ids.IdManager.getNsURIPackageId("http://omcri.org/cloudrobotics/core/ecore", null, omcricore.OmcricorePackage.eINSTANCE);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.NsURIPackageId PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore = org.eclipse.ocl.pivot.ids.IdManager.getNsURIPackageId("http://occiware.org/cloudrobotics/core/ecore", null, omcricore.OmcricorePackage.eINSTANCE);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.NsURIPackageId PACKid_http_c_s_s_schemas_ogf_org_s_occi_s_core_s_ecore = org.eclipse.ocl.pivot.ids.IdManager.getNsURIPackageId("http://schemas.ogf.org/occi/core/ecore", "occi", org.eclipse.cmf.occi.core.OCCIPackage.eINSTANCE);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Actuator = omcricore.OmcricoreTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore.getClassId("Actuator", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Actuator = omcricore.OmcricoreTables.PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore.getClassId("Actuator", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Class = omcricore.OmcricoreTables.PACKid_$metamodel$.getClassId("Class", 0);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Connection = omcricore.OmcricoreTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore.getClassId("Connection", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Connection = omcricore.OmcricoreTables.PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore.getClassId("Connection", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Entity = omcricore.OmcricoreTables.PACKid_http_c_s_s_schemas_ogf_org_s_occi_s_core_s_ecore.getClassId("Entity", 0);
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Resource = omcricore.OmcricoreTables.PACKid_http_c_s_s_schemas_ogf_org_s_occi_s_core_s_ecore.getClassId("Resource", 0);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Robot = omcricore.OmcricoreTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore.getClassId("Robot", 0);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Robotlink = omcricore.OmcricoreTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore.getClassId("Robotlink", 0);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Sensor = omcricore.OmcricoreTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore.getClassId("Sensor", 0);
-	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.EnumerationId ENUMid_Color = omcricore.OmcricoreTables.PACKid_http_c_s_s_omcri_org_s_cloudrobotics_s_core_s_ecore.getEnumerationId("Color");
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Robot = omcricore.OmcricoreTables.PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore.getClassId("Robot", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Robotlink = omcricore.OmcricoreTables.PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore.getClassId("Robotlink", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.ClassId CLSSid_Sensor = omcricore.OmcricoreTables.PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore.getClassId("Sensor", 0);
+	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.ids.EnumerationId ENUMid_Color = omcricore.OmcricoreTables.PACKid_http_c_s_s_example_org_s_cloudrobotics_s_core_s_ecore.getEnumerationId("Color");
 	public static final /*@NonInvalid*/ org.eclipse.ocl.pivot.values.IntegerValue INT_0 = org.eclipse.ocl.pivot.utilities.ValueUtil.integerValueOf("0");
 	public static final /*@NonInvalid*/ java.lang.String STR_Actuator_c_c_appliesConstraint = "Actuator::appliesConstraint";
 	public static final /*@NonInvalid*/ java.lang.String STR_Connection_c_c_appliesConstraint = "Connection::appliesConstraint";

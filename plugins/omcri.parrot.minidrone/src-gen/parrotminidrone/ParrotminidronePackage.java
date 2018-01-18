@@ -32,6 +32,8 @@ import org.eclipse.emf.ecore.EPackage;
  * <!-- end-user-doc -->
  * @see parrotminidrone.ParrotminidroneFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot'"
+ *        annotation="http://www.eclipse.org/OCL/Import occi='http://schemas.ogf.org/occi/core/ecore' omcricore='http://occiware.org/cloudrobotics/core/ecore'"
  * @generated
  */
 public interface ParrotminidronePackage extends EPackage {
@@ -49,7 +51,7 @@ public interface ParrotminidronePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://omcri.org/cloudrobotics/parrotminidrone/ecore";
+	String eNS_URI = "http://occiware.org/cloudrobotics/parrotminidrone/ecore";
 
 	/**
 	 * The package namespace name.

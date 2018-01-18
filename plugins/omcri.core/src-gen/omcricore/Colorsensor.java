@@ -46,7 +46,7 @@ public interface Colorsensor extends Sensor, MixinBase {
 	 * @see omcricore.Color
 	 * @see #setColor(Color)
 	 * @see omcricore.OmcricorePackage#getColorsensor_Color()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!color'"
+	 * @model
 	 * @generated
 	 */
 	Color getColor();
@@ -73,7 +73,6 @@ public interface Colorsensor extends Sensor, MixinBase {
 	 * @see #setLight(Integer)
 	 * @see omcricore.OmcricorePackage#getColorsensor_Light()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!light'"
 	 * @generated
 	 */
 	Integer getLight();
@@ -99,7 +98,6 @@ public interface Colorsensor extends Sensor, MixinBase {
 	 * @see #setDarkness(Integer)
 	 * @see omcricore.OmcricorePackage#getColorsensor_Darkness()
 	 * @model dataType="org.eclipse.cmf.occi.core.Integer"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!darkness'"
 	 * @generated
 	 */
 	Integer getDarkness();
@@ -126,7 +124,7 @@ public interface Colorsensor extends Sensor, MixinBase {
 	 * @see omcricore.Color
 	 * @see #setColorLamp(Color)
 	 * @see omcricore.OmcricorePackage#getColorsensor_ColorLamp()
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!colorLamp'"
+	 * @model
 	 * @generated
 	 */
 	Color getColorLamp();
@@ -148,7 +146,7 @@ public interface Colorsensor extends Sensor, MixinBase {
 	 * <!-- begin-model-doc -->
 	 * 
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/core/ecore!Colorsensor!sensecolor()'"
+	 * @model
 	 * @generated
 	 */
 	void sensecolor();

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EPackage;
  * @see omcri.legomindstormev3.Legomindstormev3Factory
  * @model kind="package"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot'"
- *        annotation="http://www.eclipse.org/OCL/Import core='http://schemas.ogf.org/occi/core/ecore' omcricore='http://omcri.org/cloudrobotics/core/ecore'"
+ *        annotation="http://www.eclipse.org/OCL/Import occi='http://schemas.ogf.org/occi/core/ecore' omcricore='http://occiware.org/cloudrobotics/core/ecore'"
  * @generated
  */
 public interface Legomindstormev3Package extends EPackage {
@@ -51,7 +51,7 @@ public interface Legomindstormev3Package extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://omcri.org/cloudrobotics/mindstormev3/ecore";
+	String eNS_URI = "http://occiware.org/cloudrobotics/mindstormev3/ecore";
 
 	/**
 	 * The package namespace name.

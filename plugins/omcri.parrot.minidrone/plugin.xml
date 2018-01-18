@@ -53,9 +53,8 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated parrotminidrone -->
       <package
-            uri="http://omcri.org/cloudrobotics/parrotminidrone/ecore"
-            class="parrotminidrone.ParrotminidronePackage"
-            genModel="model/parrotminidrone.genmodel"/>
+            uri="http://occiware.org/cloudrobotics/parrotminidrone/ecore"
+            class="parrotminidrone.ParrotminidronePackage"/>
    </extension>
 
 </plugin>

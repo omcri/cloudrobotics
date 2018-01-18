@@ -34,6 +34,8 @@ import org.eclipse.emf.ecore.EPackage;
  * <!-- end-user-doc -->
  * @see omcricore.OmcricoreFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot'"
+ *        annotation="http://www.eclipse.org/OCL/Import occi='http://schemas.ogf.org/occi/core/ecore'"
  * @generated
  */
 public interface OmcricorePackage extends EPackage {
@@ -51,7 +53,7 @@ public interface OmcricorePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://omcri.org/cloudrobotics/core/ecore";
+	String eNS_URI = "http://occiware.org/cloudrobotics/core/ecore";
 
 	/**
 	 * The package namespace name.
@@ -224,22 +226,13 @@ public interface OmcricorePackage extends EPackage {
 	int ROBOTLINK___LINK_SOURCE_INVARIANT__KIND_KIND = OCCIPackage.LINK___LINK_SOURCE_INVARIANT__KIND_KIND;
 
 	/**
-	 * The operation id for the '<em>Target Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROBOTLINK___TARGET_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.LINK_OPERATION_COUNT + 0;
-
-	/**
 	 * The number of operations of the '<em>Robotlink</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROBOTLINK_OPERATION_COUNT = OCCIPackage.LINK_OPERATION_COUNT + 1;
+	int ROBOTLINK_OPERATION_COUNT = OCCIPackage.LINK_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.RobotImpl <em>Robot</em>}' class.
@@ -469,22 +462,13 @@ public interface OmcricorePackage extends EPackage {
 	int CONNECTION___DISCONNECT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONNECTION___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
-
-	/**
 	 * The number of operations of the '<em>Connection</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 3;
+	int CONNECTION_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.SensorImpl <em>Sensor</em>}' class.
@@ -533,22 +517,13 @@ public interface OmcricorePackage extends EPackage {
 	int SENSOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
 
 	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
-
-	/**
 	 * The number of operations of the '<em>Sensor</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SENSOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+	int SENSOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link omcricore.impl.ColorsensorImpl <em>Colorsensor</em>}' class.
@@ -631,15 +606,6 @@ public interface OmcricorePackage extends EPackage {
 	 * @ordered
 	 */
 	int COLORSENSOR_FEATURE_COUNT = SENSOR_FEATURE_COUNT + 4;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLORSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Sensecolor</em>' operation.
@@ -736,22 +702,13 @@ public interface OmcricorePackage extends EPackage {
 	int ACTUATOR_FEATURE_COUNT = OCCIPackage.MIXIN_BASE_FEATURE_COUNT + 0;
 
 	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
-
-	/**
 	 * The number of operations of the '<em>Actuator</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 1;
+	int ACTUATOR_OPERATION_COUNT = OCCIPackage.MIXIN_BASE_OPERATION_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Mixin</b></em>' reference.
@@ -824,15 +781,6 @@ public interface OmcricorePackage extends EPackage {
 	 * @ordered
 	 */
 	int FLIGHTACTUATOR_FEATURE_COUNT = ACTUATOR_FEATURE_COUNT + 4;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLIGHTACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Move</em>' operation.
@@ -916,15 +864,6 @@ public interface OmcricorePackage extends EPackage {
 	int TOUCHSENSOR_FEATURE_COUNT = SENSOR_FEATURE_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOUCHSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
-
-	/**
 	 * The operation id for the '<em>Sensetouch</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -986,15 +925,6 @@ public interface OmcricorePackage extends EPackage {
 	 * @ordered
 	 */
 	int ULTRASONICSENSOR_FEATURE_COUNT = SENSOR_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ULTRASONICSENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Sensedistance</em>' operation.
@@ -1086,15 +1016,6 @@ public interface OmcricorePackage extends EPackage {
 	 * @ordered
 	 */
 	int MOTIONACTUATOR_FEATURE_COUNT = ACTUATOR_FEATURE_COUNT + 3;
-
-	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MOTIONACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Moveforward</em>' operation.
@@ -1197,15 +1118,6 @@ public interface OmcricorePackage extends EPackage {
 	int MOUTHACTUATOR_FEATURE_COUNT = ACTUATOR_FEATURE_COUNT + 0;
 
 	/**
-	 * The operation id for the '<em>Applies Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MOUTHACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
-
-	/**
 	 * The operation id for the '<em>Openmouth</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1264,16 +1176,6 @@ public interface OmcricorePackage extends EPackage {
 	EClass getRobotlink();
 
 	/**
-	 * Returns the meta object for the '{@link omcricore.Robotlink#targetConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Target Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Target Constraint</em>' operation.
-	 * @see omcricore.Robotlink#targetConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getRobotlink__TargetConstraint__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link omcricore.Robot <em>Robot</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1325,16 +1227,6 @@ public interface OmcricorePackage extends EPackage {
 	EOperation getConnection__Disconnect();
 
 	/**
-	 * Returns the meta object for the '{@link omcricore.Connection#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Applies Constraint</em>' operation.
-	 * @see omcricore.Connection#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getConnection__AppliesConstraint__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link omcricore.Sensor <em>Sensor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1343,16 +1235,6 @@ public interface OmcricorePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSensor();
-
-	/**
-	 * Returns the meta object for the '{@link omcricore.Sensor#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Applies Constraint</em>' operation.
-	 * @see omcricore.Sensor#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getSensor__AppliesConstraint__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link omcricore.Colorsensor <em>Colorsensor</em>}'.
@@ -1575,16 +1457,6 @@ public interface OmcricorePackage extends EPackage {
 	EClass getActuator();
 
 	/**
-	 * Returns the meta object for the '{@link omcricore.Actuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Applies Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Applies Constraint</em>' operation.
-	 * @see omcricore.Actuator#appliesConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getActuator__AppliesConstraint__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link omcricore.Motionactuator <em>Motionactuator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1761,14 +1633,6 @@ public interface OmcricorePackage extends EPackage {
 		EClass ROBOTLINK = eINSTANCE.getRobotlink();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Constraint</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROBOTLINK___TARGET_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getRobotlink__TargetConstraint__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link omcricore.impl.RobotImpl <em>Robot</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1813,14 +1677,6 @@ public interface OmcricorePackage extends EPackage {
 		EOperation CONNECTION___DISCONNECT = eINSTANCE.getConnection__Disconnect();
 
 		/**
-		 * The meta object literal for the '<em><b>Applies Constraint</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONNECTION___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getConnection__AppliesConstraint__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link omcricore.impl.SensorImpl <em>Sensor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1829,14 +1685,6 @@ public interface OmcricorePackage extends EPackage {
 		 * @generated
 		 */
 		EClass SENSOR = eINSTANCE.getSensor();
-
-		/**
-		 * The meta object literal for the '<em><b>Applies Constraint</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SENSOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getSensor__AppliesConstraint__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link omcricore.impl.ColorsensorImpl <em>Colorsensor</em>}' class.
@@ -2015,14 +1863,6 @@ public interface OmcricorePackage extends EPackage {
 		 * @generated
 		 */
 		EClass ACTUATOR = eINSTANCE.getActuator();
-
-		/**
-		 * The meta object literal for the '<em><b>Applies Constraint</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTUATOR___APPLIES_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getActuator__AppliesConstraint__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link omcricore.impl.MotionactuatorImpl <em>Motionactuator</em>}' class.

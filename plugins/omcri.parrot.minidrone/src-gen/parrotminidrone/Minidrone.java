@@ -47,7 +47,6 @@ public interface Minidrone extends Robot {
 	 * @see #setIpadress(String)
 	 * @see parrotminidrone.ParrotminidronePackage#getMinidrone_Ipadress()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/parrotminidrone/ecore!Minidrone!ipadress'"
 	 * @generated
 	 */
 	String getIpadress();
@@ -73,7 +72,6 @@ public interface Minidrone extends Robot {
 	 * @see #setName(String)
 	 * @see parrotminidrone.ParrotminidronePackage#getMinidrone_Name()
 	 * @model dataType="org.eclipse.cmf.occi.core.String"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://omcri.org/cloudrobotics/parrotminidrone/ecore!Minidrone!name'"
 	 * @generated
 	 */
 	String getName();

@@ -19,7 +19,7 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated omcricore -->
       <factory
-            uri="http://omcri.org/cloudrobotics/core/ecore"
+            uri="http://occiware.org/cloudrobotics/core/ecore"
             class="omcricore.provider.OmcricoreItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
