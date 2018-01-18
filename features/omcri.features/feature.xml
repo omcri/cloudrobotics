@@ -393,6 +393,26 @@ litigation.
         install-size="0"
         version="0.0.0"
         unpack="false"/>
+        <plugin
+        id="org.eclipse.cmf.occi.core.gen.alloy"
+        download-size="0"
+        install-size="0"
+        version="0.0.0"
+        unpack="false"/>
+        <plugin
+        id="org.eclipse.cmf.occi.core.gen.alloy.ui"
+        download-size="0"
+        install-size="0"
+        version="0.0.0"
+        unpack="false"/>
+        <plugin
+        id="org.eclipse.cmf.occi.core.connector.jocci"
+        download-size="0"
+        install-size="0"
+        version="0.0.0"
+        unpack="false"/>
+    
+    
    <plugin
          id="org.eclipse.cmf.occi.infrastructure"
          download-size="0"
@@ -411,18 +431,7 @@ litigation.
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-   <plugin
-         id="org.eclipse.cmf.occi.infrastructure.tests"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-   <plugin
-         id="org.eclipse.cmf.occi.infrastructure.design"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+        
    <plugin
          id="org.eclipse.cmf.occi.crtp"
          download-size="0"
@@ -441,18 +450,7 @@ litigation.
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-   <plugin
-         id="org.eclipse.cmf.occi.crtp.tests"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-   <plugin
-         id="org.eclipse.cmf.occi.crtp.design"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+         
    <plugin
          id="org.eclipse.cmf.occi.monitoring"
          download-size="0"
@@ -477,12 +475,6 @@ litigation.
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-   <plugin
-         id="org.eclipse.cmf.occi.monitoring.design"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
     
     <!-- omcri modules part -->
     <plugin
@@ -493,24 +485,6 @@ litigation.
         unpack="false"/>
     <plugin
         id="omcri.core.edit"
-        download-size="0"
-        install-size="0"
-        version="0.0.0"
-        unpack="false"/>
-    <plugin
-        id="omcri.core.editor"
-        download-size="0"
-        install-size="0"
-        version="0.0.0"
-        unpack="false"/>
-    <plugin
-        id="omcri.core.tests"
-        download-size="0"
-        install-size="0"
-        version="0.0.0"
-        unpack="false"/>
-    <plugin
-        id="omcri.core.design"
         download-size="0"
         install-size="0"
         version="0.0.0"
@@ -535,24 +509,6 @@ litigation.
        version="0.0.0"
        unpack="false"/>
     <plugin
-       id="omcri.legomindstormEV3.editor"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.legomindstormEV3.tests"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.legomindstormEV3.design"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
        id="omcri.legomindstormEV3.connector"
        download-size="0"
        install-size="0"
@@ -572,30 +528,11 @@ litigation.
        version="0.0.0"
        unpack="false"/>
     <plugin
-       id="omcri.legomindstormNXT2.editor"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.legomindstormNXT2.tests"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.legomindstormNXT2.design"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
        id="omcri.legomindstormNXT2.connector"
        download-size="0"
        install-size="0"
        version="0.0.0"
        unpack="false"/>
-    
     <plugin
        id="omcri.turtlebot"
        download-size="0"
@@ -604,24 +541,6 @@ litigation.
        unpack="false"/>
     <plugin
        id="omcri.turtlebot.edit"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.turtlebot.editor"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.turtlebot.tests"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.turtlebot.design"
        download-size="0"
        install-size="0"
        version="0.0.0"
@@ -646,24 +565,6 @@ litigation.
        version="0.0.0"
        unpack="false"/>
     <plugin
-       id="omcri.parrot.ardrone.editor"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.parrot.ardrone.tests"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.parrot.ardrone.design"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
        id="omcri.parrot.ardrone.connector"
        download-size="0"
        install-size="0"
@@ -683,32 +584,32 @@ litigation.
        version="0.0.0"
        unpack="false"/>
     <plugin
-       id="omcri.parrot.minidrone.editor"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.parrot.minidrone.tests"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-       unpack="false"/>
-    <plugin
-       id="omcri.parrot.minidrone.design"
-       download-size="0"
-       install-size="0"
-       version="0.0.0"
-        unpack="false"/>
-    <plugin
        id="omcri.parrot.minidrone.connector"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+       <plugin
+       id="omcri.all"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+       <plugin
+       id="omcri.all.edit"
+       download-size="0"
+       install-size="0"
+       version="0.0.0"
+       unpack="false"/>
+       <plugin
+       id="omcri.all.design.extended"
        download-size="0"
        install-size="0"
        version="0.0.0"
        unpack="false"/>
     
     <requires>
-            <!-- Eclipse Modeling Framework and tools. -->
+        <!-- Eclipse Modeling Framework and tools. -->
         <import feature="org.eclipse.emf" version="2.12.0.v20160526-0356"/>
         <import feature="org.eclipse.sirius.runtime" version="5.0.0.201706130938"/>
         <import feature="org.eclipse.sirius.runtime.aql" version="5.0.0.201706130938"/>
@@ -724,5 +625,9 @@ litigation.
         <import feature="org.eclipse.epsilon.core.dt.feature" version="1.4.0.201611012202"/>
         <import feature="org.eclipse.epsilon.emf.dt.feature" version="1.4.0.201611012202"/>
         <import feature="org.eclipse.epsilon.emf.feature" version="1.4.0.201611012202"/>
+        <import feature="org.eclipse.emf.ecoretools.design" version="3.3.0.201706121316"/>
+        <import feature="org.eclipse.mylyn.wikitext_feature" version="3.0.6.201703111926"/>
+        <import feature="org.eclipse.egit" version="4.8.0.201706111038-r"/>
+        <import feature="org.eclipse.emf.compare.egit" version="1.2.1.201706130827"/>
     </requires>
 </feature>

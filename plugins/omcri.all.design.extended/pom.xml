@@ -22,7 +22,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>org.occiware</groupId>
-    <artifactId>omcri.all.extended.design</artifactId>
+    <artifactId>omcri.all.design.extended</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>eclipse-plugin</packaging>
 </project>
