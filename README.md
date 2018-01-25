@@ -6,7 +6,6 @@ OMCRI acronym : Open Mobile Cloud Robotics Interface.
 
 [![Build Status](https://travis-ci.org/omcri/cloudrobotics.svg?branch=master)](https://travis-ci.org/omcri/cloudrobotics)
 
-
 ## Install
 
 First get a working OMCRI-Studio, in your working directory type:
@@ -36,3 +35,4 @@ In Eclipse:
  * Click on finish to generate the project.
 
 It will create the modeling scheme. 
+
