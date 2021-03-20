@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2015-2017 Obeo, Inria
- 
+ Copyright (c) 2015-2021 Obeo, Inria
+
  All rights reserved. This program and the accompanying materials
  are made available under the terms of the Eclipse Public License v1.0
  which accompanies this distribution, and is available at
  http://www.eclipse.org/legal/epl-v10.html
- 
+
  Contributors:
  - William Piers <william.piers@obeo.fr>
  - Philippe Merle <philippe.merle@inria.fr>
@@ -21,46 +21,46 @@
     <packaging>pom</packaging>
     <modules>
         <!-- OMCRI modules -->
-        
+
         <!-- OMCRI core -->
         <module>plugins/omcri.core</module>
         <module>plugins/omcri.core.edit</module>
         <module>plugins/omcri.core.connector</module>
-        
+
         <!-- OMCRI Lego mindstorm EV3 -->
         <module>plugins/omcri.legomindstormEV3</module>
         <module>plugins/omcri.legomindstormEV3.edit</module>
         <module>plugins/omcri.legomindstormEV3.connector</module>
-        
+
         <!-- OMCRI Lego mindstorm NXT2 -->
         <module>plugins/omcri.legomindstormNXT2</module>
         <module>plugins/omcri.legomindstormNXT2.edit</module>
         <module>plugins/omcri.legomindstormNXT2.connector</module>
-        
+
         <!-- OMCRI Turtlebot -->
         <module>plugins/omcri.turtlebot</module>
         <module>plugins/omcri.turtlebot.edit</module>
         <module>plugins/omcri.turtlebot.connector</module>
-        
+
         <!-- OMCRI Parrot ARDrone -->
         <module>plugins/omcri.parrot.ardrone</module>
         <module>plugins/omcri.parrot.ardrone.edit</module>
         <module>plugins/omcri.parrot.ardrone.connector</module>
-        
+
         <!-- OMCRI Parrot Minidrone current: Cargo Mars -->
         <module>plugins/omcri.parrot.minidrone</module>
         <module>plugins/omcri.parrot.minidrone.edit</module>
         <module>plugins/omcri.parrot.minidrone.connector</module>
-        
+
         <!-- Main designer and all robots extension -->
         <module>plugins/omcri.all</module>
         <module>plugins/omcri.all.edit</module>
         <module>plugins/omcri.all.design.extended</module>
-        
+
         <!-- Releng -->
         <module>features/omcri.features</module>
     </modules>
-    
+
     <profiles>
         <profile>
             <!-- Type mvn -Pbuild.products to activate this profile. -->
@@ -71,29 +71,35 @@
             </modules>
         </profile>
     </profiles>
-    
+
     <properties>
         <tycho-version>1.0.0</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <repositories>
         <!-- configure p2 repository to resolve against -->
+<!-- PM: commented as this repository contains incorrect artefacts,
+         see https://github.com/occiware/OCCI-Studio/issues/51
         <repository>
             <id>OCCI-Studio</id>
             <url>http://dl.bintray.com/occiware/OCCI-Studio/update-site/current-release</url>
             <layout>p2</layout>
         </repository>
+-->
         <repository>
-            <id>oxygen</id>
+            <id>photon</id>
             <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/oxygen</url>
+            <url>http://download.eclipse.org/releases/photon</url>
         </repository>
+<!-- PM: commented as the 6.3.0 repository is not more available!
+     Moreover this repository seems useless, no errors when it is commented!
         <repository>
             <id>OCL-6.3</id>
             <layout>p2</layout>
             <url>http://download.eclipse.org/modeling/mdt/ocl/updates/milestones/6.3.0</url>
         </repository>
+-->
         <repository>
             <id>mvnrepository</id>
             <url>http://repo1.maven.org/maven2</url>
@@ -106,7 +112,7 @@
         </repository>
         <repository>
             <id>epsilonrepository</id>
-            <url>http://download.eclipse.org/epsilon/updates/</url>
+            <url>http://download.eclipse.org/epsilon/updates/1.4</url>
             <layout>p2</layout>
         </repository>
     </repositories>
@@ -116,7 +122,7 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-         
+
          <build>
              <plugins>
                  <plugin>
