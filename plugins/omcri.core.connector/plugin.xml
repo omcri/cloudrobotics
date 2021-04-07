@@ -17,7 +17,7 @@
    <!-- Register the factory of this connector. -->
    <extension point="org.eclipse.emf.ecore.factory_override">
       <factory
-            uri="http://omcri.org/cloudrobotics/core/ecore"
+            uri="http://occiware.org/cloudrobotics/core/ecore"
             class="omcri.core.connector.ConnectorFactory"/>
    </extension>
 

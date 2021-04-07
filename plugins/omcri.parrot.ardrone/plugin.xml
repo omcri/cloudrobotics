@@ -16,12 +16,12 @@
 
    <!-- Register the parrotardrone extension. -->
    <extension point="org.eclipse.cmf.occi.core.occie">
-      <occie scheme="http://omcri.org/cloudrobotics/parrotardrone#" file="model/parrotardrone.occie"/>
+      <occie scheme="http://occiware.org/cloudrobotics/parrotardrone#" file="model/parrotardrone.occie"/>
    </extension>
 
    <!-- Define URI mapping. -->
    <extension point="org.eclipse.emf.ecore.uri_mapping">
-      <mapping source="http://omcri.org/cloudrobotics/parrotardrone" target="platform:/plugin/omcri.parrot.ardrone/model/parrotardrone.occie"/>
+      <mapping source="http://occiware.org/cloudrobotics/parrotardrone" target="platform:/plugin/omcri.parrot.ardrone/model/parrotardrone.occie"/>
    </extension>
 
    <!-- Register the parser for .parrotardrone files. -->

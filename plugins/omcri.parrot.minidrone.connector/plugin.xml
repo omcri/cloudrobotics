@@ -17,7 +17,7 @@
    <!-- Register the factory of this connector. -->
    <extension point="org.eclipse.emf.ecore.factory_override">
       <factory
-            uri="http://omcri.org/cloudrobotics/parrotminidrone/ecore"
+            uri="http://occiware.org/cloudrobotics/parrotminidrone/ecore"
             class="omcri.parrot.minidrone.connector.ConnectorFactory"/>
    </extension>
 

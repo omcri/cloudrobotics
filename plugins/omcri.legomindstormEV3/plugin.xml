@@ -16,12 +16,12 @@
 
    <!-- Register the legomindstormev3 extension. -->
    <extension point="org.eclipse.cmf.occi.core.occie">
-      <occie scheme="http://omcri.org/cloudrobotics/mindstormev3#" file="model/legomindstormev3.occie"/>
+      <occie scheme="http://occiware.org/cloudrobotics/mindstormev3#" file="model/legomindstormev3.occie"/>
    </extension>
 
    <!-- Define URI mapping. -->
    <extension point="org.eclipse.emf.ecore.uri_mapping">
-      <mapping source="http://omcri.org/cloudrobotics/mindstormev3" target="platform:/plugin/omcri.legomindstormEV3/model/legomindstormev3.occie"/>
+      <mapping source="http://occiware.org/cloudrobotics/mindstormev3" target="platform:/plugin/omcri.legomindstormEV3/model/legomindstormev3.occie"/>
    </extension>
 
    <!-- Register the parser for .legomindstormev3 files. -->

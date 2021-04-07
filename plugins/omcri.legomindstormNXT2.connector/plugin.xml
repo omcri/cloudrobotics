@@ -17,7 +17,7 @@
    <!-- Register the factory of this connector. -->
    <extension point="org.eclipse.emf.ecore.factory_override">
       <factory
-            uri="http://omcri.org/cloudrobotics/mindstormnxt/ecore"
+            uri="http://occiware.org/cloudrobotics/mindstormnxt/ecore"
             class="omcri.legomindstormNXT2.connector.ConnectorFactory"/>
    </extension>
 
